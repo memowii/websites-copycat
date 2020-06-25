@@ -19,7 +19,12 @@
   padding-bottom: 0.8rem;
 }
 
-#header form button {
+#header form .btn {
   background-color: rgb(231, 89, 111);
   color: white;
+}
+
+.nav-link--outline-white {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
 }
