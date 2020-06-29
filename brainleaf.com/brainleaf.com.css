@@ -1,30 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
-#header {
-  background-image: -webkit-linear-gradient(
-    left,
-    rgba(75, 199, 162, 1) 0%,
-    rgba(174, 221, 127, 1) 100%
-  );
-  font-family: 'Rubik Mono One', sans-serif;
+body {
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
-#header img {
-  max-width: 160px;
+.navbar--gradient-green {
+    background-image: -webkit-linear-gradient(
+            left,
+            rgba(75, 199, 162, 1) 0%,
+            rgba(174, 221, 127, 1) 100%
+    );
 }
 
-#header .navbar-toggler {
-  background-color: #78D192;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+.navbar-brand__img {
+    max-width: 160px;
 }
 
-#header form .btn {
-  background-color: rgb(231, 89, 111);
-  color: white;
+.navbar-toggler--green {
+    background-color: #78D192;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.btn-red {
+    background-color: rgb(231, 89, 111);
+    color: white;
 }
 
 .nav-link--outline-white {
-  border: 1px solid #ffffff;
-  border-radius: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
 }
