@@ -7,6 +7,9 @@
     --light-gray: rgb(235, 236, 235);
     --bright-green: rgb(120, 209, 146);
     --black: rgb(84, 84, 84);
+    --facebook-color: rgb(58, 88, 151);
+    --google-color: rgb(221, 78, 66);
+    --twitter-color: rgb(85, 172, 238);
 }
 
 body {
@@ -108,4 +111,21 @@ input[type="tel"], input[type="time"], input[type="url"], textarea {
 
 .widget__search {
     background: var(--light-gray);
+}
+
+.social-icon i {
+    font-size: 4rem;
+    opacity: 0.6;
+}
+
+.social-icon--facebook  {
+    color: var(--facebook-color);
+}
+
+.social-icon--twitter {
+    color: var(--twitter-color);
+}
+
+.social-icon--google {
+    color: var(--google-color);
 }
