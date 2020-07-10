@@ -118,18 +118,50 @@ input[type="tel"], input[type="time"], input[type="url"], textarea {
     opacity: 0.6;
 }
 
-.social-icon--facebook  {
+.social-icon--facebook i {
     color: var(--facebook-color);
 }
 
-.social-icon--twitter {
+.social-icon--twitter i {
     color: var(--twitter-color);
 }
 
-.social-icon--google {
+.social-icon--google i {
     color: var(--google-color);
 }
 
-.widget__tags li {
+.social-icon--infooter i {
+    font-size: 2rem;
+    color: white;
+    opacity: 1;
+}
 
+.footer {
+    background-color: var(--black);
+    color: white;
+}
+
+.footer__logo {
+    max-width: 120px;
+}
+
+.footer__address {
+    font-size: 0.8rem;
+}
+
+.footer__address a {
+    color: white;
+}
+
+.footer__nav {
+    font-size: .9rem;
+}
+
+.footer__nav a {
+    color: white;
+}
+
+.footer__copyright {
+    font-size: .9rem;
+    color: var(--bright-green);
 }
