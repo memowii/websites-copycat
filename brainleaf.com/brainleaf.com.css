@@ -165,3 +165,11 @@ input[type="tel"], input[type="time"], input[type="url"], textarea {
     font-size: .9rem;
     color: white;
 }
+
+@media (min-width: 768px) {
+    .footer__nav li {
+        width: auto !important;
+        float: left;
+        margin-right: 2.5rem;
+    }
+}
