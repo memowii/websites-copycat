@@ -79,7 +79,7 @@ input[type="tel"], input[type="time"], input[type="url"], textarea {
 }
 
 .entry__footer-meta--text-small {
-    font-size: 0.88rem;
+    font-size: 0.8rem;
 }
 
 .entry__categories::before {
@@ -163,5 +163,5 @@ input[type="tel"], input[type="time"], input[type="url"], textarea {
 
 .footer__copyright {
     font-size: .9rem;
-    color: var(--bright-green);
+    color: white;
 }
