@@ -6,6 +6,7 @@
     --gray: rgb(170, 170, 170);
     --light-gray: rgb(235, 236, 235);
     --bright-green: rgb(120, 209, 146);
+    --bright-green-focus: rgb(92, 163, 112);
     --black: rgb(84, 84, 84);
     --facebook-color: rgb(58, 88, 151);
     --google-color: rgb(221, 78, 66);
@@ -46,6 +47,10 @@ input[type="tel"], input[type="time"], input[type="url"], textarea {
     background-color: var(--bright-green);
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
+}
+
+.navbar-toggler--green:focus {
+    outline: 5px auto var(--bright-green-focus);
 }
 
 .btn-red {
@@ -165,6 +170,13 @@ input[type="tel"], input[type="time"], input[type="url"], textarea {
 .footer__copyright {
     font-size: .9rem;
     color: white;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .wrap-main {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 768px) {
