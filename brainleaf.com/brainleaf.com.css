@@ -63,6 +63,7 @@ input[type="tel"], input[type="time"], input[type="url"], textarea {
 }
 
 .entry {
+    /*max-width: 768px;*/
     border-bottom: 1px dotted var(--gray);
 }
 
@@ -171,5 +172,12 @@ input[type="tel"], input[type="time"], input[type="url"], textarea {
         width: auto !important;
         float: left;
         margin-right: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .post__img {
+        width: 7.5rem;
+        height: 7.5rem;
     }
 }
