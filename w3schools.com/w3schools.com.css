@@ -1,0 +1,42 @@
+:root {
+    --dotcom-green: #4CAF50;
+    --accordion-green: var(--dotcom-green);
+    --navbar-collapse-bg: #f1f1f1;
+}
+
+.w3schools-logo {
+    font-family: fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #555555;
+    display: block;
+    position: relative;
+}
+
+.w3schools-logo__dotcom {
+    color: var(--dotcom-green);
+}
+
+.bg-w3-green {
+    background-color: var(--accordion-green);
+}
+
+.nav-link--black {
+    color: black !important;
+}
+
+.navbar-collapse--white {
+    background-color: var(--navbar-collapse-bg);
+}
+
+.collapsing {
+    background-color: var(--navbar-collapse-bg);
+}
+
+.collapsing .nav-link {
+    color: black;
+}
