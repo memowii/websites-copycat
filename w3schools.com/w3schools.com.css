@@ -66,13 +66,22 @@
     vertical-align: inherit;
 }
 
-.btn-a:hover {
+.navbar-btn {
+    width: 45px;
+}
+
+.navbar-btn:hover {
     color: #000 !important;
     background-color: #fff !important;
 }
 
-.form-control--accordion {
-    width: 60%;
-    display: inline-block;
-    /*padding: 0;*/
+.lang-selection {
+    position: relative;
+}
+
+.lang-selection__form {
+    position: absolute;
+    z-index: 10;
+    right: 110px;
+    top: 10px;
 }

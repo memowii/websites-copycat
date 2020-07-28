@@ -25,14 +25,9 @@
   </a>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-w3-green p-0">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <span class="navbar-text py-3">
-    <select class="form-control form-control--accordion d-none">
+<div class="lang-selection d-none">
+  <form class="lang-selection__form">
+    <select class="form-control">
       <option selected>Seleccionar idioma</option>
       <option value="1">Inglés</option>
       <option value="2">Chino mandarín</option>
@@ -42,11 +37,21 @@
       <option value="6">Bengalí</option>
       <option value="7">Ruso</option>
     </select>
-    <a class="px-3 link-unstyled btn-a" href="javascript:void(0)" role="button" onclick="open_translate(this)">
+  </form>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-w3-green p-0">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <span class="navbar-text">
+    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+       onclick="open_translate(this)">
       <i class="fas fa-globe-americas"></i>
       <i class="fas fa-times d-none"></i>
     </a>
-    <a class="px-3 link-unstyled btn-a" href="javascript:void(0)" role="button">
+    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button">
       <i class="fas fa-search"></i>
     </a>
   </span>
@@ -91,12 +96,12 @@
         crossorigin="anonymous"></script>
 <script>
   function open_translate(_this) {
-    const bntGlobe = _this.querySelector('i:first-child'),
-      btnX = _this.querySelector('i:last-child'),
-      selectLang = _this.previousElementSibling;
+    const bntShowLangSelection = _this.querySelector('i:first-child'),
+      btnHideLangSelection = _this.querySelector('i:last-child'),
+      selectLang = document.querySelector('.lang-selection');
 
-    bntGlobe.classList.toggle('d-none');
-    btnX.classList.toggle('d-none');
+    bntShowLangSelection.classList.toggle('d-none');
+    btnHideLangSelection.classList.toggle('d-none');
     selectLang.classList.toggle('d-none');
   }
 </script>
