@@ -33,10 +33,46 @@
     background-color: var(--navbar-collapse-bg);
 }
 
+/* I wanted to do a modifier of this class, but it just appears for some milliseconds when a navbar is collapsing. */
+/* For that reason, I just added the property that I wanted to change. The same happens with the next css rule. */
 .collapsing {
     background-color: var(--navbar-collapse-bg);
 }
 
 .collapsing .nav-link {
     color: black;
+}
+
+.link-unstyled,
+.link-unstyled:visited,
+.link-unstyled:hover,
+.link-unstyled:active,
+.link-unstyled:focus,
+.link-unstyled:active:hover {
+    font-style: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    text-decoration: none;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    border-radius: inherit;
+    border: inherit;
+    outline: inherit;
+    box-shadow: inherit;
+    padding: inherit;
+    vertical-align: inherit;
+}
+
+.btn-a:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+.form-control--accordion {
+    width: 60%;
+    display: inline-block;
+    /*padding: 0;*/
 }

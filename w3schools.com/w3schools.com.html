@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+  <!-- Font Awesome 5 -->
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        rel="stylesheet" />
+
   <link rel="stylesheet" href="w3schools.com.css">
   <title>w3schools</title>
 </head>
@@ -26,16 +31,39 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+  <span class="navbar-text py-3">
+    <select class="form-control form-control--accordion d-none">
+      <option selected>Seleccionar idioma</option>
+      <option value="1">Inglés</option>
+      <option value="2">Chino mandarín</option>
+      <option value="3">Hindi</option>
+      <option value="4">Español</option>
+      <option value="5">Francés</option>
+      <option value="6">Bengalí</option>
+      <option value="7">Ruso</option>
+    </select>
+    <a class="px-3 link-unstyled btn-a" href="javascript:void(0)" role="button" onclick="open_translate(this)">
+      <i class="fas fa-globe-americas"></i>
+      <i class="fas fa-times d-none"></i>
+    </a>
+    <a class="px-3 link-unstyled btn-a" href="javascript:void(0)" role="button">
+      <i class="fas fa-search"></i>
+    </a>
+  </span>
+
+
   <div class="navbar-collapse navbar-collapse--white collapse" id="navbarSupportedContent">
     <div class="p-3 pr-4">
-      <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <button type="button" class="close" aria-label="Close" data-toggle="collapse"
+              data-target="#navbarSupportedContent">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
 
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link nav-link--black dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        <a class="nav-link nav-link--black dropdown-toggle" href="#" id="navbarDropdown" role="button"
+           data-toggle="dropdown"
            aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
@@ -50,7 +78,6 @@
   </div>
 </nav>
 
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -62,5 +89,16 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+<script>
+  function open_translate(_this) {
+    const bntGlobe = _this.querySelector('i:first-child'),
+      btnX = _this.querySelector('i:last-child'),
+      selectLang = _this.previousElementSibling;
+
+    bntGlobe.classList.toggle('d-none');
+    btnX.classList.toggle('d-none');
+    selectLang.classList.toggle('d-none');
+  }
+</script>
 </body>
 </html>
