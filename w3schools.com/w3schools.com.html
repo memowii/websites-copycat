@@ -81,20 +81,93 @@
       </button>
     </div>
 
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link nav-link--black dropdown-toggle" href="#" id="navbarDropdown" role="button"
-           data-toggle="dropdown">
-          Dropdown
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <div class="accordion mt-4 px-3 py-4" id="accordionExample">
+      <div class="card border-0 rounded-0">
+        <div class="card-header card-header--gray p-0" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne">
+              TUTORIALS
+            </button>
+          </h2>
         </div>
-      </li>
-    </ul>
+        <div id="collapseOne" class="collapse bg-white">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+
+      <div class="card border-0 rounded-0">
+        <div class="card-header card-header--gray p-0" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo">
+              REFERENCES
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse bg-white">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+
+      <div class="card border-0 rounded-0">
+        <div class="card-header card-header--gray p-0" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button" data-toggle="collapse"
+                    data-target="#collapseThree">
+              EXAMPLES
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse bg-white">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+
+      <div class="card border-0 rounded-0">
+        <div class="card-header card-header--gray p-0" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button" data-toggle="collapse"
+                    data-target="#collapseFour">
+              EXERCISES
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse bg-white">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+            wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+            excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+            you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
 
@@ -156,6 +229,10 @@
   siteSearchDiv.addEventListener('focusin', saveSearchPlaceHolder);
   siteSearchDiv.addEventListener('focusout', setSearchPlaceHolder);
   siteSearchBtnX.addEventListener('click', deleteSearchInput);
+
+  const navTogglerBtn = document.querySelector('nav > button');
+  navTogglerBtn.dispatchEvent(new MouseEvent('click', {bubbles: true}));
+
 </script>
 </body>
 </html>

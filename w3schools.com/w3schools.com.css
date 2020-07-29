@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500&display=swap");
+
 :root {
     --dotcom-green: #4CAF50;
     --accordion-green: var(--dotcom-green);
-    --navbar-collapse-bg: #f1f1f1;
+    --gray: #f1f1f1;
+    --navbar-collapse-bg: var(--gray);
 }
 
 .w3schools-logo {
@@ -86,7 +89,24 @@
 }
 
 .site-search {
-    z-index: 10;
+    z-index: 11;
     right: 50px;
     top: 10px;
+}
+
+.card-header--gray {
+    background-color: var(--gray);
+}
+
+.btn--accordion {
+    font-family: 'Varta', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 27px;
+    padding: 8px;
+}
+
+.btn--accordion:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
 }
