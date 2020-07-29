@@ -79,9 +79,14 @@
     position: relative;
 }
 
-.lang-selection__form {
-    position: absolute;
+.lang-selection {
     z-index: 10;
     right: 110px;
+    top: 10px;
+}
+
+.site-search {
+    z-index: 10;
+    right: 50px;
     top: 10px;
 }

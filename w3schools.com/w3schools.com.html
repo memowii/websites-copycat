@@ -25,8 +25,24 @@
   </a>
 </div>
 
-<div class="lang-selection d-none">
-  <form class="lang-selection__form">
+<div class="position-relative d-none">
+  <form class="site-search position-absolute w-75">
+    <div class="input-group">
+      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="ENHANCED BY Google">
+      <div class="input-group-append">
+        <button type="button" class="btn btn-primary">
+          <i class="fas fa-times"></i>
+        </button>
+        <button type="button" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="position-relative d-none">
+  <form class="lang-selection position-absolute">
     <select class="form-control">
       <option selected>Seleccionar idioma</option>
       <option value="1">Inglés</option>
@@ -47,12 +63,14 @@
 
   <span class="navbar-text">
     <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
-       onclick="open_translate(this)">
+       onclick="openTranslate(this)">
       <i class="fas fa-globe-americas"></i>
       <i class="fas fa-times d-none"></i>
     </a>
-    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button">
+    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+       onclick="openSearch(this)">
       <i class="fas fa-search"></i>
+      <i class="fas fa-times d-none"></i>
     </a>
   </span>
 
@@ -95,15 +113,52 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 <script>
-  function open_translate(_this) {
+  const siteSearchDiv = document.querySelector('.site-search').parentElement;
+  const siteSearchBtnX = siteSearchDiv.querySelector('button:first-child');
+  const selectLangDiv = document.querySelector('.lang-selection').parentElement;
+  let placeHolderMess;
+
+  function openTranslate(_this) {
     const bntShowLangSelection = _this.querySelector('i:first-child'),
-      btnHideLangSelection = _this.querySelector('i:last-child'),
-      selectLang = document.querySelector('.lang-selection');
+      btnHideLangSelection = _this.querySelector('i:last-child');
 
     bntShowLangSelection.classList.toggle('d-none');
     btnHideLangSelection.classList.toggle('d-none');
-    selectLang.classList.toggle('d-none');
+    selectLangDiv.classList.toggle('d-none');
   }
+
+  function openSearch(_this) {
+    const btnShowSearch = _this.querySelector('i:first-child'),
+      btnHideSearch = _this.querySelector('i:last-child');
+
+    btnShowSearch.classList.toggle('d-none');
+    btnHideSearch.classList.toggle('d-none');
+    siteSearchDiv.classList.toggle('d-none');
+
+    siteSearchDiv.querySelector('input').focus();
+  }
+
+  function saveSearchPlaceHolder(e) {
+    const input = e.target;
+    placeHolderMess = input.placeholder;
+    input.placeholder = '';
+  }
+
+  function setSearchPlaceHolder(e) {
+    const input = e.target;
+    input.placeholder = placeHolderMess;
+  }
+
+  function deleteSearchInput() {
+    const input = this.parentElement.previousElementSibling
+    input.value = '';
+    input.focus();
+    console.log(input.value);
+  }
+
+  siteSearchDiv.addEventListener('focusin', saveSearchPlaceHolder);
+  siteSearchDiv.addEventListener('focusout', setSearchPlaceHolder);
+  siteSearchBtnX.addEventListener('click', deleteSearchInput);
 </script>
 </body>
 </html>
