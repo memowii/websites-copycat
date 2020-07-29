@@ -20,6 +20,15 @@
     position: relative;
 }
 
+.w3schools-logo:hover {
+    color: #555555;
+    text-decoration: none;
+}
+
+.w3schools-logo:active {
+    background-color: #ade1f5;
+}
+
 .w3schools-logo__dotcom {
     color: var(--dotcom-green);
 }
@@ -118,3 +127,6 @@
 .accordion .card-body a {
     font-family: 'Noto Sans', sans-serif;
 }
+
+/*font-family: 'Noto Sans', sans-serif;*/
+/*font-family: 'Varta', sans-serif;*/
