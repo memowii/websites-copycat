@@ -5,9 +5,10 @@
     --accordion-green: var(--dotcom-green);
     --gray: #f1f1f1;
     --navbar-collapse-bg: var(--gray);
+    --font-segoe-ui: 'Varta', sans-serif;;
 }
 
-.w3schools-logo {
+.w3schools-title {
     font-family: fontawesome;
     text-decoration: none;
     line-height: 1;
@@ -20,12 +21,20 @@
     position: relative;
 }
 
-.w3schools-logo:hover {
+.w3schools-subtitle {
+    font-family: var(--font-segoe-ui);
+    font-size: 15px;
+    letter-spacing: 4px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+.w3schools-title:hover {
     color: #555555;
     text-decoration: none;
 }
 
-.w3schools-logo:active {
+.w3schools-title:active {
     background-color: #ade1f5;
 }
 
