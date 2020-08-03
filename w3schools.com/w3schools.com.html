@@ -519,9 +519,11 @@
       </div>
     </div>
 
+    <!-- NAVBAR-NAV -->
     <ul class="navbar-nav mr-auto " style="background: green">
+      <!-- TUTORIALS -->
       <li class="nav-item dropdown position-static">
-        <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
+        <a id="do-click" class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
           tutorials
         </a>
         <div class="dropdown-menu w-100 mt-0">
@@ -531,7 +533,7 @@
             </button>
           </div>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-xl-3">
               <!-- HTML -->
               <div class="d-flex flex-column text-left mb-4">
                 <h3>HTML and CSS</h3>
@@ -547,20 +549,22 @@
                 <a class="link-unstyled my-2" href="/howto/default.asp">Learn How To</a>
                 <a class="link-unstyled my-2" href="/sass/default.asp">Learn Sass</a>
               </div>
-              <!-- XML -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>XML Tutorials</h3>
-                <a class="link-unstyled my-2" href="/xml/default.asp">Learn XML</a>
-                <a class="link-unstyled my-2" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
-                <a class="link-unstyled my-2" href="/xml/dom_intro.asp">Learn XML DOM</a>
-                <a class="link-unstyled my-2" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
-                <a class="link-unstyled my-2" href="/xml/schema_intro.asp">Learn XML Schema</a>
-                <a class="link-unstyled my-2" href="/xml/xsl_intro.asp">Learn XSLT</a>
-                <a class="link-unstyled my-2" href="/xml/xpath_intro.asp">Learn XPath</a>
-                <a class="link-unstyled my-2" href="/xml/xquery_intro.asp">Learn XQuery</a>
+              <div class="d-xl-none">
+                <!-- XML -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>XML Tutorials</h3>
+                  <a class="link-unstyled my-2" href="/xml/default.asp">Learn XML</a>
+                  <a class="link-unstyled my-2" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
+                  <a class="link-unstyled my-2" href="/xml/dom_intro.asp">Learn XML DOM</a>
+                  <a class="link-unstyled my-2" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
+                  <a class="link-unstyled my-2" href="/xml/schema_intro.asp">Learn XML Schema</a>
+                  <a class="link-unstyled my-2" href="/xml/xsl_intro.asp">Learn XSLT</a>
+                  <a class="link-unstyled my-2" href="/xml/xpath_intro.asp">Learn XPath</a>
+                  <a class="link-unstyled my-2" href="/xml/xquery_intro.asp">Learn XQuery</a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-xl-3">
               <!-- JAVASCRIPT -->
               <div class="d-flex flex-column text-left mb-4">
 
@@ -582,29 +586,71 @@
                 <a class="link-unstyled my-2" href="/cs/default.asp">Learn C#</a>
                 <a class="link-unstyled my-2" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
               </div>
-              <!-- SERVER SIDE -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>Server Side</h3>
-                <a class="link-unstyled my-2" href="/sql/default.asp">Learn SQL</a>
-                <a class="link-unstyled my-2" href="/php/default.asp">Learn PHP</a>
-                <a class="link-unstyled my-2" href="/asp/default.asp">Learn ASP</a>
-                <a class="link-unstyled my-2" href="/nodejs/default.asp">Learn Node.js</a>
-                <a class="link-unstyled my-2" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
+              <div class="d-xl-none">
+                <!-- SERVER SIDE -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Server Side</h3>
+                  <a class="link-unstyled my-2" href="/sql/default.asp">Learn SQL</a>
+                  <a class="link-unstyled my-2" href="/php/default.asp">Learn PHP</a>
+                  <a class="link-unstyled my-2" href="/asp/default.asp">Learn ASP</a>
+                  <a class="link-unstyled my-2" href="/nodejs/default.asp">Learn Node.js</a>
+                  <a class="link-unstyled my-2" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
+                </div>
+                <!-- WEB BUILDING -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Web Building</h3>
+                  <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
+                  <a class="link-unstyled my-2" href="/browsers/default.asp">Web Statistics</a>
+                  <a class="link-unstyled my-2" href="/cert/default.asp">Web Certificates</a>
+                  <a class="link-unstyled my-2" href="/tryit/default.asp">Web Editor</a>
+                  <a class="link-unstyled my-2" href="/whatis/default.asp">Web Development</a>
+                  <a class="link-unstyled my-2" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+                </div>
               </div>
-              <!-- WEB BUILDING -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>Web Building</h3>
-                <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
-                <a class="link-unstyled my-2" href="/browsers/default.asp">Web Statistics</a>
-                <a class="link-unstyled my-2" href="/cert/default.asp">Web Certificates</a>
-                <a class="link-unstyled my-2" href="/tryit/default.asp">Web Editor</a>
-                <a class="link-unstyled my-2" href="/whatis/default.asp">Web Development</a>
-                <a class="link-unstyled my-2" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+            </div>
+            <div class="col-lg-6 col-xl-3">
+              <div class="d-none d-xl-block">
+                <!-- SERVER SIDE -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Server Side</h3>
+                  <a class="link-unstyled my-2" href="/sql/default.asp">Learn SQL</a>
+                  <a class="link-unstyled my-2" href="/php/default.asp">Learn PHP</a>
+                  <a class="link-unstyled my-2" href="/asp/default.asp">Learn ASP</a>
+                  <a class="link-unstyled my-2" href="/nodejs/default.asp">Learn Node.js</a>
+                  <a class="link-unstyled my-2" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
+                </div>
+                <!-- WEB BUILDING -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Web Building</h3>
+                  <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
+                  <a class="link-unstyled my-2" href="/browsers/default.asp">Web Statistics</a>
+                  <a class="link-unstyled my-2" href="/cert/default.asp">Web Certificates</a>
+                  <a class="link-unstyled my-2" href="/tryit/default.asp">Web Editor</a>
+                  <a class="link-unstyled my-2" href="/whatis/default.asp">Web Development</a>
+                  <a class="link-unstyled my-2" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-3">
+              <div class="d-none d-xl-block">
+                <!-- XML -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>XML Tutorials</h3>
+                  <a class="link-unstyled my-2" href="/xml/default.asp">Learn XML</a>
+                  <a class="link-unstyled my-2" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
+                  <a class="link-unstyled my-2" href="/xml/dom_intro.asp">Learn XML DOM</a>
+                  <a class="link-unstyled my-2" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
+                  <a class="link-unstyled my-2" href="/xml/schema_intro.asp">Learn XML Schema</a>
+                  <a class="link-unstyled my-2" href="/xml/xsl_intro.asp">Learn XSLT</a>
+                  <a class="link-unstyled my-2" href="/xml/xpath_intro.asp">Learn XPath</a>
+                  <a class="link-unstyled my-2" href="/xml/xquery_intro.asp">Learn XQuery</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </li>
+      <!-- REFERENCES -->
       <li class="nav-item dropdown position-static">
         <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
           references
@@ -690,6 +736,7 @@
           </div>
         </div>
       </li>
+      <!-- EXAMPLES -->
       <li class="nav-item dropdown position-static">
         <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
           examples
@@ -771,9 +818,9 @@
           </div>
         </div>
       </li>
-
+      <!-- EXERCISES -->
       <li class="nav-item dropdown position-static d-lg-none d-xl-block">
-        <a id="do-click" class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
           exercises
         </a>
         <div class="dropdown-menu w-100 mt-0">
