@@ -325,8 +325,6 @@
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -523,7 +521,7 @@
     <ul class="navbar-nav mr-auto " style="background: green">
       <!-- TUTORIALS -->
       <li class="nav-item dropdown position-static">
-        <a id="do-click" class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
           tutorials
         </a>
         <div class="dropdown-menu w-100 mt-0">
@@ -652,7 +650,7 @@
       </li>
       <!-- REFERENCES -->
       <li class="nav-item dropdown position-static">
-        <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
+        <a id="do-click" class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
           references
         </a>
         <div class="dropdown-menu w-100 mt-0">
@@ -662,7 +660,7 @@
             </button>
           </div>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-xl-3">
               <!-- HTML -->
               <div class="d-flex flex-column text-left mb-4">
                 <h3>HTML</h3>
@@ -689,19 +687,21 @@
                 <a class="link-unstyled my-2" href="/icons/icons_reference.asp">Icon Reference</a>
                 <a class="link-unstyled my-2" href="/sass/sass_functions_string.asp">Sass Reference</a>
               </div>
-              <!-- CHARACTER SET -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>Character Sets</h3>
-                <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
-                <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
-                <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
-                <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
-                <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
-                <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
-                <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+              <div class="d-xl-none">
+                <!-- CHARACTER SET -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Character Sets</h3>
+                  <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-xl-3">
               <!-- JAVASCRIPT -->
               <div class="d-flex flex-column text-left mb-4">
                 <h3>JavaScript</h3>
@@ -717,20 +717,56 @@
                 <a class="link-unstyled my-2" href="/python/python_reference.asp">Python Reference</a>
                 <a class="link-unstyled my-2" href="/java/java_ref_keywords.asp">Java Reference</a>
               </div>
-              <!-- SERVER SIDE -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>Server Side</h3>
-                <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
-                <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
-                <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
+              <div class="d-xl-none">
+                <!-- SERVER SIDE -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Server Side</h3>
+                  <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
+                  <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
+                  <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
+                </div>
+                <!-- XML -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>XML</h3>
+                  <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
+                  <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
+                  <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
+                  <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
+                </div>
               </div>
-              <!-- XML -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>XML</h3>
-                <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
-                <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
-                <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
-                <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
+            </div>
+            <div class="col-lg-6 col-xl-3">
+              <div class="d-none d-xl-block">
+                <!-- SERVER SIDE -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Server Side</h3>
+                  <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
+                  <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
+                  <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
+                </div>
+                <!-- XML -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>XML</h3>
+                  <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
+                  <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
+                  <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
+                  <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-3">
+              <div class="d-none d-xl-block">
+                <!-- CHARACTER SET -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Character Sets</h3>
+                  <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
+                  <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+                </div>
               </div>
             </div>
           </div>
