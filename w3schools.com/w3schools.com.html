@@ -62,6 +62,19 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+  <span class="navbar-text d-lg-none">
+    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+       onclick="openTranslate(this)">
+    <i class="fas fa-globe-americas"></i>
+    <i class="fas fa-times d-none"></i>
+  </a>
+    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+       onclick="openSearch(this)">
+    <i class="fas fa-search"></i>
+    <i class="fas fa-times d-none"></i>
+  </a>
+  </span>
+
   <div class="navbar-collapse navbar-collapse--white collapse" id="navbarSupportedContent">
     <div class="p-3 pr-4 d-lg-none">
       <button type="button" class="close" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -518,7 +531,7 @@
     </div>
 
     <!-- NAVBAR-NAV -->
-    <ul class="navbar-nav mr-auto " style="background: green">
+    <ul class="navbar-nav mr-auto d-none d-lg-flex">
       <!-- TUTORIALS -->
       <li class="nav-item dropdown position-static">
         <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
@@ -964,17 +977,17 @@
     </ul>
 
     <span class="navbar-text d-none d-lg-inline-block">
-    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+      <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
        onclick="openTranslate(this)">
       <i class="fas fa-globe-americas"></i>
       <i class="fas fa-times d-none"></i>
     </a>
-    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+      <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
        onclick="openSearch(this)">
       <i class="fas fa-search"></i>
       <i class="fas fa-times d-none"></i>
     </a>
-  </span>
+    </span>
   </div>
 </nav>
 
