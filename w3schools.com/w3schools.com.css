@@ -5,11 +5,12 @@
     --accordion-green: var(--dotcom-green);
     --gray: #f1f1f1;
     --navbar-collapse-bg: var(--gray);
-    --font-segoe-ui: 'Varta', sans-serif;;
+    --font-segoe-ui: 'Varta', sans-serif;
+    --font-verdana: 'Noto Sans', sans-serif;
 }
 
 .w3schools-title {
-    font-family: fontawesome;
+    font-family: fontawesome, sans-serif;
     text-decoration: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
@@ -117,7 +118,7 @@
 }
 
 .btn--accordion {
-    font-family: 'Varta', sans-serif;
+    font-family: var(--font-segoe-ui);
     font-size: 18px;
     letter-spacing: 4px;
     line-height: 27px;
@@ -130,12 +131,39 @@
 }
 
 .accordion .card-body h3 {
-    font-family: 'Varta', sans-serif;
+    font-family: var(--font-segoe-ui);
 }
 
 .accordion .card-body a {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: var(--font-verdana);
 }
 
-/*font-family: 'Noto Sans', sans-serif;*/
-/*font-family: 'Varta', sans-serif;*/
+.nav-link--w3 {
+    font-family: var(--font-segoe-ui);
+    font-size: 17px;
+    letter-spacing: 4px;
+    line-height: 25.5px;
+}
+
+.dropdown-menu--gray {
+    background-color: var(--navbar-collapse-bg)
+}
+
+.navbar-nav .nav-item.dropdown.position-static .dropdown-menu h3 {
+    font-family: var(--font-segoe-ui);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.navbar-nav .nav-item.dropdown.position-static .dropdown-menu a {
+    font-family: var(--font-verdana);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse--xl-green {
+        background-color: var(--accordion-green);
+    }
+}
