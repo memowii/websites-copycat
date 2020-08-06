@@ -167,6 +167,10 @@
     line-height: 24px;
 }
 
+.noticeboard--gray {
+    background-color: var(--gray);
+}
+
 .noticeboard__title {
     font-family: var(--font-segoe-ui);
     font-size: 60px;
@@ -201,7 +205,6 @@
 .noticeboard__btn:active {
     background-color: var(--btn-active-color);
 }
-
 
 @media (min-width: 992px) {
     .navbar-collapse--xl-green {
