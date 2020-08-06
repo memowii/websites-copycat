@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -7,117 +8,178 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <!-- Font Awesome 5 -->
   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
-        rel="stylesheet" />
+    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="w3schools.com.css">
   <title>w3schools</title>
 </head>
+
 <body>
 
-<!-- HEADER -->
-<div class="text-center pt-3 pb-3 pb-md-0 clearfix m-xl-2">
-  <a class="w3schools-title float-xl-left" href="#">
-    w3schools<span class="w3schools-logo__dotcom">.com</span>
-  </a>
-  <p class="w3schools-subtitle d-none d-md-block mb-0 mt-2 pb-2 float-xl-right">THE WORLD'S LARGEST WEB DEVELOPER
-    SITE</p>
-</div>
+  <!-- HEADER -->
+  <div class="text-center pt-3 pb-3 pb-md-0 clearfix m-xl-2">
+    <a class="w3schools-title float-xl-left" href="#">
+      w3schools<span class="w3schools-logo__dotcom">.com</span>
+    </a>
+    <p class="w3schools-subtitle d-none d-md-block mb-0 mt-2 pb-2 float-xl-right">THE WORLD'S LARGEST WEB DEVELOPER
+      SITE</p>
+  </div>
 
-<!-- SITE SEARCH -->
-<div class="position-relative d-none">
-  <form class="site-search position-absolute w-50">
-    <div class="input-group">
-      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="ENHANCED BY Google">
-      <div class="input-group-append">
-        <button type="button" class="btn btn-primary">
-          <i class="fas fa-times"></i>
-        </button>
-        <button type="button" class="btn btn-primary">
-          <i class="fas fa-search"></i>
+  <!-- SITE SEARCH -->
+  <div class="position-relative d-none">
+    <form class="site-search position-absolute w-50">
+      <div class="input-group">
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="ENHANCED BY Google">
+        <div class="input-group-append">
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-times"></i>
+          </button>
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- LANGUAGE SELECTION -->
+  <div class="position-relative d-none">
+    <form class="lang-selection position-absolute">
+      <select class="form-control">
+        <option selected>Seleccionar idioma</option>
+        <option value="1">Inglés</option>
+        <option value="2">Chino mandarín</option>
+        <option value="3">Hindi</option>
+        <option value="4">Español</option>
+        <option value="5">Francés</option>
+        <option value="6">Bengalí</option>
+        <option value="7">Ruso</option>
+      </select>
+    </form>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-w3-green p-0">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <span class="navbar-text d-lg-none">
+      <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+        onclick="openTranslate(this)">
+        <i class="fas fa-globe-americas"></i>
+        <i class="fas fa-times d-none"></i>
+      </a>
+      <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+        onclick="openSearch(this)">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-times d-none"></i>
+      </a>
+    </span>
+
+    <div class="navbar-collapse navbar-collapse--white navbar-collapse--xl-green collapse" id="navbarSupportedContent">
+      <div class="p-3 pr-4 d-lg-none">
+        <button type="button" class="close" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span>&times;</span>
         </button>
       </div>
-    </div>
-  </form>
-</div>
 
-<!-- LANGUAGE SELECTION -->
-<div class="position-relative d-none">
-  <form class="lang-selection position-absolute">
-    <select class="form-control">
-      <option selected>Seleccionar idioma</option>
-      <option value="1">Inglés</option>
-      <option value="2">Chino mandarín</option>
-      <option value="3">Hindi</option>
-      <option value="4">Español</option>
-      <option value="5">Francés</option>
-      <option value="6">Bengalí</option>
-      <option value="7">Ruso</option>
-    </select>
-  </form>
-</div>
+      <div class="accordion mt-4 px-3 py-4 d-lg-none" id="accordionExample">
+        <div class="card border-0 rounded-0">
+          <div class="card-header card-header--gray p-0" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
+                data-toggle="collapse" data-target="#collapseOne">
+                TUTORIALS
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse bg-white">
+            <div class="card-body pb-0">
+              <div class="row">
+                <div class="col-md-6 col-lg-3">
+                  <!-- HTML AND XML -->
+                  <div class="d-flex flex-column text-center mb-4">
+                    <h3>HTML and CSS</h3>
+                    <a class="link-unstyled my-2" href="/html/default.asp">Learn HTML</a>
+                    <a class="link-unstyled my-2" href="/css/default.asp">Learn CSS</a>
+                    <a class="link-unstyled my-2" href="/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a>
+                    <a class="link-unstyled my-2" href="/w3css/default.asp">Learn W3.CSS</a>
+                    <a class="link-unstyled my-2" href="/colors/default.asp">Learn Colors</a>
+                    <a class="link-unstyled my-2" href="/icons/default.asp">Learn Icons</a>
+                    <a class="link-unstyled my-2" href="/graphics/default.asp">Learn Graphics</a>
+                    <a class="link-unstyled my-2" href="/graphics/svg_intro.asp">Learn SVG</a>
+                    <a class="link-unstyled my-2" href="/graphics/canvas_intro.asp">Learn Canvas</a>
+                    <a class="link-unstyled my-2" href="/howto/default.asp">Learn How To</a>
+                    <a class="link-unstyled my-2" href="/sass/default.asp">Learn Sass</a>
+                  </div>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-w3-green p-0">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <span class="navbar-text d-lg-none">
-    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
-       onclick="openTranslate(this)">
-    <i class="fas fa-globe-americas"></i>
-    <i class="fas fa-times d-none"></i>
-  </a>
-    <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
-       onclick="openSearch(this)">
-    <i class="fas fa-search"></i>
-    <i class="fas fa-times d-none"></i>
-  </a>
-  </span>
-
-  <div class="navbar-collapse navbar-collapse--white navbar-collapse--xl-green collapse" id="navbarSupportedContent">
-    <div class="p-3 pr-4 d-lg-none">
-      <button type="button" class="close" data-toggle="collapse" data-target="#navbarSupportedContent">
-        <span>&times;</span>
-      </button>
-    </div>
-
-    <div class="accordion mt-4 px-3 py-4 d-lg-none" id="accordionExample">
-      <div class="card border-0 rounded-0">
-        <div class="card-header card-header--gray p-0" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseOne">
-              TUTORIALS
-            </button>
-          </h2>
-        </div>
-        <div id="collapseOne" class="collapse bg-white">
-          <div class="card-body pb-0">
-            <div class="row">
-              <div class="col-md-6 col-lg-3">
-                <!-- HTML AND XML -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>HTML and CSS</h3>
-                  <a class="link-unstyled my-2" href="/html/default.asp">Learn HTML</a>
-                  <a class="link-unstyled my-2" href="/css/default.asp">Learn CSS</a>
-                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a>
-                  <a class="link-unstyled my-2" href="/w3css/default.asp">Learn W3.CSS</a>
-                  <a class="link-unstyled my-2" href="/colors/default.asp">Learn Colors</a>
-                  <a class="link-unstyled my-2" href="/icons/default.asp">Learn Icons</a>
-                  <a class="link-unstyled my-2" href="/graphics/default.asp">Learn Graphics</a>
-                  <a class="link-unstyled my-2" href="/graphics/svg_intro.asp">Learn SVG</a>
-                  <a class="link-unstyled my-2" href="/graphics/canvas_intro.asp">Learn Canvas</a>
-                  <a class="link-unstyled my-2" href="/howto/default.asp">Learn How To</a>
-                  <a class="link-unstyled my-2" href="/sass/default.asp">Learn Sass</a>
+                  <div class="d-none d-md-block d-lg-none">
+                    <!-- XML -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>XML Tutorials</h3>
+                      <a class="link-unstyled my-2" href="/xml/default.asp">Learn XML</a>
+                      <a class="link-unstyled my-2" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
+                      <a class="link-unstyled my-2" href="/xml/dom_intro.asp">Learn XML DOM</a>
+                      <a class="link-unstyled my-2" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
+                      <a class="link-unstyled my-2" href="/xml/schema_intro.asp">Learn XML Schema</a>
+                      <a class="link-unstyled my-2" href="/xml/xsl_intro.asp">Learn XSLT</a>
+                      <a class="link-unstyled my-2" href="/xml/xpath_intro.asp">Learn XPath</a>
+                      <a class="link-unstyled my-2" href="/xml/xquery_intro.asp">Learn XQuery</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-md-6 col-lg-3">
+                  <!-- JAVASCRIPT -->
+                  <div class="d-flex flex-column text-center mb-4">
 
-                <div class="d-none d-md-block d-lg-none">
+                    <h3>JavaScript</h3>
+                    <a class="link-unstyled my-2" href="/js/default.asp">Learn JavaScript</a>
+                    <a class="link-unstyled my-2" href="/jquery/default.asp">Learn jQuery</a>
+                    <a class="link-unstyled my-2" href="/react/default.asp">Learn React</a>
+                    <a class="link-unstyled my-2" href="/angular/default.asp">Learn AngularJS</a>
+                    <a class="link-unstyled my-2" href="/js/js_json_intro.asp">Learn JSON</a>
+                    <a class="link-unstyled my-2" href="/js/js_ajax_intro.asp">Learn AJAX</a>
+                    <a class="link-unstyled my-2" href="/w3js/default.asp">Learn W3.JS</a>
+                  </div>
+                  <!-- PROGRAMMING -->
+                  <div class="d-flex flex-column text-center mb-4">
+                    <h3>Programming</h3>
+                    <a class="link-unstyled my-2" href="/python/default.asp">Learn Python</a>
+                    <a class="link-unstyled my-2" href="/java/default.asp">Learn Java</a>
+                    <a class="link-unstyled my-2" href="/cpp/default.asp">Learn C++</a>
+                    <a class="link-unstyled my-2" href="/cs/default.asp">Learn C#</a>
+                    <a class="link-unstyled my-2" href="/python/python_ml_getting_started.asp">Learn Machine
+                      Learning</a>
+                  </div>
+
+                  <div class="">
+                    <!-- SERVER SIDE -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Server Side</h3>
+                      <a class="link-unstyled my-2" href="/sql/default.asp">Learn SQL</a>
+                      <a class="link-unstyled my-2" href="/php/default.asp">Learn PHP</a>
+                      <a class="link-unstyled my-2" href="/asp/default.asp">Learn ASP</a>
+                      <a class="link-unstyled my-2" href="/nodejs/default.asp">Learn Node.js</a>
+                      <a class="link-unstyled my-2" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
+                    </div>
+                    <!-- WEB BUILDING -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Web Building</h3>
+                      <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
+                      <a class="link-unstyled my-2" href="/browsers/default.asp">Web Statistics</a>
+                      <a class="link-unstyled my-2" href="/cert/default.asp">Web Certificates</a>
+                      <a class="link-unstyled my-2" href="/tryit/default.asp">Web Editor</a>
+                      <a class="link-unstyled my-2" href="/whatis/default.asp">Web Development</a>
+                      <a class="link-unstyled my-2" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-md-none">
                   <!-- XML -->
                   <div class="d-flex flex-column text-center mb-4">
                     <h3>XML Tutorials</h3>
@@ -132,783 +194,281 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3">
-                <!-- JAVASCRIPT -->
-                <div class="d-flex flex-column text-center mb-4">
 
-                  <h3>JavaScript</h3>
-                  <a class="link-unstyled my-2" href="/js/default.asp">Learn JavaScript</a>
-                  <a class="link-unstyled my-2" href="/jquery/default.asp">Learn jQuery</a>
-                  <a class="link-unstyled my-2" href="/react/default.asp">Learn React</a>
-                  <a class="link-unstyled my-2" href="/angular/default.asp">Learn AngularJS</a>
-                  <a class="link-unstyled my-2" href="/js/js_json_intro.asp">Learn JSON</a>
-                  <a class="link-unstyled my-2" href="/js/js_ajax_intro.asp">Learn AJAX</a>
-                  <a class="link-unstyled my-2" href="/w3js/default.asp">Learn W3.JS</a>
-                </div>
-                <!-- PROGRAMMING -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>Programming</h3>
-                  <a class="link-unstyled my-2" href="/python/default.asp">Learn Python</a>
-                  <a class="link-unstyled my-2" href="/java/default.asp">Learn Java</a>
-                  <a class="link-unstyled my-2" href="/cpp/default.asp">Learn C++</a>
-                  <a class="link-unstyled my-2" href="/cs/default.asp">Learn C#</a>
-                  <a class="link-unstyled my-2" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
-                </div>
 
-                <div class="">
-                  <!-- SERVER SIDE -->
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-0 rounded-0">
+          <div class="card-header card-header--gray p-0" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
+                data-toggle="collapse" data-target="#collapseTwo">
+                REFERENCES
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse bg-white">
+            <div class="card-body pb-0">
+              <div class="row">
+                <div class="col-md-6 col-lg-3">
+                  <!-- HTML -->
                   <div class="d-flex flex-column text-center mb-4">
-                    <h3>Server Side</h3>
-                    <a class="link-unstyled my-2" href="/sql/default.asp">Learn SQL</a>
-                    <a class="link-unstyled my-2" href="/php/default.asp">Learn PHP</a>
-                    <a class="link-unstyled my-2" href="/asp/default.asp">Learn ASP</a>
-                    <a class="link-unstyled my-2" href="/nodejs/default.asp">Learn Node.js</a>
-                    <a class="link-unstyled my-2" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
+                    <h3>HTML</h3>
+                    <a class="link-unstyled my-2" href="/tags/default.asp">HTML Tag Reference</a>
+                    <a class="link-unstyled my-2" href="/tags/ref_html_browsersupport.asp">HTML Browser Support</a>
+                    <a class="link-unstyled my-2" href="/tags/ref_eventattributes.asp">HTML Event Reference</a>
+                    <a class="link-unstyled my-2" href="/colors/default.asp">HTML Color Reference</a>
+                    <a class="link-unstyled my-2" href="/tags/ref_attributes.asp">HTML Attribute Reference</a>
+                    <a class="link-unstyled my-2" href="/tags/ref_canvas.asp">HTML Canvas Reference</a>
+                    <a class="link-unstyled my-2" href="/graphics/svg_reference.asp">HTML SVG Reference</a>
+                    <a class="link-unstyled my-2" href="/graphics/google_maps_reference.asp">Google Maps Reference</a>
                   </div>
-                  <!-- WEB BUILDING -->
+                  <!-- CSS -->
                   <div class="d-flex flex-column text-center mb-4">
-                    <h3>Web Building</h3>
+                    <h3>CSS</h3>
+                    <a class="link-unstyled my-2" href="/cssref/default.asp">CSS Reference</a>
+                    <a class="link-unstyled my-2" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a>
+                    <a class="link-unstyled my-2" href="/cssref/css_selectors.asp">CSS Selector Reference</a>
+                    <a class="link-unstyled my-2" href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap 3
+                      Reference</a>
+                    <a class="link-unstyled my-2" href="/bootstrap4/bootstrap_ref_all_classes.asp">Bootstrap 4
+                      Reference</a>
+                    <a class="link-unstyled my-2" href="/w3css/w3css_references.asp">W3.CSS Reference</a>
+                    <a class="link-unstyled my-2" href="/icons/icons_reference.asp">Icon Reference</a>
+                    <a class="link-unstyled my-2" href="/sass/sass_functions_string.asp">Sass Reference</a>
+                  </div>
+                  <div class="d-none d-md-block">
+                    <!-- CHARACTER SET -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Character Sets</h3>
+                      <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <!-- JAVASCRIPT -->
+                  <div class="d-flex flex-column text-center mb-4">
+                    <h3>JavaScript</h3>
+                    <a class="link-unstyled my-2" href="/jsref/default.asp">JavaScript Reference</a>
+                    <a class="link-unstyled my-2" href="/jsref/default.asp">HTML DOM Reference</a>
+                    <a class="link-unstyled my-2" href="/jquery/jquery_ref_overview.asp">jQuery Reference</a>
+                    <a class="link-unstyled my-2" href="/angular/angular_ref_directives.asp">AngularJS Reference</a>
+                    <a class="link-unstyled my-2" href="/w3js/w3js_references.asp">W3.JS Reference</a>
+                  </div>
+                  <!-- PROGRAMMING -->
+                  <div class="d-flex flex-column text-center mb-4">
+                    <h3>Programming</h3>
+                    <a class="link-unstyled my-2" href="/python/python_reference.asp">Python Reference</a>
+                    <a class="link-unstyled my-2" href="/java/java_ref_keywords.asp">Java Reference</a>
+                  </div>
+                  <div class="d-none d-md-block">
+                    <!-- SERVER SIDE -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Server Side</h3>
+                      <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
+                      <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
+                      <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
+                    </div>
+                    <!-- XML -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>XML</h3>
+                      <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
+                      <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
+                      <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
+                      <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="d-md-none">
+                    <!-- SERVER SIDE -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Server Side</h3>
+                      <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
+                      <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
+                      <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
+                    </div>
+                    <!-- XML -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>XML</h3>
+                      <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
+                      <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
+                      <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
+                      <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="d-md-none">
+                    <!-- CHARACTER SET -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Character Sets</h3>
+                      <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
+                      <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-0 rounded-0">
+          <div class="card-header card-header--gray p-0" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
+                data-toggle="collapse" data-target="#collapseThree">
+                EXAMPLES
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse bg-white">
+            <div class="card-body pb-0">
+              <div class="row">
+                <div class="col-md-6 col-lg-3">
+                  <!-- HTML -->
+                  <div class="d-flex flex-column text-center mb-4">
+                    <h3>HTML and CSS</h3>
+                    <a class="link-unstyled my-2" href="/html/html_examples.asp">HTML Examples</a>
+                    <a class="link-unstyled my-2" href="/css/css_examples.asp">CSS Examples</a>
+                    <a class="link-unstyled my-2" href="/w3css/w3css_examples.asp">W3.CSS Examples</a>
+                    <a class="link-unstyled my-2" href="/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a>
+                    <a class="link-unstyled my-2" href="/howto/default.asp">How To Examples</a>
+                    <a class="link-unstyled my-2" href="/graphics/svg_examples.asp">SVG Examples</a>
                     <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
-                    <a class="link-unstyled my-2" href="/browsers/default.asp">Web Statistics</a>
-                    <a class="link-unstyled my-2" href="/cert/default.asp">Web Certificates</a>
-                    <a class="link-unstyled my-2" href="/tryit/default.asp">Web Editor</a>
-                    <a class="link-unstyled my-2" href="/whatis/default.asp">Web Development</a>
-                    <a class="link-unstyled my-2" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+                  </div>
+                  <div class="d-none d-md-block d-lg-none">
+                    <!-- QUIZZ -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Quizzes</h3>
+                      <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
+                      <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+                      <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+                      <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
+                      <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
+                      <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+                      <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
+                      <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap
+                        Quiz</a>
+                      <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
+                      <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
+                      <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
+                      <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <!-- JAVASCRIPT -->
+                  <div class="d-flex flex-column text-center mb-4">
+                    <h3>JavaScript</h3>
+                    <a class="link-unstyled my-2" href="/js/js_examples.asp" target="_top">JavaScript Examples</a>
+                    <a class="link-unstyled my-2" href="/js/js_dom_examples.asp" target="_top">HTML DOM Examples</a>
+                    <a class="link-unstyled my-2" href="/jquery/jquery_examples.asp" target="_top">jQuery Examples</a>
+                    <a class="link-unstyled my-2" href="/angular/angular_examples.asp" target="_top">AngularJS
+                      Examples</a>
+                    <a class="link-unstyled my-2" href="/js/js_ajax_examples.asp" target="_top">AJAX Examples</a>
+                    <a class="link-unstyled my-2" href="/w3js/w3js_examples.asp" target="_top">W3.JS Examples</a>
+                  </div>
+                  <!-- PROGRAMMING -->
+                  <div class="d-flex flex-column text-center mb-4">
+                    <h3>Programming</h3>
+                    <a class="link-unstyled my-2" href="/python/python_examples.asp" target="_top">Python Examples</a>
+                    <a class="link-unstyled my-2" href="/java/java_examples.asp" target="_top">Java Examples</a>
+                    <a class="link-unstyled my-2" href="/cpp/cpp_examples.asp" target="_top">C++ Examples</a>
+                    <a class="link-unstyled my-2" href="/cs/cs_examples.asp" target="_top">C# Examples</a>
+                  </div>
+                  <div class="d-none d-md-block">
+                    <!-- SEVER SIDE -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Server Side</h3>
+                      <a class="link-unstyled my-2" href="/sql/sql_examples.asp" target="_top">SQL Examples</a>
+                      <a class="link-unstyled my-2" href="/php/php_examples.asp" target="_top">PHP Examples</a>
+                      <a class="link-unstyled my-2" href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
+                    </div>
+                    <!-- XML -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>XML</h3>
+                      <a class="link-unstyled my-2" href="/xml/xml_examples.asp" target="_top">XML Examples</a>
+                      <a class="link-unstyled my-2" href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
+                      <a class="link-unstyled my-2" href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
+                      <a class="link-unstyled my-2" href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
+                      <a class="link-unstyled my-2" href="/xml/ajax_examples.asp" target="_top">AJAX Examples</a>
+                      <a class="link-unstyled my-2" href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="d-md-none">
+                    <!-- SEVER SIDE -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Server Side</h3>
+                      <a class="link-unstyled my-2" href="/sql/sql_examples.asp" target="_top">SQL Examples</a>
+                      <a class="link-unstyled my-2" href="/php/php_examples.asp" target="_top">PHP Examples</a>
+                      <a class="link-unstyled my-2" href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
+                    </div>
+                    <!-- XML -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>XML</h3>
+                      <a class="link-unstyled my-2" href="/xml/xml_examples.asp" target="_top">XML Examples</a>
+                      <a class="link-unstyled my-2" href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
+                      <a class="link-unstyled my-2" href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
+                      <a class="link-unstyled my-2" href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
+                      <a class="link-unstyled my-2" href="/xml/ajax_examples.asp" target="_top">AJAX Examples</a>
+                      <a class="link-unstyled my-2" href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="d-md-none">
+                    <!-- QUIZZ -->
+                    <div class="d-flex flex-column text-center mb-4">
+                      <h3>Quizzes</h3>
+                      <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
+                      <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+                      <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+                      <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
+                      <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
+                      <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+                      <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
+                      <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap
+                        Quiz</a>
+                      <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
+                      <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
+                      <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
+                      <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3 d-md-none">
-                <!-- XML -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>XML Tutorials</h3>
-                  <a class="link-unstyled my-2" href="/xml/default.asp">Learn XML</a>
-                  <a class="link-unstyled my-2" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
-                  <a class="link-unstyled my-2" href="/xml/dom_intro.asp">Learn XML DOM</a>
-                  <a class="link-unstyled my-2" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
-                  <a class="link-unstyled my-2" href="/xml/schema_intro.asp">Learn XML Schema</a>
-                  <a class="link-unstyled my-2" href="/xml/xsl_intro.asp">Learn XSLT</a>
-                  <a class="link-unstyled my-2" href="/xml/xpath_intro.asp">Learn XPath</a>
-                  <a class="link-unstyled my-2" href="/xml/xquery_intro.asp">Learn XQuery</a>
-                </div>
-              </div>
             </div>
+          </div>
+        </div>
 
-
+        <div class="card border-0 rounded-0">
+          <div class="card-header card-header--gray p-0" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
+                data-toggle="collapse" data-target="#collapseFour">
+                EXERCISES
+              </button>
+            </h2>
           </div>
-        </div>
-      </div>
-
-      <div class="card border-0 rounded-0">
-        <div class="card-header card-header--gray p-0" id="headingTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseTwo">
-              REFERENCES
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse bg-white">
-          <div class="card-body pb-0">
-            <div class="row">
-              <div class="col-md-6 col-lg-3">
-                <!-- HTML -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>HTML</h3>
-                  <a class="link-unstyled my-2" href="/tags/default.asp">HTML Tag Reference</a>
-                  <a class="link-unstyled my-2" href="/tags/ref_html_browsersupport.asp">HTML Browser Support</a>
-                  <a class="link-unstyled my-2" href="/tags/ref_eventattributes.asp">HTML Event Reference</a>
-                  <a class="link-unstyled my-2" href="/colors/default.asp">HTML Color Reference</a>
-                  <a class="link-unstyled my-2" href="/tags/ref_attributes.asp">HTML Attribute Reference</a>
-                  <a class="link-unstyled my-2" href="/tags/ref_canvas.asp">HTML Canvas Reference</a>
-                  <a class="link-unstyled my-2" href="/graphics/svg_reference.asp">HTML SVG Reference</a>
-                  <a class="link-unstyled my-2" href="/graphics/google_maps_reference.asp">Google Maps Reference</a>
-                </div>
-                <!-- CSS -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>CSS</h3>
-                  <a class="link-unstyled my-2" href="/cssref/default.asp">CSS Reference</a>
-                  <a class="link-unstyled my-2" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a>
-                  <a class="link-unstyled my-2" href="/cssref/css_selectors.asp">CSS Selector Reference</a>
-                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap 3
-                    Reference</a>
-                  <a class="link-unstyled my-2" href="/bootstrap4/bootstrap_ref_all_classes.asp">Bootstrap 4
-                    Reference</a>
-                  <a class="link-unstyled my-2" href="/w3css/w3css_references.asp">W3.CSS Reference</a>
-                  <a class="link-unstyled my-2" href="/icons/icons_reference.asp">Icon Reference</a>
-                  <a class="link-unstyled my-2" href="/sass/sass_functions_string.asp">Sass Reference</a>
-                </div>
-                <div class="d-none d-md-block">
-                  <!-- CHARACTER SET -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>Character Sets</h3>
-                    <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <!-- JAVASCRIPT -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>JavaScript</h3>
-                  <a class="link-unstyled my-2" href="/jsref/default.asp">JavaScript Reference</a>
-                  <a class="link-unstyled my-2" href="/jsref/default.asp">HTML DOM Reference</a>
-                  <a class="link-unstyled my-2" href="/jquery/jquery_ref_overview.asp">jQuery Reference</a>
-                  <a class="link-unstyled my-2" href="/angular/angular_ref_directives.asp">AngularJS Reference</a>
-                  <a class="link-unstyled my-2" href="/w3js/w3js_references.asp">W3.JS Reference</a>
-                </div>
-                <!-- PROGRAMMING -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>Programming</h3>
-                  <a class="link-unstyled my-2" href="/python/python_reference.asp">Python Reference</a>
-                  <a class="link-unstyled my-2" href="/java/java_ref_keywords.asp">Java Reference</a>
-                </div>
-                <div class="d-none d-md-block">
-                  <!-- SERVER SIDE -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>Server Side</h3>
-                    <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
-                    <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
-                    <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
-                  </div>
-                  <!-- XML -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>XML</h3>
-                    <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
-                    <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
-                    <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
-                    <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="d-md-none">
-                  <!-- SERVER SIDE -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>Server Side</h3>
-                    <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
-                    <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
-                    <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
-                  </div>
-                  <!-- XML -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>XML</h3>
-                    <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
-                    <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
-                    <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
-                    <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="d-md-none">
-                  <!-- CHARACTER SET -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>Character Sets</h3>
-                    <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
-                    <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card border-0 rounded-0">
-        <div class="card-header card-header--gray p-0" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseThree">
-              EXAMPLES
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse bg-white">
-          <div class="card-body pb-0">
-            <div class="row">
-              <div class="col-md-6 col-lg-3">
-                <!-- HTML -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>HTML and CSS</h3>
-                  <a class="link-unstyled my-2" href="/html/html_examples.asp">HTML Examples</a>
-                  <a class="link-unstyled my-2" href="/css/css_examples.asp">CSS Examples</a>
-                  <a class="link-unstyled my-2" href="/w3css/w3css_examples.asp">W3.CSS Examples</a>
-                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a>
-                  <a class="link-unstyled my-2" href="/howto/default.asp">How To Examples</a>
-                  <a class="link-unstyled my-2" href="/graphics/svg_examples.asp">SVG Examples</a>
-                  <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
-                </div>
-                <div class="d-none d-md-block d-lg-none">
-                  <!-- QUIZZ -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>Quizzes</h3>
-                    <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
-                    <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
-                    <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
-                    <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
-                    <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
-                    <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
-                    <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
-                    <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
-                    <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
-                    <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
-                    <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
-                    <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <!-- JAVASCRIPT -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>JavaScript</h3>
-                  <a class="link-unstyled my-2" href="/js/js_examples.asp" target="_top">JavaScript Examples</a>
-                  <a class="link-unstyled my-2" href="/js/js_dom_examples.asp" target="_top">HTML DOM Examples</a>
-                  <a class="link-unstyled my-2" href="/jquery/jquery_examples.asp" target="_top">jQuery Examples</a>
-                  <a class="link-unstyled my-2" href="/angular/angular_examples.asp" target="_top">AngularJS
-                    Examples</a>
-                  <a class="link-unstyled my-2" href="/js/js_ajax_examples.asp" target="_top">AJAX Examples</a>
-                  <a class="link-unstyled my-2" href="/w3js/w3js_examples.asp" target="_top">W3.JS Examples</a>
-                </div>
-                <!-- PROGRAMMING -->
-                <div class="d-flex flex-column text-center mb-4">
-                  <h3>Programming</h3>
-                  <a class="link-unstyled my-2" href="/python/python_examples.asp" target="_top">Python Examples</a>
-                  <a class="link-unstyled my-2" href="/java/java_examples.asp" target="_top">Java Examples</a>
-                  <a class="link-unstyled my-2" href="/cpp/cpp_examples.asp" target="_top">C++ Examples</a>
-                  <a class="link-unstyled my-2" href="/cs/cs_examples.asp" target="_top">C# Examples</a>
-                </div>
-                <div class="d-none d-md-block">
-                  <!-- SEVER SIDE -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>Server Side</h3>
-                    <a class="link-unstyled my-2" href="/sql/sql_examples.asp" target="_top">SQL Examples</a>
-                    <a class="link-unstyled my-2" href="/php/php_examples.asp" target="_top">PHP Examples</a>
-                    <a class="link-unstyled my-2" href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
-                  </div>
-                  <!-- XML -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>XML</h3>
-                    <a class="link-unstyled my-2" href="/xml/xml_examples.asp" target="_top">XML Examples</a>
-                    <a class="link-unstyled my-2" href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
-                    <a class="link-unstyled my-2" href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
-                    <a class="link-unstyled my-2" href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
-                    <a class="link-unstyled my-2" href="/xml/ajax_examples.asp" target="_top">AJAX Examples</a>
-                    <a class="link-unstyled my-2" href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="d-md-none">
-                  <!-- SEVER SIDE -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>Server Side</h3>
-                    <a class="link-unstyled my-2" href="/sql/sql_examples.asp" target="_top">SQL Examples</a>
-                    <a class="link-unstyled my-2" href="/php/php_examples.asp" target="_top">PHP Examples</a>
-                    <a class="link-unstyled my-2" href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
-                  </div>
-                  <!-- XML -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>XML</h3>
-                    <a class="link-unstyled my-2" href="/xml/xml_examples.asp" target="_top">XML Examples</a>
-                    <a class="link-unstyled my-2" href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
-                    <a class="link-unstyled my-2" href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
-                    <a class="link-unstyled my-2" href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
-                    <a class="link-unstyled my-2" href="/xml/ajax_examples.asp" target="_top">AJAX Examples</a>
-                    <a class="link-unstyled my-2" href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="d-md-none">
-                  <!-- QUIZZ -->
-                  <div class="d-flex flex-column text-center mb-4">
-                    <h3>Quizzes</h3>
-                    <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
-                    <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
-                    <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
-                    <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
-                    <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
-                    <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
-                    <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
-                    <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
-                    <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
-                    <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
-                    <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
-                    <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card border-0 rounded-0">
-        <div class="card-header card-header--gray p-0" id="headingFour">
-          <h2 class="mb-0">
-            <button class="btn btn-block text-center collapsed dropdown-toggle btn--accordion rounded-0" type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseFour">
-              EXERCISES
-            </button>
-          </h2>
-        </div>
-        <div id="collapseFour" class="collapse bg-white">
-          <div class="card-body pb-0">
-            <div class="d-flex flex-column text-center mb-4">
-              <h3>Exercises</h3>
-              <a class="link-unstyled my-2" href="/html/html_exercises.asp">HTML Exercises</a>
-              <a class="link-unstyled my-2" href="/css/css_exercises.asp">CSS Exercises</a>
-              <a class="link-unstyled my-2" href="/js/js_exercises.asp">JavaScript Exercises</a>
-              <a class="link-unstyled my-2" href="/sql/sql_exercises.asp">SQL Exercises</a>
-              <a class="link-unstyled my-2" href="/php/php_exercises.asp">PHP Exercises</a>
-              <a class="link-unstyled my-2" href="/python/python_exercises.asp">Python Exercises</a>
-              <a class="link-unstyled my-2" href="/jquery/jquery_exercises.asp">jQuery Exercises</a>
-              <a class="link-unstyled my-2" href="/java/java_exercises.asp">Java Exercises</a>
-              <a class="link-unstyled my-2" href="/bootstrap/bootstrap_exercises.asp">Bootstrap Exercises</a>
-              <a class="link-unstyled my-2" href="/cpp/cpp_exercises.asp">C++ Exercises</a>
-              <a class="link-unstyled my-2" href="/cs/cs_exercises.asp">C# Exercises</a>
-            </div>
-            <div class="d-flex flex-column text-center mb-4">
-              <h3>Quizzes</h3>
-              <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
-              <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
-              <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
-              <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
-              <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
-              <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
-              <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
-              <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
-              <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
-              <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
-              <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
-              <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
-            </div>
-            <div class="d-flex flex-column text-center mb-4">
-              <h3>Certificates</h3>
-              <a class="link-unstyled my-2" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
-              <a class="link-unstyled my-2" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
-              <a class="link-unstyled my-2" href="/cert/cert_javascript.asp" target="_top">JavaScript Certificate</a>
-              <a class="link-unstyled my-2" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
-              <a class="link-unstyled my-2" href="/cert/cert_php.asp" target="_top">PHP Certificate</a>
-              <a class="link-unstyled my-2" href="/cert/cert_python.asp" target="_top">Python Certificate</a>
-              <a class="link-unstyled my-2" href="/cert/cert_bootstrap.asp" target="_top">Bootstrap Certificate</a>
-              <a class="link-unstyled my-2" href="/cert/cert_jquery.asp" target="_top">jQuery Certificate</a>
-              <a class="link-unstyled my-2" href="/cert/cert_xml.asp" target="_top">XML Certificate</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- NAVBAR-NAV -->
-    <ul class="navbar-nav mr-auto d-none d-lg-flex">
-      <!-- TUTORIALS -->
-      <li class="nav-item dropdown position-static">
-        <a class="nav-link nav-link--w3 dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
-          tutorials
-        </a>
-        <div class="dropdown-menu dropdown-menu--gray w-100 mt-0">
-          <div class="p-3 pr-4">
-            <button id="close-drop" type="button" class="close" data-toggle="dropdown">
-              <span>&times;</span>
-            </button>
-          </div>
-          <div class="row pt-4">
-            <div class="col-lg-6 col-xl-3">
-              <!-- HTML -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>HTML and CSS</h3>
-                <a class="link-unstyled my-2" href="/html/default.asp">Learn HTML</a>
-                <a class="link-unstyled my-2" href="/css/default.asp">Learn CSS</a>
-                <a class="link-unstyled my-2" href="/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a>
-                <a class="link-unstyled my-2" href="/w3css/default.asp">Learn W3.CSS</a>
-                <a class="link-unstyled my-2" href="/colors/default.asp">Learn Colors</a>
-                <a class="link-unstyled my-2" href="/icons/default.asp">Learn Icons</a>
-                <a class="link-unstyled my-2" href="/graphics/default.asp">Learn Graphics</a>
-                <a class="link-unstyled my-2" href="/graphics/svg_intro.asp">Learn SVG</a>
-                <a class="link-unstyled my-2" href="/graphics/canvas_intro.asp">Learn Canvas</a>
-                <a class="link-unstyled my-2" href="/howto/default.asp">Learn How To</a>
-                <a class="link-unstyled my-2" href="/sass/default.asp">Learn Sass</a>
-              </div>
-              <div class="d-xl-none">
-                <!-- XML -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>XML Tutorials</h3>
-                  <a class="link-unstyled my-2" href="/xml/default.asp">Learn XML</a>
-                  <a class="link-unstyled my-2" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
-                  <a class="link-unstyled my-2" href="/xml/dom_intro.asp">Learn XML DOM</a>
-                  <a class="link-unstyled my-2" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
-                  <a class="link-unstyled my-2" href="/xml/schema_intro.asp">Learn XML Schema</a>
-                  <a class="link-unstyled my-2" href="/xml/xsl_intro.asp">Learn XSLT</a>
-                  <a class="link-unstyled my-2" href="/xml/xpath_intro.asp">Learn XPath</a>
-                  <a class="link-unstyled my-2" href="/xml/xquery_intro.asp">Learn XQuery</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-              <!-- JAVASCRIPT -->
-              <div class="d-flex flex-column text-left mb-4">
-
-                <h3>JavaScript</h3>
-                <a class="link-unstyled my-2" href="/js/default.asp">Learn JavaScript</a>
-                <a class="link-unstyled my-2" href="/jquery/default.asp">Learn jQuery</a>
-                <a class="link-unstyled my-2" href="/react/default.asp">Learn React</a>
-                <a class="link-unstyled my-2" href="/angular/default.asp">Learn AngularJS</a>
-                <a class="link-unstyled my-2" href="/js/js_json_intro.asp">Learn JSON</a>
-                <a class="link-unstyled my-2" href="/js/js_ajax_intro.asp">Learn AJAX</a>
-                <a class="link-unstyled my-2" href="/w3js/default.asp">Learn W3.JS</a>
-              </div>
-              <!-- PROGRAMMING -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>Programming</h3>
-                <a class="link-unstyled my-2" href="/python/default.asp">Learn Python</a>
-                <a class="link-unstyled my-2" href="/java/default.asp">Learn Java</a>
-                <a class="link-unstyled my-2" href="/cpp/default.asp">Learn C++</a>
-                <a class="link-unstyled my-2" href="/cs/default.asp">Learn C#</a>
-                <a class="link-unstyled my-2" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
-              </div>
-              <div class="d-xl-none">
-                <!-- SERVER SIDE -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Server Side</h3>
-                  <a class="link-unstyled my-2" href="/sql/default.asp">Learn SQL</a>
-                  <a class="link-unstyled my-2" href="/php/default.asp">Learn PHP</a>
-                  <a class="link-unstyled my-2" href="/asp/default.asp">Learn ASP</a>
-                  <a class="link-unstyled my-2" href="/nodejs/default.asp">Learn Node.js</a>
-                  <a class="link-unstyled my-2" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
-                </div>
-                <!-- WEB BUILDING -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Web Building</h3>
-                  <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
-                  <a class="link-unstyled my-2" href="/browsers/default.asp">Web Statistics</a>
-                  <a class="link-unstyled my-2" href="/cert/default.asp">Web Certificates</a>
-                  <a class="link-unstyled my-2" href="/tryit/default.asp">Web Editor</a>
-                  <a class="link-unstyled my-2" href="/whatis/default.asp">Web Development</a>
-                  <a class="link-unstyled my-2" href="/typingspeed/default.asp">Test Your Typing Speed</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-              <div class="d-none d-xl-block">
-                <!-- SERVER SIDE -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Server Side</h3>
-                  <a class="link-unstyled my-2" href="/sql/default.asp">Learn SQL</a>
-                  <a class="link-unstyled my-2" href="/php/default.asp">Learn PHP</a>
-                  <a class="link-unstyled my-2" href="/asp/default.asp">Learn ASP</a>
-                  <a class="link-unstyled my-2" href="/nodejs/default.asp">Learn Node.js</a>
-                  <a class="link-unstyled my-2" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
-                </div>
-                <!-- WEB BUILDING -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Web Building</h3>
-                  <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
-                  <a class="link-unstyled my-2" href="/browsers/default.asp">Web Statistics</a>
-                  <a class="link-unstyled my-2" href="/cert/default.asp">Web Certificates</a>
-                  <a class="link-unstyled my-2" href="/tryit/default.asp">Web Editor</a>
-                  <a class="link-unstyled my-2" href="/whatis/default.asp">Web Development</a>
-                  <a class="link-unstyled my-2" href="/typingspeed/default.asp">Test Your Typing Speed</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-              <div class="d-none d-xl-block">
-                <!-- XML -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>XML Tutorials</h3>
-                  <a class="link-unstyled my-2" href="/xml/default.asp">Learn XML</a>
-                  <a class="link-unstyled my-2" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
-                  <a class="link-unstyled my-2" href="/xml/dom_intro.asp">Learn XML DOM</a>
-                  <a class="link-unstyled my-2" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
-                  <a class="link-unstyled my-2" href="/xml/schema_intro.asp">Learn XML Schema</a>
-                  <a class="link-unstyled my-2" href="/xml/xsl_intro.asp">Learn XSLT</a>
-                  <a class="link-unstyled my-2" href="/xml/xpath_intro.asp">Learn XPath</a>
-                  <a class="link-unstyled my-2" href="/xml/xquery_intro.asp">Learn XQuery</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <!-- REFERENCES -->
-      <li class="nav-item dropdown position-static">
-        <a class="nav-link nav-link--w3 dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
-          references
-        </a>
-        <div class="dropdown-menu dropdown-menu--gray w-100 mt-0">
-          <div class="p-3 pr-4">
-            <button type="button" class="close" data-toggle="dropdown">
-              <span>&times;</span>
-            </button>
-          </div>
-          <div class="row pt-4">
-            <div class="col-lg-6 col-xl-3">
-              <!-- HTML -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>HTML</h3>
-                <a class="link-unstyled my-2" href="/tags/default.asp">HTML Tag Reference</a>
-                <a class="link-unstyled my-2" href="/tags/ref_html_browsersupport.asp">HTML Browser Support</a>
-                <a class="link-unstyled my-2" href="/tags/ref_eventattributes.asp">HTML Event Reference</a>
-                <a class="link-unstyled my-2" href="/colors/default.asp">HTML Color Reference</a>
-                <a class="link-unstyled my-2" href="/tags/ref_attributes.asp">HTML Attribute Reference</a>
-                <a class="link-unstyled my-2" href="/tags/ref_canvas.asp">HTML Canvas Reference</a>
-                <a class="link-unstyled my-2" href="/graphics/svg_reference.asp">HTML SVG Reference</a>
-                <a class="link-unstyled my-2" href="/graphics/google_maps_reference.asp">Google Maps Reference</a>
-              </div>
-              <!-- CSS -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>CSS</h3>
-                <a class="link-unstyled my-2" href="/cssref/default.asp">CSS Reference</a>
-                <a class="link-unstyled my-2" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a>
-                <a class="link-unstyled my-2" href="/cssref/css_selectors.asp">CSS Selector Reference</a>
-                <a class="link-unstyled my-2" href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap 3
-                  Reference</a>
-                <a class="link-unstyled my-2" href="/bootstrap4/bootstrap_ref_all_classes.asp">Bootstrap 4
-                  Reference</a>
-                <a class="link-unstyled my-2" href="/w3css/w3css_references.asp">W3.CSS Reference</a>
-                <a class="link-unstyled my-2" href="/icons/icons_reference.asp">Icon Reference</a>
-                <a class="link-unstyled my-2" href="/sass/sass_functions_string.asp">Sass Reference</a>
-              </div>
-              <div class="d-xl-none">
-                <!-- CHARACTER SET -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Character Sets</h3>
-                  <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-              <!-- JAVASCRIPT -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>JavaScript</h3>
-                <a class="link-unstyled my-2" href="/jsref/default.asp">JavaScript Reference</a>
-                <a class="link-unstyled my-2" href="/jsref/default.asp">HTML DOM Reference</a>
-                <a class="link-unstyled my-2" href="/jquery/jquery_ref_overview.asp">jQuery Reference</a>
-                <a class="link-unstyled my-2" href="/angular/angular_ref_directives.asp">AngularJS Reference</a>
-                <a class="link-unstyled my-2" href="/w3js/w3js_references.asp">W3.JS Reference</a>
-              </div>
-              <!-- PROGRAMMING -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>Programming</h3>
-                <a class="link-unstyled my-2" href="/python/python_reference.asp">Python Reference</a>
-                <a class="link-unstyled my-2" href="/java/java_ref_keywords.asp">Java Reference</a>
-              </div>
-              <div class="d-xl-none">
-                <!-- SERVER SIDE -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Server Side</h3>
-                  <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
-                  <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
-                  <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
-                </div>
-                <!-- XML -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>XML</h3>
-                  <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
-                  <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
-                  <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
-                  <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-              <div class="d-none d-xl-block">
-                <!-- SERVER SIDE -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Server Side</h3>
-                  <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
-                  <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
-                  <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
-                </div>
-                <!-- XML -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>XML</h3>
-                  <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
-                  <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
-                  <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
-                  <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-              <div class="d-none d-xl-block">
-                <!-- CHARACTER SET -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Character Sets</h3>
-                  <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
-                  <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <!-- EXAMPLES -->
-      <li class="nav-item dropdown position-static">
-        <a class="nav-link nav-link--w3 dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
-          examples
-        </a>
-        <div class="dropdown-menu dropdown-menu--gray w-100 mt-0">
-          <div class="p-3 pr-4">
-            <button type="button" class="close" data-toggle="dropdown">
-              <span>&times;</span>
-            </button>
-          </div>
-          <div class="row pt-4">
-            <div class="col-lg-6 col-xl-3">
-              <!-- HTML -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>HTML and CSS</h3>
-                <a class="link-unstyled my-2" href="/html/html_examples.asp">HTML Examples</a>
-                <a class="link-unstyled my-2" href="/css/css_examples.asp">CSS Examples</a>
-                <a class="link-unstyled my-2" href="/w3css/w3css_examples.asp">W3.CSS Examples</a>
-                <a class="link-unstyled my-2" href="/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a>
-                <a class="link-unstyled my-2" href="/howto/default.asp">How To Examples</a>
-                <a class="link-unstyled my-2" href="/graphics/svg_examples.asp">SVG Examples</a>
-                <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
-              </div>
-              <div class="d-xl-none">
-                <!-- QUIZZ -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Quizzes</h3>
-                  <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
-                  <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
-                  <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
-                  <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
-                  <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
-                  <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
-                  <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
-                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
-                  <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
-                  <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
-                  <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
-                  <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-              <!-- JAVASCRIPT -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>JavaScript</h3>
-                <a class="link-unstyled my-2" href="/js/js_examples.asp" target="_top">JavaScript Examples</a>
-                <a class="link-unstyled my-2" href="/js/js_dom_examples.asp" target="_top">HTML DOM Examples</a>
-                <a class="link-unstyled my-2" href="/jquery/jquery_examples.asp" target="_top">jQuery Examples</a>
-                <a class="link-unstyled my-2" href="/angular/angular_examples.asp" target="_top">AngularJS
-                  Examples</a>
-                <a class="link-unstyled my-2" href="/js/js_ajax_examples.asp" target="_top">AJAX Examples</a>
-                <a class="link-unstyled my-2" href="/w3js/w3js_examples.asp" target="_top">W3.JS Examples</a>
-              </div>
-              <!-- PROGRAMMING -->
-              <div class="d-flex flex-column text-left mb-4">
-                <h3>Programming</h3>
-                <a class="link-unstyled my-2" href="/python/python_examples.asp" target="_top">Python Examples</a>
-                <a class="link-unstyled my-2" href="/java/java_examples.asp" target="_top">Java Examples</a>
-                <a class="link-unstyled my-2" href="/cpp/cpp_examples.asp" target="_top">C++ Examples</a>
-                <a class="link-unstyled my-2" href="/cs/cs_examples.asp" target="_top">C# Examples</a>
-              </div>
-              <div class="d-xl-none">
-                <!-- SEVER SIDE -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Server Side</h3>
-                  <a class="link-unstyled my-2" href="/sql/sql_examples.asp" target="_top">SQL Examples</a>
-                  <a class="link-unstyled my-2" href="/php/php_examples.asp" target="_top">PHP Examples</a>
-                  <a class="link-unstyled my-2" href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
-                </div>
-                <!-- XML -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>XML</h3>
-                  <a class="link-unstyled my-2" href="/xml/xml_examples.asp" target="_top">XML Examples</a>
-                  <a class="link-unstyled my-2" href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
-                  <a class="link-unstyled my-2" href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
-                  <a class="link-unstyled my-2" href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
-                  <a class="link-unstyled my-2" href="/xml/ajax_examples.asp" target="_top">AJAX Examples</a>
-                  <a class="link-unstyled my-2" href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-              <div class="d-none d-xl-block">
-                <!-- SEVER SIDE -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Server Side</h3>
-                  <a class="link-unstyled my-2" href="/sql/sql_examples.asp" target="_top">SQL Examples</a>
-                  <a class="link-unstyled my-2" href="/php/php_examples.asp" target="_top">PHP Examples</a>
-                  <a class="link-unstyled my-2" href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
-                </div>
-                <!-- XML -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>XML</h3>
-                  <a class="link-unstyled my-2" href="/xml/xml_examples.asp" target="_top">XML Examples</a>
-                  <a class="link-unstyled my-2" href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
-                  <a class="link-unstyled my-2" href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
-                  <a class="link-unstyled my-2" href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
-                  <a class="link-unstyled my-2" href="/xml/ajax_examples.asp" target="_top">AJAX Examples</a>
-                  <a class="link-unstyled my-2" href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-              <div class="d-none d-xl-block">
-                <!-- QUIZZ -->
-                <div class="d-flex flex-column text-left mb-4">
-                  <h3>Quizzes</h3>
-                  <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
-                  <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
-                  <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
-                  <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
-                  <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
-                  <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
-                  <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
-                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
-                  <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
-                  <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
-                  <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
-                  <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <!-- EXERCISES -->
-      <li class="nav-item dropdown position-static d-lg-none d-xl-block">
-        <a class="nav-link nav-link--w3 dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
-          exercises
-        </a>
-        <div class="dropdown-menu dropdown-menu--gray w-100 mt-0">
-          <div class="p-3 pr-4">
-            <button type="button" class="close" data-toggle="dropdown">
-              <span>&times;</span>
-            </button>
-          </div>
-          <div class="row pt-4">
-            <div class="col-xl-4">
-              <div class="d-flex flex-column text-left mb-4">
+          <div id="collapseFour" class="collapse bg-white">
+            <div class="card-body pb-0">
+              <div class="d-flex flex-column text-center mb-4">
                 <h3>Exercises</h3>
                 <a class="link-unstyled my-2" href="/html/html_exercises.asp">HTML Exercises</a>
                 <a class="link-unstyled my-2" href="/css/css_exercises.asp">CSS Exercises</a>
@@ -922,9 +482,7 @@
                 <a class="link-unstyled my-2" href="/cpp/cpp_exercises.asp">C++ Exercises</a>
                 <a class="link-unstyled my-2" href="/cs/cs_exercises.asp">C# Exercises</a>
               </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="d-flex flex-column text-left mb-4">
+              <div class="d-flex flex-column text-center mb-4">
                 <h3>Quizzes</h3>
                 <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
                 <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
@@ -939,9 +497,7 @@
                 <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
                 <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
               </div>
-            </div>
-            <div class="col-xl-4">
-              <div class="d-flex flex-column text-left mb-4">
+              <div class="d-flex flex-column text-center mb-4">
                 <h3>Certificates</h3>
                 <a class="link-unstyled my-2" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
                 <a class="link-unstyled my-2" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
@@ -956,135 +512,643 @@
             </div>
           </div>
         </div>
-      </li>
-    </ul>
+      </div>
 
-    <span class="navbar-text d-none d-lg-inline-block">
-      <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
-         onclick="openTranslate(this)">
-      <i class="fas fa-globe-americas"></i>
-      <i class="fas fa-times d-none"></i>
-    </a>
-      <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
-         onclick="openSearch(this)">
-      <i class="fas fa-search"></i>
-      <i class="fas fa-times d-none"></i>
-    </a>
-    </span>
-  </div>
-</nav>
+      <!-- NAVBAR-NAV -->
+      <ul class="navbar-nav mr-auto d-none d-lg-flex">
+        <!-- TUTORIALS -->
+        <li class="nav-item dropdown position-static">
+          <a class="nav-link nav-link--w3 dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
+            tutorials
+          </a>
+          <div class="dropdown-menu dropdown-menu--gray w-100 mt-0">
+            <div class="p-3 pr-4">
+              <button id="close-drop" type="button" class="close" data-toggle="dropdown">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="row pt-4">
+              <div class="col-lg-6 col-xl-3">
+                <!-- HTML -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>HTML and CSS</h3>
+                  <a class="link-unstyled my-2" href="/html/default.asp">Learn HTML</a>
+                  <a class="link-unstyled my-2" href="/css/default.asp">Learn CSS</a>
+                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a>
+                  <a class="link-unstyled my-2" href="/w3css/default.asp">Learn W3.CSS</a>
+                  <a class="link-unstyled my-2" href="/colors/default.asp">Learn Colors</a>
+                  <a class="link-unstyled my-2" href="/icons/default.asp">Learn Icons</a>
+                  <a class="link-unstyled my-2" href="/graphics/default.asp">Learn Graphics</a>
+                  <a class="link-unstyled my-2" href="/graphics/svg_intro.asp">Learn SVG</a>
+                  <a class="link-unstyled my-2" href="/graphics/canvas_intro.asp">Learn Canvas</a>
+                  <a class="link-unstyled my-2" href="/howto/default.asp">Learn How To</a>
+                  <a class="link-unstyled my-2" href="/sass/default.asp">Learn Sass</a>
+                </div>
+                <div class="d-xl-none">
+                  <!-- XML -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>XML Tutorials</h3>
+                    <a class="link-unstyled my-2" href="/xml/default.asp">Learn XML</a>
+                    <a class="link-unstyled my-2" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
+                    <a class="link-unstyled my-2" href="/xml/dom_intro.asp">Learn XML DOM</a>
+                    <a class="link-unstyled my-2" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
+                    <a class="link-unstyled my-2" href="/xml/schema_intro.asp">Learn XML Schema</a>
+                    <a class="link-unstyled my-2" href="/xml/xsl_intro.asp">Learn XSLT</a>
+                    <a class="link-unstyled my-2" href="/xml/xpath_intro.asp">Learn XPath</a>
+                    <a class="link-unstyled my-2" href="/xml/xquery_intro.asp">Learn XQuery</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-3">
+                <!-- JAVASCRIPT -->
+                <div class="d-flex flex-column text-left mb-4">
 
-<main>
-  <div class="noticeboard">
-    <div class="container text-center">
-      <div class="row p-4 pb-5">
-        <div class="col">
-          <h1 class="noticeboard__title text-uppercase">html</h1>
-          <p class="noticeboard__brief mb-4">The language for building web pages</p>
-          <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#" role="button">learn html</a>
-          <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#" role="button">html reference</a>
+                  <h3>JavaScript</h3>
+                  <a class="link-unstyled my-2" href="/js/default.asp">Learn JavaScript</a>
+                  <a class="link-unstyled my-2" href="/jquery/default.asp">Learn jQuery</a>
+                  <a class="link-unstyled my-2" href="/react/default.asp">Learn React</a>
+                  <a class="link-unstyled my-2" href="/angular/default.asp">Learn AngularJS</a>
+                  <a class="link-unstyled my-2" href="/js/js_json_intro.asp">Learn JSON</a>
+                  <a class="link-unstyled my-2" href="/js/js_ajax_intro.asp">Learn AJAX</a>
+                  <a class="link-unstyled my-2" href="/w3js/default.asp">Learn W3.JS</a>
+                </div>
+                <!-- PROGRAMMING -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Programming</h3>
+                  <a class="link-unstyled my-2" href="/python/default.asp">Learn Python</a>
+                  <a class="link-unstyled my-2" href="/java/default.asp">Learn Java</a>
+                  <a class="link-unstyled my-2" href="/cpp/default.asp">Learn C++</a>
+                  <a class="link-unstyled my-2" href="/cs/default.asp">Learn C#</a>
+                  <a class="link-unstyled my-2" href="/python/python_ml_getting_started.asp">Learn Machine Learning</a>
+                </div>
+                <div class="d-xl-none">
+                  <!-- SERVER SIDE -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Server Side</h3>
+                    <a class="link-unstyled my-2" href="/sql/default.asp">Learn SQL</a>
+                    <a class="link-unstyled my-2" href="/php/default.asp">Learn PHP</a>
+                    <a class="link-unstyled my-2" href="/asp/default.asp">Learn ASP</a>
+                    <a class="link-unstyled my-2" href="/nodejs/default.asp">Learn Node.js</a>
+                    <a class="link-unstyled my-2" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
+                  </div>
+                  <!-- WEB BUILDING -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Web Building</h3>
+                    <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
+                    <a class="link-unstyled my-2" href="/browsers/default.asp">Web Statistics</a>
+                    <a class="link-unstyled my-2" href="/cert/default.asp">Web Certificates</a>
+                    <a class="link-unstyled my-2" href="/tryit/default.asp">Web Editor</a>
+                    <a class="link-unstyled my-2" href="/whatis/default.asp">Web Development</a>
+                    <a class="link-unstyled my-2" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-3">
+                <div class="d-none d-xl-block">
+                  <!-- SERVER SIDE -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Server Side</h3>
+                    <a class="link-unstyled my-2" href="/sql/default.asp">Learn SQL</a>
+                    <a class="link-unstyled my-2" href="/php/default.asp">Learn PHP</a>
+                    <a class="link-unstyled my-2" href="/asp/default.asp">Learn ASP</a>
+                    <a class="link-unstyled my-2" href="/nodejs/default.asp">Learn Node.js</a>
+                    <a class="link-unstyled my-2" href="/nodejs/nodejs_raspberrypi.asp">Learn Raspberry Pi</a>
+                  </div>
+                  <!-- WEB BUILDING -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Web Building</h3>
+                    <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
+                    <a class="link-unstyled my-2" href="/browsers/default.asp">Web Statistics</a>
+                    <a class="link-unstyled my-2" href="/cert/default.asp">Web Certificates</a>
+                    <a class="link-unstyled my-2" href="/tryit/default.asp">Web Editor</a>
+                    <a class="link-unstyled my-2" href="/whatis/default.asp">Web Development</a>
+                    <a class="link-unstyled my-2" href="/typingspeed/default.asp">Test Your Typing Speed</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-3">
+                <div class="d-none d-xl-block">
+                  <!-- XML -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>XML Tutorials</h3>
+                    <a class="link-unstyled my-2" href="/xml/default.asp">Learn XML</a>
+                    <a class="link-unstyled my-2" href="/xml/ajax_intro.asp">Learn XML AJAX</a>
+                    <a class="link-unstyled my-2" href="/xml/dom_intro.asp">Learn XML DOM</a>
+                    <a class="link-unstyled my-2" href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
+                    <a class="link-unstyled my-2" href="/xml/schema_intro.asp">Learn XML Schema</a>
+                    <a class="link-unstyled my-2" href="/xml/xsl_intro.asp">Learn XSLT</a>
+                    <a class="link-unstyled my-2" href="/xml/xpath_intro.asp">Learn XPath</a>
+                    <a class="link-unstyled my-2" href="/xml/xquery_intro.asp">Learn XQuery</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- REFERENCES -->
+        <li class="nav-item dropdown position-static">
+          <a class="nav-link nav-link--w3 dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
+            references
+          </a>
+          <div class="dropdown-menu dropdown-menu--gray w-100 mt-0">
+            <div class="p-3 pr-4">
+              <button type="button" class="close" data-toggle="dropdown">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="row pt-4">
+              <div class="col-lg-6 col-xl-3">
+                <!-- HTML -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>HTML</h3>
+                  <a class="link-unstyled my-2" href="/tags/default.asp">HTML Tag Reference</a>
+                  <a class="link-unstyled my-2" href="/tags/ref_html_browsersupport.asp">HTML Browser Support</a>
+                  <a class="link-unstyled my-2" href="/tags/ref_eventattributes.asp">HTML Event Reference</a>
+                  <a class="link-unstyled my-2" href="/colors/default.asp">HTML Color Reference</a>
+                  <a class="link-unstyled my-2" href="/tags/ref_attributes.asp">HTML Attribute Reference</a>
+                  <a class="link-unstyled my-2" href="/tags/ref_canvas.asp">HTML Canvas Reference</a>
+                  <a class="link-unstyled my-2" href="/graphics/svg_reference.asp">HTML SVG Reference</a>
+                  <a class="link-unstyled my-2" href="/graphics/google_maps_reference.asp">Google Maps Reference</a>
+                </div>
+                <!-- CSS -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>CSS</h3>
+                  <a class="link-unstyled my-2" href="/cssref/default.asp">CSS Reference</a>
+                  <a class="link-unstyled my-2" href="/cssref/css3_browsersupport.asp">CSS Browser Support</a>
+                  <a class="link-unstyled my-2" href="/cssref/css_selectors.asp">CSS Selector Reference</a>
+                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap 3
+                    Reference</a>
+                  <a class="link-unstyled my-2" href="/bootstrap4/bootstrap_ref_all_classes.asp">Bootstrap 4
+                    Reference</a>
+                  <a class="link-unstyled my-2" href="/w3css/w3css_references.asp">W3.CSS Reference</a>
+                  <a class="link-unstyled my-2" href="/icons/icons_reference.asp">Icon Reference</a>
+                  <a class="link-unstyled my-2" href="/sass/sass_functions_string.asp">Sass Reference</a>
+                </div>
+                <div class="d-xl-none">
+                  <!-- CHARACTER SET -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Character Sets</h3>
+                    <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-3">
+                <!-- JAVASCRIPT -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>JavaScript</h3>
+                  <a class="link-unstyled my-2" href="/jsref/default.asp">JavaScript Reference</a>
+                  <a class="link-unstyled my-2" href="/jsref/default.asp">HTML DOM Reference</a>
+                  <a class="link-unstyled my-2" href="/jquery/jquery_ref_overview.asp">jQuery Reference</a>
+                  <a class="link-unstyled my-2" href="/angular/angular_ref_directives.asp">AngularJS Reference</a>
+                  <a class="link-unstyled my-2" href="/w3js/w3js_references.asp">W3.JS Reference</a>
+                </div>
+                <!-- PROGRAMMING -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Programming</h3>
+                  <a class="link-unstyled my-2" href="/python/python_reference.asp">Python Reference</a>
+                  <a class="link-unstyled my-2" href="/java/java_ref_keywords.asp">Java Reference</a>
+                </div>
+                <div class="d-xl-none">
+                  <!-- SERVER SIDE -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Server Side</h3>
+                    <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
+                    <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
+                    <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
+                  </div>
+                  <!-- XML -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>XML</h3>
+                    <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
+                    <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
+                    <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
+                    <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-3">
+                <div class="d-none d-xl-block">
+                  <!-- SERVER SIDE -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Server Side</h3>
+                    <a class="link-unstyled my-2" href="/sql/sql_ref_keywords.asp">SQL Reference</a>
+                    <a class="link-unstyled my-2" href="/php/php_ref_overview.asp">PHP Reference</a>
+                    <a class="link-unstyled my-2" href="/asp/asp_ref_response.asp">ASP Reference</a>
+                  </div>
+                  <!-- XML -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>XML</h3>
+                    <a class="link-unstyled my-2" href="/xml/dom_nodetype.asp">XML DOM Reference</a>
+                    <a class="link-unstyled my-2" href="/xml/dom_http.asp">XML Http Reference</a>
+                    <a class="link-unstyled my-2" href="/xml/xsl_elementref.asp">XSLT Reference</a>
+                    <a class="link-unstyled my-2" href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-3">
+                <div class="d-none d-xl-block">
+                  <!-- CHARACTER SET -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Character Sets</h3>
+                    <a class="link-unstyled my-2" href="/charsets/default.asp">HTML Character Sets</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
+                    <a class="link-unstyled my-2" href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- EXAMPLES -->
+        <li class="nav-item dropdown position-static">
+          <a class="nav-link nav-link--w3 dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
+            examples
+          </a>
+          <div class="dropdown-menu dropdown-menu--gray w-100 mt-0">
+            <div class="p-3 pr-4">
+              <button type="button" class="close" data-toggle="dropdown">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="row pt-4">
+              <div class="col-lg-6 col-xl-3">
+                <!-- HTML -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>HTML and CSS</h3>
+                  <a class="link-unstyled my-2" href="/html/html_examples.asp">HTML Examples</a>
+                  <a class="link-unstyled my-2" href="/css/css_examples.asp">CSS Examples</a>
+                  <a class="link-unstyled my-2" href="/w3css/w3css_examples.asp">W3.CSS Examples</a>
+                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a>
+                  <a class="link-unstyled my-2" href="/howto/default.asp">How To Examples</a>
+                  <a class="link-unstyled my-2" href="/graphics/svg_examples.asp">SVG Examples</a>
+                  <a class="link-unstyled my-2" href="/w3css/w3css_templates.asp">Web Templates</a>
+                </div>
+                <div class="d-xl-none">
+                  <!-- QUIZZ -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Quizzes</h3>
+                    <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
+                    <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+                    <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+                    <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
+                    <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
+                    <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+                    <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
+                    <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
+                    <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
+                    <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
+                    <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
+                    <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-3">
+                <!-- JAVASCRIPT -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>JavaScript</h3>
+                  <a class="link-unstyled my-2" href="/js/js_examples.asp" target="_top">JavaScript Examples</a>
+                  <a class="link-unstyled my-2" href="/js/js_dom_examples.asp" target="_top">HTML DOM Examples</a>
+                  <a class="link-unstyled my-2" href="/jquery/jquery_examples.asp" target="_top">jQuery Examples</a>
+                  <a class="link-unstyled my-2" href="/angular/angular_examples.asp" target="_top">AngularJS
+                    Examples</a>
+                  <a class="link-unstyled my-2" href="/js/js_ajax_examples.asp" target="_top">AJAX Examples</a>
+                  <a class="link-unstyled my-2" href="/w3js/w3js_examples.asp" target="_top">W3.JS Examples</a>
+                </div>
+                <!-- PROGRAMMING -->
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Programming</h3>
+                  <a class="link-unstyled my-2" href="/python/python_examples.asp" target="_top">Python Examples</a>
+                  <a class="link-unstyled my-2" href="/java/java_examples.asp" target="_top">Java Examples</a>
+                  <a class="link-unstyled my-2" href="/cpp/cpp_examples.asp" target="_top">C++ Examples</a>
+                  <a class="link-unstyled my-2" href="/cs/cs_examples.asp" target="_top">C# Examples</a>
+                </div>
+                <div class="d-xl-none">
+                  <!-- SEVER SIDE -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Server Side</h3>
+                    <a class="link-unstyled my-2" href="/sql/sql_examples.asp" target="_top">SQL Examples</a>
+                    <a class="link-unstyled my-2" href="/php/php_examples.asp" target="_top">PHP Examples</a>
+                    <a class="link-unstyled my-2" href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
+                  </div>
+                  <!-- XML -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>XML</h3>
+                    <a class="link-unstyled my-2" href="/xml/xml_examples.asp" target="_top">XML Examples</a>
+                    <a class="link-unstyled my-2" href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
+                    <a class="link-unstyled my-2" href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
+                    <a class="link-unstyled my-2" href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
+                    <a class="link-unstyled my-2" href="/xml/ajax_examples.asp" target="_top">AJAX Examples</a>
+                    <a class="link-unstyled my-2" href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-3">
+                <div class="d-none d-xl-block">
+                  <!-- SEVER SIDE -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Server Side</h3>
+                    <a class="link-unstyled my-2" href="/sql/sql_examples.asp" target="_top">SQL Examples</a>
+                    <a class="link-unstyled my-2" href="/php/php_examples.asp" target="_top">PHP Examples</a>
+                    <a class="link-unstyled my-2" href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
+                  </div>
+                  <!-- XML -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>XML</h3>
+                    <a class="link-unstyled my-2" href="/xml/xml_examples.asp" target="_top">XML Examples</a>
+                    <a class="link-unstyled my-2" href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
+                    <a class="link-unstyled my-2" href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
+                    <a class="link-unstyled my-2" href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
+                    <a class="link-unstyled my-2" href="/xml/ajax_examples.asp" target="_top">AJAX Examples</a>
+                    <a class="link-unstyled my-2" href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-3">
+                <div class="d-none d-xl-block">
+                  <!-- QUIZZ -->
+                  <div class="d-flex flex-column text-left mb-4">
+                    <h3>Quizzes</h3>
+                    <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
+                    <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+                    <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+                    <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
+                    <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
+                    <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+                    <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
+                    <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
+                    <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
+                    <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
+                    <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
+                    <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- EXERCISES -->
+        <li class="nav-item dropdown position-static d-lg-none d-xl-block">
+          <a class="nav-link nav-link--w3 dropdown-toggle text-uppercase" href="#" role="button" data-toggle="dropdown">
+            exercises
+          </a>
+          <div class="dropdown-menu dropdown-menu--gray w-100 mt-0">
+            <div class="p-3 pr-4">
+              <button type="button" class="close" data-toggle="dropdown">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="row pt-4">
+              <div class="col-xl-4">
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Exercises</h3>
+                  <a class="link-unstyled my-2" href="/html/html_exercises.asp">HTML Exercises</a>
+                  <a class="link-unstyled my-2" href="/css/css_exercises.asp">CSS Exercises</a>
+                  <a class="link-unstyled my-2" href="/js/js_exercises.asp">JavaScript Exercises</a>
+                  <a class="link-unstyled my-2" href="/sql/sql_exercises.asp">SQL Exercises</a>
+                  <a class="link-unstyled my-2" href="/php/php_exercises.asp">PHP Exercises</a>
+                  <a class="link-unstyled my-2" href="/python/python_exercises.asp">Python Exercises</a>
+                  <a class="link-unstyled my-2" href="/jquery/jquery_exercises.asp">jQuery Exercises</a>
+                  <a class="link-unstyled my-2" href="/java/java_exercises.asp">Java Exercises</a>
+                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_exercises.asp">Bootstrap Exercises</a>
+                  <a class="link-unstyled my-2" href="/cpp/cpp_exercises.asp">C++ Exercises</a>
+                  <a class="link-unstyled my-2" href="/cs/cs_exercises.asp">C# Exercises</a>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Quizzes</h3>
+                  <a class="link-unstyled my-2" href="/html/html_quiz.asp" target="_top">HTML Quiz</a>
+                  <a class="link-unstyled my-2" href="/css/css_quiz.asp" target="_top">CSS Quiz</a>
+                  <a class="link-unstyled my-2" href="/js/js_quiz.asp" target="_top">JavaScript Quiz</a>
+                  <a class="link-unstyled my-2" href="/sql/sql_quiz.asp" target="_top">SQL Quiz</a>
+                  <a class="link-unstyled my-2" href="/php/php_quiz.asp" target="_top">PHP Quiz</a>
+                  <a class="link-unstyled my-2" href="/python/python_quiz.asp" target="_top">Python Quiz</a>
+                  <a class="link-unstyled my-2" href="/jquery/jquery_quiz.asp" target="_top">jQuery Quiz</a>
+                  <a class="link-unstyled my-2" href="/bootstrap/bootstrap_quiz.asp" target="_top">Bootstrap Quiz</a>
+                  <a class="link-unstyled my-2" href="/java/java_quiz.asp" target="_top">Java Quiz</a>
+                  <a class="link-unstyled my-2" href="/cpp/cpp_quiz.asp" target="_top">C++ Quiz</a>
+                  <a class="link-unstyled my-2" href="/cs/cs_quiz.asp" target="_top">C# Quiz</a>
+                  <a class="link-unstyled my-2" href="/xml/xml_quiz.asp" target="_top">XML Quiz</a>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="d-flex flex-column text-left mb-4">
+                  <h3>Certificates</h3>
+                  <a class="link-unstyled my-2" href="/cert/cert_html_new.asp" target="_top">HTML Certificate</a>
+                  <a class="link-unstyled my-2" href="/cert/cert_css.asp" target="_top">CSS Certificate</a>
+                  <a class="link-unstyled my-2" href="/cert/cert_javascript.asp" target="_top">JavaScript
+                    Certificate</a>
+                  <a class="link-unstyled my-2" href="/cert/cert_sql.asp" target="_top">SQL Certificate</a>
+                  <a class="link-unstyled my-2" href="/cert/cert_php.asp" target="_top">PHP Certificate</a>
+                  <a class="link-unstyled my-2" href="/cert/cert_python.asp" target="_top">Python Certificate</a>
+                  <a class="link-unstyled my-2" href="/cert/cert_bootstrap.asp" target="_top">Bootstrap Certificate</a>
+                  <a class="link-unstyled my-2" href="/cert/cert_jquery.asp" target="_top">jQuery Certificate</a>
+                  <a class="link-unstyled my-2" href="/cert/cert_xml.asp" target="_top">XML Certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <span class="navbar-text d-none d-lg-inline-block">
+        <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+          onclick="openTranslate(this)">
+          <i class="fas fa-globe-americas"></i>
+          <i class="fas fa-times d-none"></i>
+        </a>
+        <a class="px-3 link-unstyled navbar-btn d-inline-block text-center" href="javascript:void(0)" role="button"
+          onclick="openSearch(this)">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-times d-none"></i>
+        </a>
+      </span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="noticeboard">
+      <div class="container text-center">
+        <div class="row p-4 pb-5">
+          <div class="col">
+            <h1 class="noticeboard__title text-uppercase">html</h1>
+            <p class="noticeboard__brief mb-4">The language for building web pages</p>
+            <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+              role="button">learn html</a>
+            <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+              role="button">html reference</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="noticeboard noticeboard--gray">
-    <div class="container text-center">
-      <div class="row p-4 pb-5">
-        <div class="col">
-          <h1 class="noticeboard__title text-uppercase">css</h1>
-          <p class="noticeboard__brief mb-4">The language for styling web pages</p>
-          <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#" role="button">learn CSS</a>
-          <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#" role="button">CSS reference</a>
+    <div class="noticeboard noticeboard--gray">
+      <div class="container text-center">
+        <div class="row p-4 pb-5">
+          <div class="col">
+            <h1 class="noticeboard__title text-uppercase">css</h1>
+            <p class="noticeboard__brief mb-4">The language for styling web pages</p>
+            <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+              role="button">learn CSS</a>
+            <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+              role="button">CSS reference</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="noticeboard">
-    <div class="container text-center">
-      <div class="row p-4 pb-5">
-        <div class="col">
-          <h1 class="noticeboard__title text-uppercase">JavaScript</h1>
-          <p class="noticeboard__brief mb-4">The language for programming web pages</p>
-          <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#" role="button">learn javascript</a>
-          <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#" role="button">javascript reference</a>
+    <div class="noticeboard">
+      <div class="container text-center">
+        <div class="row p-4 pb-5">
+          <div class="col">
+            <h1 class="noticeboard__title text-uppercase">JavaScript</h1>
+            <p class="noticeboard__brief mb-4">The language for programming web pages</p>
+            <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+              role="button">learn javascript</a>
+            <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+              role="button">javascript reference</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="noticeboard noticeboard--gray">
-    <div class="container text-center">
-      <div class="row p-4 pb-5">
-        <div class="col">
-          <h1 class="noticeboard__title text-uppercase">sql</h1>
-          <p class="noticeboard__brief mb-4">A language for accessing databases</p>
-          <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#" role="button">learn sql</a>
-          <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#" role="button">sql reference</a>
+    <div class="noticeboard noticeboard--gray">
+      <div class="container text-center">
+        <div class="row p-4 pb-5">
+          <div class="col">
+            <h1 class="noticeboard__title text-uppercase">sql</h1>
+            <p class="noticeboard__brief mb-4">A language for accessing databases</p>
+            <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+              role="button">learn sql</a>
+            <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+              role="button">sql reference</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-<script>
-  const siteSearchDiv = document.querySelector('.site-search').parentElement;
-  const siteSearchBtnX = siteSearchDiv.querySelector('button:first-child');
-  const selectLangDiv = document.querySelector('.lang-selection').parentElement;
-  let placeHolderMess;
+    <div class="bg-dark py-4">
+      <div class="noticeboard-card">
+        <div class="container-fluid py-3">
+          <div class="card rounded-0">
+            <div class="card-body text-center">
+              <h2 class="card-title noticeboard-card__title mb-0">Python</h5>
+                <p class="card-text noticeboard-card__brief mb-4">A programming language</p>
+                <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+                  role="button">learn python</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="noticeboard-card">
+        <div class="container-fluid py-3">
+          <div class="card rounded-0">
+            <div class="card-body text-center">
+              <h2 class="card-title noticeboard-card__title mb-0">PHP</h5>
+                <p class="card-text noticeboard-card__brief mb-4">A web server programming language</p>
+                <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+                  role="button">learn php</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="noticeboard-card">
+        <div class="container-fluid py-3">
+          <div class="card rounded-0">
+            <div class="card-body text-center">
+              <h2 class="card-title noticeboard-card__title mb-0">jQuery</h5>
+                <p class="card-text noticeboard-card__brief mb-4">A JavaScript library for developing web pages</p>
+                <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+                  role="button">learn jquery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="noticeboard-card">
+        <div class="container-fluid py-3">
+          <div class="card rounded-0">
+            <div class="card-body text-center">
+              <h2 class="card-title noticeboard-card__title mb-0">Java</h5>
+                <p class="card-text noticeboard-card__brief mb-4">A programming language</p>
+                <a class="btn noticeboard__btn text-uppercase text-white rounded-0 px-3 py-2 shadow-none" href="#"
+                  role="button">learn java</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  function openTranslate(_this) {
-    const bntShowLangSelection = _this.querySelector('i:first-child'),
-      btnHideLangSelection = _this.querySelector('i:last-child');
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script>
+    const siteSearchDiv = document.querySelector('.site-search').parentElement;
+    const siteSearchBtnX = siteSearchDiv.querySelector('button:first-child');
+    const selectLangDiv = document.querySelector('.lang-selection').parentElement;
+    let placeHolderMess;
 
-    bntShowLangSelection.classList.toggle('d-none');
-    btnHideLangSelection.classList.toggle('d-none');
-    selectLangDiv.classList.toggle('d-none');
-  }
+    function openTranslate(_this) {
+      const bntShowLangSelection = _this.querySelector('i:first-child'),
+        btnHideLangSelection = _this.querySelector('i:last-child');
 
-  function openSearch(_this) {
-    const btnShowSearch = _this.querySelector('i:first-child'),
-      btnHideSearch = _this.querySelector('i:last-child');
+      bntShowLangSelection.classList.toggle('d-none');
+      btnHideLangSelection.classList.toggle('d-none');
+      selectLangDiv.classList.toggle('d-none');
+    }
 
-    btnShowSearch.classList.toggle('d-none');
-    btnHideSearch.classList.toggle('d-none');
-    siteSearchDiv.classList.toggle('d-none');
+    function openSearch(_this) {
+      const btnShowSearch = _this.querySelector('i:first-child'),
+        btnHideSearch = _this.querySelector('i:last-child');
 
-    siteSearchDiv.querySelector('input').focus();
-  }
+      btnShowSearch.classList.toggle('d-none');
+      btnHideSearch.classList.toggle('d-none');
+      siteSearchDiv.classList.toggle('d-none');
 
-  function saveSearchPlaceHolder(e) {
-    const input = e.target;
-    placeHolderMess = input.placeholder;
-    input.placeholder = '';
-  }
+      siteSearchDiv.querySelector('input').focus();
+    }
 
-  function setSearchPlaceHolder(e) {
-    const input = e.target;
-    input.placeholder = placeHolderMess;
-  }
+    function saveSearchPlaceHolder(e) {
+      const input = e.target;
+      placeHolderMess = input.placeholder;
+      input.placeholder = '';
+    }
 
-  function deleteSearchInput() {
-    const input = this.parentElement.previousElementSibling;
-    input.value = '';
-    input.focus();
-  }
+    function setSearchPlaceHolder(e) {
+      const input = e.target;
+      input.placeholder = placeHolderMess;
+    }
 
-  siteSearchDiv.addEventListener('focusin', saveSearchPlaceHolder);
-  siteSearchDiv.addEventListener('focusout', setSearchPlaceHolder);
-  siteSearchBtnX.addEventListener('click', deleteSearchInput);
+    function deleteSearchInput() {
+      const input = this.parentElement.previousElementSibling;
+      input.value = '';
+      input.focus();
+    }
+
+    siteSearchDiv.addEventListener('focusin', saveSearchPlaceHolder);
+    siteSearchDiv.addEventListener('focusout', setSearchPlaceHolder);
+    siteSearchBtnX.addEventListener('click', deleteSearchInput);
 
   // Actions to avoid clicking elements.
   // const navTogglerBtn = document.querySelector('nav > button');
@@ -1094,6 +1158,7 @@
 
   // const doClick = document.querySelector('#do-click');
   // doClick.dispatchEvent(new MouseEvent('click', {bubbles: true}));
-</script>
+  </script>
 </body>
+
 </html>
