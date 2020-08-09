@@ -280,6 +280,24 @@
     margin: 16px 0 20px 0;
 }
 
+.how-to-section {
+
+}
+
+.how-to-section__title {
+    font-family: var(--font-segoe-ui);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.how-to-section__brief {
+    font-family: var(--font-segoe-ui);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
 @media (min-width: 992px) {
     .navbar-collapse--xl-green {
         background-color: var(--accordion-green);
