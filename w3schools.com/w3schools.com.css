@@ -1,73 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Varta:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Varta:wght@300;400;500&display=swap");
 
 :root {
-    --dotcom-green: #4CAF50;
-    --accordion-green: var(--dotcom-green);
-    --gray: #f1f1f1;
-    --navbar-collapse-bg: var(--gray);
-    --font-segoe-ui: 'Varta', sans-serif;
-    --font-verdana: 'Noto Sans', sans-serif;
-    --noticeboard__title-black: #555555;
-    --noticeboard__brief-black: #3a3a3a;
-    --noticeboard__btn-bg-black: #616161;
-    --noticeboard__btn-outline: black auto 1px;
-    --btn-active-color: #ade1f5;
+  --dotcom-green: #4caf50;
+  --accordion-green: var(--dotcom-green);
+  --gray: #f1f1f1;
+  --navbar-collapse-bg: var(--gray);
+  --font-segoe-ui: "Varta", sans-serif;
+  --font-verdana: "Noto Sans", sans-serif;
+  --noticeboard__title-black: #555555;
+  --noticeboard__brief-black: #3a3a3a;
+  --noticeboard__btn-bg-black: #616161;
+  --noticeboard__btn-outline: black auto 1px;
+  --btn-active-color: #ade1f5;
 }
 
 .w3schools-title {
-    font-family: fontawesome, sans-serif;
-    text-decoration: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 37px;
-    letter-spacing: 3px;
-    color: #555555;
-    display: block;
-    position: relative;
+  font-family: fontawesome, sans-serif;
+  text-decoration: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 37px;
+  letter-spacing: 3px;
+  color: #555555;
+  display: block;
+  position: relative;
 }
 
 .w3schools-title:hover {
-    color: #555555;
-    text-decoration: none;
+  color: #555555;
+  text-decoration: none;
 }
 
 .w3schools-title:active {
-    background-color: var(--btn-active-color);
+  background-color: var(--btn-active-color);
 }
 
 .w3schools-subtitle {
-    font-family: var(--font-segoe-ui);
-    font-size: 15px;
-    letter-spacing: 4px;
-    line-height: 23px;
-    font-weight: 500;
+  font-family: var(--font-segoe-ui);
+  font-size: 15px;
+  letter-spacing: 4px;
+  line-height: 23px;
+  font-weight: 500;
 }
 
 .w3schools-logo__dotcom {
-    color: var(--dotcom-green);
+  color: var(--dotcom-green);
 }
 
 .bg-w3-green {
-    background-color: var(--accordion-green);
+  background-color: var(--accordion-green);
 }
 
 .nav-link--black {
-    color: black !important;
+  color: black !important;
 }
 
 .navbar-collapse--white {
-    background-color: var(--navbar-collapse-bg);
+  background-color: var(--navbar-collapse-bg);
 }
 
 /* I wanted to do a modifier of this class, but it just appears for some milliseconds when a navbar is collapsing. */
 /* For that reason, I just added the property that I wanted to change. The same happens with the next css rule. */
 .collapsing {
-    background-color: var(--navbar-collapse-bg);
+  background-color: var(--navbar-collapse-bg);
 }
 
 .collapsing .nav-link {
-    color: black;
+  color: black;
 }
 
 .link-unstyled,
@@ -76,230 +76,268 @@
 .link-unstyled:active,
 .link-unstyled:focus,
 .link-unstyled:active:hover {
-    font-style: inherit;
-    color: inherit;
-    background-color: transparent;
-    font-size: inherit;
-    text-decoration: none;
-    font-variant: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    font-family: inherit;
-    border-radius: inherit;
-    border: inherit;
-    outline: inherit;
-    box-shadow: inherit;
-    padding: inherit;
-    vertical-align: inherit;
+  font-style: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  border-radius: inherit;
+  border: inherit;
+  outline: inherit;
+  box-shadow: inherit;
+  padding: inherit;
+  vertical-align: inherit;
 }
 
 .navbar-btn {
-    width: 45px;
+  width: 45px;
 }
 
 .navbar-btn:hover {
-    color: #000 !important;
-    background-color: #fff !important;
+  color: #000 !important;
+  background-color: #fff !important;
 }
 
 .lang-selection {
-    position: relative;
+  position: relative;
 }
 
 .lang-selection {
-    z-index: 10;
-    right: 110px;
-    top: 10px;
+  z-index: 10;
+  right: 110px;
+  top: 10px;
 }
 
 .site-search {
-    z-index: 11;
-    right: 50px;
-    top: 10px;
+  z-index: 11;
+  right: 50px;
+  top: 10px;
 }
 
 .card-header--gray {
-    background-color: var(--gray);
+  background-color: var(--gray);
 }
 
 .btn--accordion {
-    font-family: var(--font-segoe-ui);
-    font-size: 18px;
-    letter-spacing: 4px;
-    line-height: 27px;
-    padding: 8px;
+  font-family: var(--font-segoe-ui);
+  font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 27px;
+  padding: 8px;
 }
 
 .btn--accordion:hover {
-    color: #000 !important;
-    background-color: #ccc !important;
+  color: #000 !important;
+  background-color: #ccc !important;
 }
 
 .accordion .card-body h3 {
-    font-family: var(--font-segoe-ui);
+  font-family: var(--font-segoe-ui);
 }
 
 .accordion .card-body a {
-    font-family: var(--font-verdana);
+  font-family: var(--font-verdana);
 }
 
 .nav-link--w3 {
-    font-family: var(--font-segoe-ui);
-    font-size: 17px;
-    letter-spacing: 4px;
-    line-height: 25.5px;
+  font-family: var(--font-segoe-ui);
+  font-size: 17px;
+  letter-spacing: 4px;
+  line-height: 25.5px;
 }
 
 .dropdown-menu--gray {
-    background-color: var(--navbar-collapse-bg)
+  background-color: var(--navbar-collapse-bg);
 }
 
 .navbar-nav .nav-item.dropdown.position-static .dropdown-menu h3 {
-    font-family: var(--font-segoe-ui);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
+  font-family: var(--font-segoe-ui);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 .navbar-nav .nav-item.dropdown.position-static .dropdown-menu a {
-    font-family: var(--font-verdana);
-    font-size: 16px;
-    line-height: 24px;
+  font-family: var(--font-verdana);
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .noticeboard--gray {
-    background-color: var(--gray);
+  background-color: var(--gray);
 }
 
 .noticeboard__title {
-    font-family: var(--font-segoe-ui);
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 90px;
-    color: var(--noticeboard__title-black);
+  font-family: var(--font-segoe-ui);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 90px;
+  color: var(--noticeboard__title-black);
 }
 
 .noticeboard__brief {
-    font-family: var(--font-verdana);
-    font-size: 24px;
-    line-height: 36px;
-    color: var(--noticeboard__brief-black);
+  font-family: var(--font-verdana);
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--noticeboard__brief-black);
 }
 
 .noticeboard__btn {
-    background-color: var(--noticeboard__btn-bg-black);
-    font-family: var(--font-verdana);
-    font-size: 16px;
-    line-height: 24px;
+  background-color: var(--noticeboard__btn-bg-black);
+  font-family: var(--font-verdana);
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .noticeboard__btn:focus {
-    outline: var(--noticeboard__btn-outline);
+  outline: var(--noticeboard__btn-outline);
 }
 
 .noticeboard__btn:hover {
-    color: #000;
-    background-color: #ccc;
+  color: #000;
+  background-color: #ccc;
 }
 
 .noticeboard__btn:active {
-    background-color: var(--btn-active-color);
+  background-color: var(--btn-active-color);
 }
 
 .noticeboard-card__title {
-    font-family: var(--font-segoe-ui);
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 54px;
+  font-family: var(--font-segoe-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
 }
 
 .noticeboard-card__brief {
-    font-family: var(--font-segoe-ui);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
+  font-family: var(--font-segoe-ui);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .noticeboard-simple__title {
-    font-family: var(--font-segoe-ui);
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 54px;
+  font-family: var(--font-segoe-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
 }
 
 .noticeboard-simple__brief {
-    font-family: var(--font-segoe-ui);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
+  font-family: var(--font-segoe-ui);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .noticeboard-exercises__title {
-    font-family: var(--font-segoe-ui);
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 54px;
+  font-family: var(--font-segoe-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
 }
 
 .noticeboard-exercises__brief {
-    font-family: var(--font-segoe-ui);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
+  font-family: var(--font-segoe-ui);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .noticeboard-exercises__link {
-    background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .web-templates {
-    background-color: var(--gray);
+  background-color: var(--gray);
 }
 
 .web-templates__title {
-    font-family: var(--font-segoe-ui);
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 54px;
+  font-family: var(--font-segoe-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
 }
 
 .web-templates__brief {
-    font-family: var(--font-segoe-ui);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
+  font-family: var(--font-segoe-ui);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .web-templates__content {
-    max-width: 980px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .web-templates__img {
-    margin: 16px 0 20px 0;
+  margin: 16px 0 20px 0;
 }
 
 .how-to-section {
-
 }
 
 .how-to-section__title {
+  font-family: var(--font-segoe-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+}
+
+.how-to-section__brief {
+  font-family: var(--font-segoe-ui);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.web-cert__overlay {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  height: 100%;
+}
+
+.web-cert__title {
+    color: white;
     font-family: var(--font-segoe-ui);
     font-size: 36px;
     font-weight: 400;
     line-height: 54px;
 }
 
-.how-to-section__brief {
+.web-cert__brief {
+    color: white;
     font-family: var(--font-segoe-ui);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 22.5px;
+}
+
+.web-cert__btn {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: 50%;
+    font-size: 13px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.web-cert__btn a {
+    background-color: var(--dotcom-green);
 }
 
 @media (min-width: 992px) {
-    .navbar-collapse--xl-green {
-        background-color: var(--accordion-green);
-    }
+  .navbar-collapse--xl-green {
+    background-color: var(--accordion-green);
+  }
 }
