@@ -280,9 +280,6 @@
   margin: 16px 0 20px 0;
 }
 
-.how-to-section {
-}
-
 .how-to-section__title {
   font-family: var(--font-segoe-ui);
   font-size: 36px;
@@ -365,7 +362,26 @@
 }
 
 .footer__fb {
-    font-size: 36px;
+  font-size: 36px;
+}
+
+.code-sample {
+  background-color: var(--gray);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.code-sample__title {
+  font-family: var(--font-segoe-ui);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.code-sample__code {
+  padding: 8px 12px;
+  border-left: 4px solid var(--dotcom-green);
+  font-family: Consolas,"courier new";
+  font-size: 16px;
 }
 
 @media (max-width: 545px) {
