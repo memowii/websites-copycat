@@ -307,33 +307,66 @@
 }
 
 .web-cert__title {
-    color: white;
-    font-family: var(--font-segoe-ui);
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 54px;
+  color: white;
+  font-family: var(--font-segoe-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
 }
 
 .web-cert__brief {
-    color: white;
-    font-family: var(--font-segoe-ui);
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 22.5px;
+  color: white;
+  font-family: var(--font-segoe-ui);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
 }
 
 .web-cert__btn {
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    bottom: 50%;
-    font-size: 13px;
-    top: 50%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: 50%;
+  font-size: 13px;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .web-cert__btn a {
-    background-color: var(--dotcom-green);
+  background-color: var(--dotcom-green);
+}
+
+.noticeboard__btn--gray {
+  background-color: var(--gray);
+}
+
+.footer__a {
+  font-family: var(--font-segoe-ui);
+  font-size: 15px;
+  letter-spacing: 4px;
+  line-height: 22.5px;
+}
+
+.footer__a:hover {
+  color: var(--dotcom-green) !important;
+}
+
+.footer__brief {
+  font-family: var(--font-verdana);
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.footer__brief a {
+  text-decoration: underline;
+}
+
+.footer__brief a:hover {
+  color: var(--dotcom-green) !important;
+}
+
+.footer__fb {
+    font-size: 36px;
 }
 
 @media (min-width: 992px) {
