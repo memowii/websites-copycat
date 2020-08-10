@@ -384,6 +384,10 @@
   font-size: 16px;
 }
 
+.code-sample--green {
+  background-color:var(--dotcom-green);
+}
+
 @media (max-width: 545px) {
   .web-cert__overlay {
     padding: 10px;
