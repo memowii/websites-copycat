@@ -384,12 +384,16 @@
 .code-sample__code {
   padding: 8px 12px;
   border-left: 4px solid var(--dotcom-green);
-  font-family: Consolas,"courier new";
+  font-family: Consolas, "courier new";
   font-size: 16px;
 }
 
 .code-sample--green {
-  background-color:var(--dotcom-green);
+  background-color: var(--dotcom-green);
+}
+
+.w3-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 @media (max-width: 545px) {
