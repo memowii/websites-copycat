@@ -1,0 +1,16 @@
+:root {
+  --nav-gray-white: #f9f9f9;
+  --nav-link-hover-blue: #0274be;
+}
+
+.nav--gray {
+  background-color: var(--nav-gray-white);
+}
+
+.nav--font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-link--hover-blue:hover {
+  color: var(--nav-link-hover-blue) !important;
+}
