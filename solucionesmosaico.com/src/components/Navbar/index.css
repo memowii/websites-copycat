@@ -14,3 +14,28 @@
 .nav-link--hover-blue:hover {
   color: var(--nav-link-hover-blue) !important;
 }
+
+.nav-link--border {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.navbar-nav .nav-item:first-child .nav-link--border {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+@media (min-width: 992px) {
+  .nav-link--border {
+    border-bottom: none !important;
+  }
+
+  .navbar-nav .nav-item:first-child .nav-link--border {
+    border-top: none !important;
+  }
+
+  .navbar-nav--expanded {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6 !important;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+}
