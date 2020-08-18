@@ -16,7 +16,7 @@ export function Navbar() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <RsNavbar expand="md" light color="white" className="p-0">
+    <RsNavbar expand="lg" light color="white" className="p-0">
       <div className="px-3 py-2 w-100 d-flex justify-content-end">
         <NavbarToggler onClick={toggle} className="" />
       </div>
