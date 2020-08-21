@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "react-slick";
 
 import { Divider } from "../../components/Divider";
 import { ServiceCard } from "../../components/ServiceCard";
@@ -8,6 +9,14 @@ import disenoFotografiaImg from "../../images/diseno-fotografia.png";
 import implementacionImg from "../../images/implementacion.png";
 
 export function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
     <div className="container">
       <Divider />
@@ -68,6 +77,29 @@ export function Home() {
           "Registro de obra ante INDAUTOR",
         ]}
       />
+
+      <h2 className="text-center font-weight-bolder mt-5">Hemos Trabajado con</h2>
+
+      <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
     </div>
   );
 }
