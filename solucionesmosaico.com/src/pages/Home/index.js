@@ -2,6 +2,7 @@ import React from "react";
 import { Divider } from "../../components/Divider";
 
 import estrategiaImg from "../../images/estrategia.png";
+import { ServiceCard } from "../../components/ServiceCard";
 
 export function Home() {
   return (
@@ -16,20 +17,16 @@ export function Home() {
         Nuestros servicios
       </h2>
 
-      <div className="card" style={{ backgroundColor: "#9faee5" }}>
-        <div className="card-body">
-          <div className="text-center">
-            <img src={estrategiaImg} alt="" />
-          </div>
-
-          <h5 className="card-title">Estrategia</h5>
-          <ul>
-            <li>Campaña publicitaria</li>
-            <li>Gestión de proyectos ante instituciones públicas y privadas</li>
-            <li>Manual organizacional</li>
-          </ul>
-        </div>
-      </div>
+      <ServiceCard
+        bgc="#9faee5"
+        image={estrategiaImg}
+        title="Estrategia"
+        remarks={[
+          "Campaña publicitaria",
+          "Gestión de proyectos ante instituciones públicas y privadas",
+          "Manual organizacional",
+        ]}
+      />
     </div>
   );
 }
