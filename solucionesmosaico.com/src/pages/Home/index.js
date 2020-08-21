@@ -1,8 +1,11 @@
 import React from "react";
-import { Divider } from "../../components/Divider";
 
-import estrategiaImg from "../../images/estrategia.png";
+import { Divider } from "../../components/Divider";
 import { ServiceCard } from "../../components/ServiceCard";
+import estrategiaImg from "../../images/estrategia.png";
+import marketingImg from "../../images/marketing.png";
+import disenoFotografiaImg from "../../images/diseno-fotografia.png";
+import implementacionImg from "../../images/implementacion.png";
 
 export function Home() {
   return (
@@ -13,7 +16,7 @@ export function Home() {
         Estrategiasa y soluciones creativas
       </h1>
 
-      <h2 className="h5 font-weight-bolder text-center mt-4">
+      <h2 className="h5 font-weight-bolder text-center mt-4 mb-4">
         Nuestros servicios
       </h2>
 
@@ -25,6 +28,44 @@ export function Home() {
           "Campaña publicitaria",
           "Gestión de proyectos ante instituciones públicas y privadas",
           "Manual organizacional",
+        ]}
+      />
+
+      <ServiceCard
+        bgc="#59cbe8"
+        image={marketingImg}
+        title="Marketing"
+        remarks={[
+          "Administración de redes sociales",
+          "Investigación de mercados",
+          "Estudio de mercado",
+          "Branding",
+          "Naming",
+        ]}
+      />
+
+      <ServiceCard
+        bgc="#a2e4b8"
+        image={disenoFotografiaImg}
+        title="Diseño y Fotografía"
+        remarks={[
+          "Diseño gráfico",
+          "Sesión fotográfica",
+          "Portafolio para grupos artísticos o empresas",
+        ]}
+      />
+
+      <ServiceCard
+        bgc="#ffb81c"
+        image={implementacionImg}
+        title="Implementación"
+        remarks={[
+          "Cobertura de eventos artísticos y corporativos",
+          "Asesoría en estrategias de comunicación",
+          "Organización y gestión de eventos",
+          "Evaluación de clima laboral",
+          "Registro de marca ante IMPI",
+          "Registro de obra ante INDAUTOR",
         ]}
       />
     </div>
