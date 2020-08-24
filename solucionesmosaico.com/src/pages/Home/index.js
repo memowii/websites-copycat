@@ -1,9 +1,17 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+
 import { Divider } from "../../components/Divider";
 import { ServiceCard } from "../../components/ServiceCard";
 import { Swiper } from "../../components/Swiper";
 import { SwiperImage } from "../../components/SwiperImage";
+import { Icon } from "../../components/Icon";
 
 import estrategiaImg from "../../images/estrategia.png";
 import marketingImg from "../../images/marketing.png";
@@ -84,7 +92,7 @@ export function Home() {
         ]}
       />
 
-      <h2 className="text-center font-weight-bolder mt-5">
+      <h2 className="text-center font-weight-bolder mt-5 h4">
         Hemos Trabajado con
       </h2>
 
@@ -102,6 +110,22 @@ export function Home() {
         <SwiperImage img={sliderImage11} alt={"sliderImage1"} />
         <SwiperImage img={sliderImage12} alt={"sliderImage1"} />
       </Swiper>
+
+      <h2 className="text-center font-weight-bolder mt-5 mb-4 h4">
+        Transformemos tu marca
+      </h2>
+
+      <div className="text-center">
+        <Icon href="#">
+          <FontAwesomeIcon icon={faFacebookF} />
+        </Icon>
+        <Icon href="#">
+          <FontAwesomeIcon icon={faInstagram} />
+        </Icon>
+        <Icon href="#">
+          <FontAwesomeIcon icon={faWhatsapp} />
+        </Icon>
+      </div>
     </div>
   );
 }

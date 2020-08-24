@@ -1,0 +1,13 @@
+.Icon {
+  width: 60px;
+  height: 60px;
+  background-color: #00a499;
+  font-size: 25px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.Icon:hover {
+  opacity: 0.9;
+  color: white;
+}
