@@ -2,11 +2,25 @@ import React from "react";
 
 import { Divider } from "../../components/Divider";
 import { ServiceCard } from "../../components/ServiceCard";
-import { Swiper } from '../../components/Swiper'
+import { Swiper } from "../../components/Swiper";
+import { SwiperImage } from "../../components/SwiperImage";
+
 import estrategiaImg from "../../images/estrategia.png";
 import marketingImg from "../../images/marketing.png";
 import disenoFotografiaImg from "../../images/diseno-fotografia.png";
 import implementacionImg from "../../images/implementacion.png";
+import sliderImage1 from "../../images/Cauz-Foro-Libreria-Xalapa-150x150.png";
+import sliderImage2 from "../../images/BBQ-Las-Costillitas-150x150.png";
+import sliderImage3 from "../../images/Flor-Catorce-Cafeteria-Xalapa-150x150.png";
+import sliderImage4 from "../../images/XALAPAJOlogo-150x150.png";
+import sliderImage5 from "../../images/Pegaduro-Mosaico-150x150.png";
+import sliderImage6 from "../../images/Jazz-House-Collective-150x150.png";
+import sliderImage7 from "../../images/Escuela-Superior-de-Artes-Veracruz-150x150.png";
+import sliderImage8 from "../../images/Tierra-Viva-Expediciones-150x150.png";
+import sliderImage9 from "../../images/Licenciatura-en-Danza-Folklorica-Mexicana-150x150.png";
+import sliderImage10 from "../../images/Serra-Licores-150x150.png";
+import sliderImage11 from "../../images/Don-Porfirio-Barberia-150x150.jpg";
+import sliderImage12 from "../../images/SISEdu-Mosaico-150x150.png";
 
 export function Home() {
   return (
@@ -74,7 +88,20 @@ export function Home() {
         Hemos Trabajado con
       </h2>
 
-      <Swiper />
+      <Swiper>
+        <SwiperImage img={sliderImage1} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage2} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage3} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage4} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage5} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage6} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage7} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage8} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage9} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage10} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage11} alt={"sliderImage1"} />
+        <SwiperImage img={sliderImage12} alt={"sliderImage1"} />
+      </Swiper>
     </div>
   );
 }
