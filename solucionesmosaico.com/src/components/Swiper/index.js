@@ -7,7 +7,7 @@ export const Swiper = ({ children }) => {
   const settings = {
     arrows: false,
     dots: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
     speed: 500,
