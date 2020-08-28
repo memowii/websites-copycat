@@ -3,7 +3,7 @@ import React from "react";
 export const ServiceCard = ({ bgc, image, title, remarks }) => {
   return (
     <div
-      className="card rounded-0 border-0 text-white"
+      className="card rounded-0 border-0 text-white h-100"
       style={{ backgroundColor: bgc }}
     >
       <div className="card-body">

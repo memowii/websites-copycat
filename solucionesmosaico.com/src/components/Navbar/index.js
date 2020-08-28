@@ -23,7 +23,7 @@ export function Navbar() {
 
       <Collapse isOpen={isOpen} navbar>
         <Nav className="nav--gray nav--font-open-sans navbar-nav--expanded" navbar>
-          <NavItem>
+          <NavItem active>
             <NavLink href="#" className="nav-link--hover-blue nav-link--border px-4">
               HOME
             </NavLink>
