@@ -7,7 +7,6 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { Divider } from "../../components/Divider";
 import { ServiceCard } from "../../components/ServiceCard";
 import { Swiper } from "../../components/Swiper";
 import { SwiperImage } from "../../components/SwiperImage";
@@ -35,8 +34,6 @@ import sliderImage12 from "../../images/SISEdu-Mosaico-150x150.png";
 export function Home() {
   return (
     <div className="container">
-      <Divider />
-
       <div className="inner-heading">
         <h1 className="text-center h4 font-weight-bolder">
           Estrategiasa y soluciones creativas
