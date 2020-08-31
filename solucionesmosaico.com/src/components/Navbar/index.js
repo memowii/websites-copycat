@@ -5,8 +5,8 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink,
 } from "reactstrap";
+import { NavLink } from "react-router-dom";
 
 import "./index.css";
 
@@ -22,24 +22,51 @@ export function Navbar() {
       </div>
 
       <Collapse isOpen={isOpen} navbar>
-        <Nav className="nav--gray nav--font-open-sans navbar-nav--expanded" navbar>
-          <NavItem active>
-            <NavLink href="#" className="nav-link--hover-blue nav-link--border px-4">
+        <Nav
+          className="nav--gray nav--font-open-sans navbar-nav--expanded"
+          navbar
+        >
+          <NavItem>
+            <NavLink
+              className="nav-link nav-link--hover-blue nav-link--border px-4"
+              to="/"
+              exact
+              activeClassName="active"
+              onClick={toggle}
+            >
               HOME
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#" className="nav-link--hover-blue nav-link--border px-4">
+            <NavLink
+              className="nav-link nav-link--hover-blue nav-link--border px-4"
+              to="/equipo"
+              exact
+              activeClassName="active"
+              onClick={toggle}
+            >
               EQUIPO
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#" className="nav-link--hover-blue nav-link--border px-4">
+            <NavLink
+              className="nav-link nav-link--hover-blue nav-link--border px-4"
+              to="/blog"
+              exact
+              activeClassName="active"
+              onClick={toggle}
+            >
               BLOG
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#" className="nav-link--hover-blue nav-link--border px-4">
+            <NavLink
+              className="nav-link nav-link--hover-blue nav-link--border px-4"
+              to="/juntos-mipymes"
+              exact
+              activeClassName="active"
+              onClick={toggle}
+            >
               #JuntosPorLasMiPyMEs
             </NavLink>
           </NavItem>
