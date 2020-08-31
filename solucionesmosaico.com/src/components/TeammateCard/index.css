@@ -1,0 +1,19 @@
+.TeammateCard {
+  padding: 35px;
+  border: 1px solid black;
+  background-color: #4c4184;
+  color: white;
+}
+
+.TeammateCard__job {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  line-height: 15.6px;
+}
+
+.TeammateCard__bio {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
