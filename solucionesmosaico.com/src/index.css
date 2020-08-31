@@ -9,6 +9,10 @@ body {
 }
 
 /* inner-heading component */
+.inner-heading {
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 768px) {
   .inner-heading h1 {
     font-size: 3rem;
