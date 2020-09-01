@@ -29,7 +29,7 @@ export const Blog = () => {
           nuestra empresa hagamos referencia a las estrategias, existe un amplio
           desconocimiento de su alcance en la realización profesional de todos
           los niveles de una organización..." 
-          link="#"
+          link="/blog/estrategias-decisiones-crecer-negocio"
           /> 
         </div>
       </div>
