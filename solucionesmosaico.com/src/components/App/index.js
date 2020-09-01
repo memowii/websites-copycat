@@ -6,6 +6,7 @@ import { Home } from "../../pages/Home";
 import { Equipo } from "../../pages/Equipo";
 import { Blog } from "../../pages/Blog";
 import { BlogEntry } from "../../pages/BlogEntry";
+import { JuntosPymes } from "../../pages/JuntosPymes";
 
 export function App() {
   return (
@@ -21,6 +22,7 @@ export function App() {
               path="/blog/estrategias-decisiones-crecer-negocio"
               component={BlogEntry}
             />
+            <Route exact path="/juntos-mipymes" component={JuntosPymes} />
           </Switch>
         </Layout>
       </BrowserRouter>
