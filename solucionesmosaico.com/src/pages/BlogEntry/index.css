@@ -11,3 +11,10 @@
 .BlogEntry img {
   margin-bottom: 1.3rem;
 }
+
+@media (min-width: 992px) {
+  .BlogEntry__wraper {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
