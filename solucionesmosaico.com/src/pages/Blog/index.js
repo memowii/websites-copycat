@@ -23,7 +23,7 @@ export const Blog = () => {
       <Divider long />
 
       <div className="row mt-4">
-        <div className="col">
+        <div className="col col-md-6">
           <BlogCard img={estrategiaNegocioImg} 
           text="A pesar de que es común —e incluso inevitable— que al hablar de
           nuestra empresa hagamos referencia a las estrategias, existe un amplio
