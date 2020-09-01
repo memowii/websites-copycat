@@ -7,6 +7,8 @@ import { SocialNetworks } from "../../components/SocialNetworks";
 import estrategiaNegocioImg from "../../images/Estrategia-negocio.jpg";
 import estrategiaNegociosImg from "../../images/Estrategia-negocios.jpg";
 
+import "./index.css";
+
 export const BlogEntry = () => {
   useEffect(() => {
     document.title =
@@ -20,7 +22,7 @@ export const BlogEntry = () => {
   });
 
   return (
-    <div className="container mt-3">
+    <div className="BlogEntry container mt-3">
       <img
         className="img-fluid"
         src={estrategiaNegocioImg}
@@ -55,12 +57,12 @@ export const BlogEntry = () => {
         .
       </p>
 
-      <h2>
+      <h3>
         <span role="img" aria-label="socket">
           💡
         </span>{" "}
         ¿Qué es una estrategia?
-      </h2>
+      </h3>
 
       <p>
         Una estrategia es una manera de vincular e insertar a una empresa en el
@@ -69,13 +71,13 @@ export const BlogEntry = () => {
         integrador, dirigido al logro de ventajas sostenibles (Navas y Guerras).
       </p>
 
-      <h2>
+      <h3>
         <span role="img" aria-label="socket">
           💼
         </span>{" "}
         ¿Cómo sé qué estrategias debo aplicar o en qué área de mi empresa son
         necesarias?
-      </h2>
+      </h3>
 
       <p>
         Es importante iniciar por definir claramente qué es lo que vendes:
