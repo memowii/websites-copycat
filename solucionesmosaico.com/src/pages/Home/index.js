@@ -11,6 +11,7 @@ import { ServiceCard } from "../../components/ServiceCard";
 import { Swiper } from "../../components/Swiper";
 import { SwiperImage } from "../../components/SwiperImage";
 import { Icon } from "../../components/Icon";
+import { InnerHeading } from "../../components/InnerHeading";
 
 import "./index.css";
 
@@ -38,15 +39,10 @@ export function Home() {
 
   return (
     <div className="container">
-      <div className="inner-heading">
-        <h1 className="text-center h4 font-weight-bolder">
-          Estrategiasa y soluciones creativas
-        </h1>
-
-        <h2 className="h5 font-weight-bolder text-center mt-4 mb-4">
-          Nuestros servicios
-        </h2>
-      </div>
+      <InnerHeading
+        title="Estrategiasa y soluciones creativas"
+        subtitle="Nuestros servicios"
+      />
 
       <div className="row">
         <div className="col-md-6 col-xl-3">

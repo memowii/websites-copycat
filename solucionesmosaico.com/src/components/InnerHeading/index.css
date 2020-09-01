@@ -1,0 +1,23 @@
+.InnerHeading {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .InnerHeading h1 {
+    font-size: 3rem;
+  }
+
+  .InnerHeading h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .InnerHeading h1 {
+    font-size: 3.5rem;
+  }
+
+  .InnerHeading h2 {
+    font-size: 2.3rem !important;
+  }
+}

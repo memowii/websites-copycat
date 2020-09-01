@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import { TeammateCard } from "../../components/TeammateCard";
+import { InnerHeading } from "../../components/InnerHeading";
 
 export const Equipo = () => {
   useEffect(() => {
@@ -9,11 +10,7 @@ export const Equipo = () => {
 
   return (
     <div className="container">
-      <div className="inner-heading">
-        <h1 className="text-center h4 font-weight-bolder">
-          Equipo joven y comprometido con proyectos que le apasionan
-        </h1>
-      </div>
+      <InnerHeading title="Equipo joven y comprometido con proyectos que le apasionan" />
 
       <div className="row">
         <div className="col-md-4">
