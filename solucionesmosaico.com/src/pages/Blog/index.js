@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 
 import { InnerHeading } from "../../components/InnerHeading";
-import { Divider } from '../../components/Divider'
+import { Divider } from "../../components/Divider";
+import { BlogCard } from "../../components/BlogCard";
+
+import estrategiaNegocioImg from "../../images/Estrategia-negocio.jpg";
 
 export const Blog = () => {
   useEffect(() => {
@@ -19,6 +22,17 @@ export const Blog = () => {
 
       <Divider long />
 
+      <div className="row mt-4">
+        <div className="col">
+          <BlogCard img={estrategiaNegocioImg} 
+          text="A pesar de que es común —e incluso inevitable— que al hablar de
+          nuestra empresa hagamos referencia a las estrategias, existe un amplio
+          desconocimiento de su alcance en la realización profesional de todos
+          los niveles de una organización..." 
+          link="#"
+          /> 
+        </div>
+      </div>
     </div>
   );
 };
