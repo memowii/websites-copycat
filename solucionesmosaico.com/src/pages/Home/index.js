@@ -1,17 +1,10 @@
 import React, { useEffect } from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-
 import { ServiceCard } from "../../components/ServiceCard";
 import { Swiper } from "../../components/Swiper";
 import { SwiperImage } from "../../components/SwiperImage";
-import { Icon } from "../../components/Icon";
 import { InnerHeading } from "../../components/InnerHeading";
+import { SocialNetworks } from "../../components/SocialNetworks";
 
 import "./index.css";
 
@@ -123,17 +116,7 @@ export function Home() {
         Transformemos tu marca
       </h2>
 
-      <div className="text-center">
-        <Icon href="#">
-          <FontAwesomeIcon icon={faFacebookF} />
-        </Icon>
-        <Icon href="#">
-          <FontAwesomeIcon icon={faInstagram} />
-        </Icon>
-        <Icon href="#">
-          <FontAwesomeIcon icon={faWhatsapp} />
-        </Icon>
-      </div>
+      <SocialNetworks />
     </div>
   );
 }

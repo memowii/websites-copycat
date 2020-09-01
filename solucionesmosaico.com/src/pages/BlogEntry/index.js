@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import { Divider } from "../../components/Divider";
+import { SocialNetworks } from "../../components/SocialNetworks";
+
 import estrategiaNegocioImg from "../../images/Estrategia-negocio.jpg";
 import estrategiaNegociosImg from "../../images/Estrategia-negocios.jpg";
 
@@ -17,29 +20,28 @@ export const BlogEntry = () => {
   });
 
   return (
-    <div className="container">
+    <div className="container mt-3">
       <img
         className="img-fluid"
         src={estrategiaNegocioImg}
         alt="Estrategia de negocios"
       />
 
-      <strong>
-        A pesar de que es común —e incluso inevitable— que al hablar de nuestra
-        empresa hagamos referencia a las estrategias, existe un amplio
-        desconocimiento de su alcance en la realización profesional de todos los
-        niveles de una organización (ventas, comunicación, finanzas, entre
-        otros).
-      </strong>
+      <p className="mt-4 text-justify">
+        <strong>
+          A pesar de que es común —e incluso inevitable— que al hablar de
+          nuestra empresa hagamos referencia a las estrategias, existe un amplio
+          desconocimiento de su alcance en la realización profesional de todos
+          los niveles de una organización (ventas, comunicación, finanzas, entre
+          otros).
+        </strong>
+      </p>
 
-      <div>
-        <h3>redes</h3>
-      </div>
-      <div>
-        <h3>rayita</h3>
-      </div>
+      <SocialNetworks className="my-4" />
 
-      <p>
+      <Divider long />
+
+      <p className="mt-4">
         A través de las <strong>estrategias</strong> acotamos e integramos lo
         que queremos y podemos hacer en un periodo definido, en relación con el{" "}
         <strong>contexto de nuestra empresa</strong>. Con la intención de
