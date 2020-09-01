@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { TeammateCard } from "../../components/TeammateCard";
 
 export const Equipo = () => {
+  useEffect(() => {
+    document.title = "Equipo | Mosaico Agencia de publicidad";
+  });
+
   return (
     <div className="container">
       <div className="inner-heading">

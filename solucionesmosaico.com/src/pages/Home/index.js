@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -32,6 +32,10 @@ import sliderImage11 from "../../images/Don-Porfirio-Barberia-150x150.jpg";
 import sliderImage12 from "../../images/SISEdu-Mosaico-150x150.png";
 
 export function Home() {
+  useEffect(() => {
+    document.title = "Mosaico Agencia de publicidad | Estrategias creativas";
+  });
+
   return (
     <div className="container">
       <div className="inner-heading">
