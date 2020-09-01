@@ -1,3 +1,8 @@
+.Divider--long .Divider__separator {
+  width: 75%;
+  border-top: 3px solid black;
+}
+
 .Divider__separator {
   width: 13%;
   border-top: solid #4c4184 5px;
