@@ -7,6 +7,7 @@ import { Equipo } from "../../pages/Equipo";
 import { Blog } from "../../pages/Blog";
 import { BlogEntry } from "../../pages/BlogEntry";
 import { JuntosPymes } from "../../pages/JuntosPymes";
+import { Terminos } from "../../pages/Terminos";
 
 export function App() {
   return (
@@ -23,6 +24,7 @@ export function App() {
               component={BlogEntry}
             />
             <Route exact path="/juntos-mipymes" component={JuntosPymes} />
+            <Route exact path="/juntos-mipymes/tyc" component={Terminos} />
           </Switch>
         </Layout>
       </BrowserRouter>

@@ -2,8 +2,8 @@ import React from "react";
 
 import "./index.css";
 
-export const InnerHeading = ({ title, subtitle, className }) => (
-  <div className={`InnerHeading ${className}`}>
+export const InnerHeading = ({ title, subtitle }) => (
+  <div className="InnerHeading">
     <h1 className="text-center h4 font-weight-bolder">{title}</h1>
 
     {subtitle && (

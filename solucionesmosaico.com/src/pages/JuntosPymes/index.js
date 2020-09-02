@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 import { InnerHeading } from "../../components/InnerHeading";
 import { Divider } from "../../components/Divider";
@@ -52,7 +53,9 @@ export const JuntosPymes = () => {
         </p>
 
         <p>
-          <a href="#">Términos y condiciones</a>
+          <NavLink to="/juntos-mipymes/tyc" exact>
+            Términos y condiciones
+          </NavLink>
         </p>
       </Notice>
     </div>
