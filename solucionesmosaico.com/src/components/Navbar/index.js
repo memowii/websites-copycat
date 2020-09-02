@@ -15,10 +15,17 @@ export function Navbar() {
 
   const toggle = () => setIsOpen(!isOpen);
 
+  const isNavbarCollapseShown = (e) => {
+    const navbarCollapse = e.target.closest(".collapse");
+    return getComputedStyle(navbarCollapse).display === "flex";
+  };
+
+  const handleClick = (e) => !isNavbarCollapseShown(e) && toggle();
+
   return (
     <RsNavbar expand="lg" light color="white" className="p-0">
       <div className="px-3 py-2 w-100 d-flex justify-content-end d-lg-none">
-        <NavbarToggler onClick={toggle} className="" />
+        <NavbarToggler onClick={toggle} />
       </div>
 
       <Collapse isOpen={isOpen} navbar>
@@ -32,7 +39,7 @@ export function Navbar() {
               to="/"
               exact
               activeClassName="active"
-              onClick={toggle}
+              onClick={(e) => handleClick(e)}
             >
               HOME
             </NavLink>
@@ -43,7 +50,7 @@ export function Navbar() {
               to="/equipo"
               exact
               activeClassName="active"
-              onClick={toggle}
+              onClick={(e) => handleClick(e)}
             >
               EQUIPO
             </NavLink>
@@ -54,7 +61,7 @@ export function Navbar() {
               to="/blog"
               exact
               activeClassName="active"
-              onClick={toggle}
+              onClick={(e) => handleClick(e)}
             >
               BLOG
             </NavLink>
@@ -65,7 +72,7 @@ export function Navbar() {
               to="/juntos-mipymes"
               exact
               activeClassName="active"
-              onClick={toggle}
+              onClick={(e) => handleClick(e)}
             >
               #JuntosPorLasMiPyMEs
             </NavLink>
