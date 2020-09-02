@@ -8,7 +8,7 @@ export function Layout(props) {
   return (
     <>
       <Navbar />
-      <Divider />
+      <Divider className="my-3" />
       {props.children}
       <Footer />
     </>

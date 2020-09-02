@@ -42,7 +42,7 @@ export const BlogEntry = () => {
 
         <SocialNetworks className="my-4" />
 
-        <Divider long />
+        <Divider long className="my-3" />
 
         <p className="mt-4">
           A través de las <strong>estrategias</strong> acotamos e integramos lo

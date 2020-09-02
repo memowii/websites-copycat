@@ -4,26 +4,24 @@ import {
   faFacebookF,
   faInstagram,
   faWhatsapp,
-  faLinkedinIn
+  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { Icon } from "../Icon";
 
-export const SocialNetworks = ({ className, children }) => {
-  return (
-    <div className={`text-center ${className}`}>
-      <Icon href="#">
-        <FontAwesomeIcon icon={faFacebookF} />
-      </Icon>
-      <Icon href="#">
-        <FontAwesomeIcon icon={faInstagram} />
-      </Icon>
-      <Icon href="#">
-        <FontAwesomeIcon icon={faWhatsapp} />
-      </Icon>
-      <Icon href="#">
-        <FontAwesomeIcon icon={faLinkedinIn} />
-      </Icon>
-    </div>
-  );
-};
+export const SocialNetworks = () => (
+  <div className="text-center">
+    <Icon href="#">
+      <FontAwesomeIcon icon={faFacebookF} />
+    </Icon>
+    <Icon href="#">
+      <FontAwesomeIcon icon={faInstagram} />
+    </Icon>
+    <Icon href="#">
+      <FontAwesomeIcon icon={faWhatsapp} />
+    </Icon>
+    <Icon href="#">
+      <FontAwesomeIcon icon={faLinkedinIn} />
+    </Icon>
+  </div>
+);
