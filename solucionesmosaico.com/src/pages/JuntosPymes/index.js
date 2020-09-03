@@ -37,7 +37,7 @@ export const JuntosPymes = () => {
         <p>
           Conscientes de ello y de lo complejo que puede resultar dicho proceso,
           lanzamos la{" "}
-          <a href="#">
+          <a href="/">
             convocatoria <strong>#JuntosPorLasMiPyMes</strong>
           </a>
           .
@@ -46,8 +46,8 @@ export const JuntosPymes = () => {
         <p>
           Elegiremos a <strong>tres negocios</strong> para brindarles una{" "}
           <strong>auditoría de marketing digital sin costo</strong>. Te
-          invitamos a seguirnos en <a href="#">Facebook</a> o{" "}
-          <a href="#">Instagram</a>, donde daremos a conocer los resultados el
+          invitamos a seguirnos en <a href="/">Facebook</a> o{" "}
+          <a href="/">Instagram</a>, donde daremos a conocer los resultados el
           27 de junio, Día de las Microempresas y las Pequeñas y Medianas
           Empresas.
         </p>
