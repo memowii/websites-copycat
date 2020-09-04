@@ -13,12 +13,6 @@ export const BlogEntry = () => {
   useEffect(() => {
     document.title =
       "Estrategias: las decisiones que hacen crecer tu negocio | Mosaico Agencia de publicidad";
-    const divider = document.querySelector(".Divider");
-    divider.hidden = true;
-
-    return () => {
-      divider.hidden = false;
-    };
   });
 
   return (
@@ -167,7 +161,7 @@ export const BlogEntry = () => {
           síguenos en nuestras redes sociales y consulta nuestro{" "}
           <Link to="/blog">blog</Link>.
         </p>
-
+        <Divider long className="my-3" />
         <SocialNetworks className="my-4" />
       </div>
     </div>

@@ -3,7 +3,7 @@ import React from "react";
 import "./index.css";
 
 export const InnerHeading = ({ title, subtitle }) => (
-  <div className="InnerHeading">
+  <div className="InnerHeading animate__animated animate__fadeIn">
     <h1 className="text-center h4 font-weight-bolder">{title}</h1>
 
     {subtitle && (

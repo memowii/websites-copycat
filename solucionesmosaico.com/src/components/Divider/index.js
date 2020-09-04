@@ -9,7 +9,7 @@ export const Divider = ({ long, mid, className }) => {
 
   return (
     <div
-      className={`Divider text-center ${longDivider} ${midDivider} ${_class}`}
+      className={`Divider text-center ${longDivider} ${midDivider} ${_class} animate__animated animate__fadeInDown`}
     >
       <span className="Divider__separator d-inline-block mx-auto"></span>
     </div>

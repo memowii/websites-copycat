@@ -5,6 +5,7 @@ import { Swiper } from "../../components/Swiper";
 import { SwiperImage } from "../../components/SwiperImage";
 import { InnerHeading } from "../../components/InnerHeading";
 import { SocialNetworks } from "../../components/SocialNetworks";
+import { Divider } from "../../components/Divider";
 
 import "./index.css";
 
@@ -32,6 +33,8 @@ export function Home() {
 
   return (
     <div className="container">
+      <Divider className="my-3" />
+
       <InnerHeading
         title="Estrategiasa y soluciones creativas"
         subtitle="Nuestros servicios"
