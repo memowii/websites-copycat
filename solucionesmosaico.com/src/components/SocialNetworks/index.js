@@ -9,19 +9,23 @@ import {
 
 import { Icon } from "../Icon";
 
-export const SocialNetworks = () => (
-  <div className="text-center">
-    <Icon href="#">
-      <FontAwesomeIcon icon={faFacebookF} />
-    </Icon>
-    <Icon href="#">
-      <FontAwesomeIcon icon={faInstagram} />
-    </Icon>
-    <Icon href="#">
-      <FontAwesomeIcon icon={faWhatsapp} />
-    </Icon>
-    <Icon href="#">
-      <FontAwesomeIcon icon={faLinkedinIn} />
-    </Icon>
-  </div>
-);
+export const SocialNetworks = ({ animate }) => {
+  const animateClass = animate ? 'animate__animated animate__fadeInDown' : '';
+
+  return (
+    <div className={`text-center ${animateClass}`}>
+      <Icon href="#">
+        <FontAwesomeIcon icon={faFacebookF} />
+      </Icon>
+      <Icon href="#">
+        <FontAwesomeIcon icon={faInstagram} />
+      </Icon>
+      <Icon href="#">
+        <FontAwesomeIcon icon={faWhatsapp} />
+      </Icon>
+      <Icon href="#">
+        <FontAwesomeIcon icon={faLinkedinIn} />
+      </Icon>
+    </div>
+  );
+};

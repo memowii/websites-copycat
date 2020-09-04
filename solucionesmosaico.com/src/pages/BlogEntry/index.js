@@ -34,7 +34,7 @@ export const BlogEntry = () => {
           </strong>
         </p>
 
-        <SocialNetworks className="my-4" />
+        <SocialNetworks className="my-4" animate />
 
         <Divider long className="my-3" />
 
@@ -162,7 +162,7 @@ export const BlogEntry = () => {
           <Link to="/blog">blog</Link>.
         </p>
         <Divider long className="my-3" />
-        <SocialNetworks className="my-4" />
+        <SocialNetworks className="my-4" animate />
       </div>
     </div>
   );
