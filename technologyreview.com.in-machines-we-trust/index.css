@@ -23,7 +23,7 @@ body {
   position: relative;
 }
 
-.hero div {
+.hero div:first-child {
   background: rgba(0, 0, 0, 0.62);
 }
 
@@ -52,4 +52,21 @@ body {
   font-size: 30px;
   line-height: 30px;
   color: #fff;
+}
+
+.subscription {
+  background: rgba(0, 0, 0, 1);
+}
+
+.subscription p {
+  letter-spacing: 2.25px;
+}
+
+.subscription__links {
+  display: flex;
+}
+
+.subscription__links a {
+  flex: 1 1 40px;
+  opacity: 0.75;
 }
