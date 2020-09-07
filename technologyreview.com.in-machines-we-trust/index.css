@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Strait&display=swap");
+
+:root {
+  --font-family-NeueHaas: "Strait", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family-NeueHaas);
+}
+
 .hero {
-  background: rgba(0, 0, 0, 0.62);
   background-image: url("http://127.0.0.1:5501/technologyreview.com.in-machines-we-trust/assets/graphics/8b3905ad-bg.gif");
   background-repeat: no-repeat;
   background-position: center;
@@ -12,4 +21,35 @@
   width: 100%;
   height: 445px;
   position: relative;
+}
+
+.hero div {
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.hero__title {
+  line-height: 22px;
+}
+
+.hero__title-unit {
+  font-family: "Cousine", monospace;
+  font-style: normal;
+  color: #000;
+  background-color: #fff;
+  margin-right: 20px;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: 6px;
+}
+
+.hero__title-unit--black {
+  color: #fff;
+  background-color: #000;
+}
+
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
 }
