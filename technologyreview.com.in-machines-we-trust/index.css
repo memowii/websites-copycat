@@ -70,3 +70,163 @@ body {
   flex: 1 1 40px;
   opacity: 0.75;
 }
+
+.premiere {
+  background: rgba(0, 0, 0, 1);
+}
+
+.premiere p {
+  letter-spacing: 2.25px;
+}
+
+.Player {
+  /* position: relative; */
+  font-family: 'pnply';
+  font-size: 16px;
+  width: 100%;
+}
+
+.Player__main {
+  height: 200px;
+  display: flex;
+}
+
+.Player__content {
+  background-color: #232831;
+  padding-top: 20px;
+  flex-grow: 1;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.Player__content__controls {
+  padding: 0 20px;
+  width: 100%;
+}
+
+.Player__play-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #7474ec;
+}
+
+.Player__play-icon {
+  width: 18px;
+  height: 18px;
+  margin: 11px;
+  padding-left: 2px;
+}
+
+.Player__episode-info {
+  margin-left: 20px;
+}
+
+.Player__podcast-title {
+  height: 1.25em;
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #c3c3c3;
+}
+
+.Player__episode-title {
+  height: 1.25em;
+  width: 100%;
+  margin: 3px 0 0 0;
+  color: #ffffff;
+  font-size: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 410px) {
+  .Player__episode-title {
+    white-space: normal;
+    height: 2.5em;
+    font-size: 0.9em;
+  }
+}
+
+.Player__episode-subtitle {
+  margin-top: 3px;
+  color: #c3c3c3;
+  font-size: 0.75em;
+  line-height: 1.2;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Player__content__timer {
+  padding: 0 20px;
+}
+
+.Player__timer {
+  padding-top: 1em;
+  font-size: 0.8em;
+  color: #bababa;
+}
+
+.Player__content__scrub-bar {
+  padding: 0 20px;
+}
+
+.Player__scrubber {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ScrubBar__primary {
+  position: absolute;
+  top: 0;
+  /* width: 100%; I commented this because it causes conflicts with the svgs */
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.ScrubBar__primary--progress {
+  transition: width 0.2s;
+  z-index: 2;
+}
+
+.ScrubBar__primary--highlight {
+  background: #232831;
+  opacity: 0.4;
+  z-index: 3;
+}
+
+.MenuBar__overlay-container {
+  position: absolute;
+  bottom: calc(26px - 12.5em);
+  z-index: 4;
+  width: 100%;
+  height: 12.5em;
+  padding: 0 20px;
+  background: #191d23;
+  transition: bottom .25s;
+}
+
+.MenuBar__overlay-container__menu-bar {
+  font-size: 9px;
+  line-height: 26px;
+  color: #bababa;
+  text-transform: uppercase;
+}
+
+.MenuBar__menubar-tab {
+  display: none;
+}
+
+.MenuBar__icon {
+  vertical-align: top;
+  display: inline-block;
+  font-family: 'pnply-icons', 'pnply';
+  margin-right: 10px;
+}
