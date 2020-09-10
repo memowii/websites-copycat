@@ -230,3 +230,12 @@ body {
   font-family: 'pnply-icons', 'pnply';
   margin-right: 10px;
 }
+
+.MenuBar__overlay-container.is-up {
+  position: absolute;
+  bottom: 0;
+}
+
+.MenuBar__menubar-tab.is-visible {
+  display: block;
+}
