@@ -66,9 +66,9 @@
       </div>
     </section>
 
-    <section class="premiere text-white font-weight-bold text-center">
+    <section class="premiere text-white font-weight-bold px-1 py-4">
       <div class="container">
-        <p class="text-uppercase">premieres august 12, 2020</p>
+        <p class="text-uppercase text-center">premieres august 12, 2020</p>
 
         <div class="Player">
           <div class="Player__main">
@@ -125,39 +125,48 @@
                   <div class="MenuBar__icon">Subscribe</div>
                   <div class="MenuBar__icon">Cookie Policy</div>
                   <div class="MenuBar__icon">Description</div>
-                  <a class="d-none" target="_blank" id="logo" href="https://megaphone.fm/" hreflang="en-us">
+                  <a class="d-none" target="_blank" id="logo" href="https://megaphone.fm/">
                     <img class="MenuBar__megaphone-wordmark"
                       src="/packs/media/assets/images/megaphone-wordmark-color-2a23c428ef3e4d05c2c4229d84f3aa04.png"
                       alt="Megaphone wordmark">
                   </a>
                 </div>
-                <div class="MenuBar__menubar-tab" aria-hidden="true">
+                <div class="MenuBar__menubar-tab">
                   <div class="MenuBar__menubar-tab__title">Share In Machines We Trust</div>
                   <div class="MenuBar__menubar-tab__subtitle">Share this episode with your friends</div>
-                  <div><a target="_blank" rel="noopener noreferrer" title="Share via Facebook"
-                      href="http://www.facebook.com/sharer.php?quote=%27Coming+August+12th%27+by+In+Machines+We+Trust&amp;u=https%3A%2F%2Fmegaphone.link%2FMIT3617726004"
-                      class="MenuBar__btn" aria-label="Share via Facebook" hreflang="en-us">
-                      <div class="MenuBar__btn__icon facebook"></div>
-                    </a><a target="_blank" rel="noopener noreferrer" title="Share via Twitter"
-                      href="https://twitter.com/intent/tweet?text=%27Coming+August+12th%27+by+In+Machines+We+Trust&amp;url=https%3A%2F%2Fmegaphone.link%2FMIT3617726004"
-                      class="MenuBar__btn" aria-label="Share via Twitter" hreflang="en-us">
-                      <div class="MenuBar__btn__icon twitter"></div>
+                  <div>
+                    <a target="_blank" title="Share via Facebook" href="#" class="MenuBar__btn">
+                      <div class="MenuBar__btn__icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                      </div>
                     </a>
-                    <div class="MenuBar__btn" aria-label="Copy link" tabindex="0">
-                      <div title="" class="MenuBar__btn__icon link"
-                        data-clipboard-text="https://megaphone.link/MIT3617726004"></div>
-                    </div>
-                    <div class="MenuBar__btn" aria-label="Copy embed code" tabindex="0">
-                      <div title="" class="MenuBar__btn__icon embed" data-clipboard-text="<iframe frameBorder=&quot;0&quot; height=&quot;482&quot; scrolling=&quot;no&quot; src=&quot;https://playlist.megaphone.fm/?e=MIT3617726004&quot;
-                width=&quot;100%&quot;></iframe>"></div>
-                    </div><a target="_blank" rel="noopener noreferrer" download="true"
-                      href="https://chtbl.com/track/5A3D15/traffic.megaphone.fm/MIT3617726004.mp3?source=player"
-                      class="MenuBar__btn" aria-label="Download episode" hreflang="en-us">
-                      <div class="MenuBar__btn__icon download"></div>
+
+                    <a target="_blank" title="Share via Twitter" href="#" class="MenuBar__btn">
+                      <div class="MenuBar__btn__icon twitter">
+                        <i class="fab fa-twitter"></i>
+                      </div>
+                    </a>
+
+                    <a target="_blank" href="#" class="MenuBar__btn">
+                      <div class="MenuBar__btn__icon link">
+                        <i class="fas fa-link"></i>
+                      </div>
+                    </a>
+
+                    <a target="_blank" href="#" class="MenuBar__btn">
+                      <div class="MenuBar__btn__icon link">
+                        <i class="fas fa-arrows-alt-h"></i>
+                      </div>
+                    </a>
+
+                    <a target="_blank" href="#" class="MenuBar__btn">
+                      <div class="MenuBar__btn__icon">
+                        <i class="fas fa-download"></i>
+                      </div>
                     </a>
                   </div>
                 </div>
-                <div class="MenuBar__menubar-tab" aria-hidden="true">
+                <div class="MenuBar__menubar-tab">
                   <div class="MenuBar__menubar-tab__title">Subscribe to In Machines We Trust</div>
                   <div class="MenuBar__menubar-tab__subtitle">Keep up to date by subscribing to this podcast</div><a
                     target="_blank" rel="noopener noreferrer" title="Subscribe via RSS"
@@ -186,7 +195,7 @@
                     <div class="MenuBar__btn__icon iheart" id="iheart"></div>
                   </a>
                 </div>
-                <div class="MenuBar__menubar-tab" aria-hidden="true">
+                <div class="MenuBar__menubar-tab">
                   <div class="MenuBar__menubar-tab__title">Cookie Policy</div>
                   <div class="MenuBar__menubar-tab__subtitle">This player is hosted by&nbsp;<a
                       href="https://megaphone.fm/" rel="noopener noreferrer" target="_blank"
@@ -196,7 +205,7 @@
                       target="_blank">privacy
                       policy</a> to learn more.</div>
                 </div>
-                <div class="MenuBar__menubar-tab" aria-hidden="true">
+                <div class="MenuBar__menubar-tab">
                   <div class="MenuBar__menubar-tab__title">Description</div>
                   <div class="MenuBar__menubar-tab__subtitle">
                     <p>Welcome to a podcast about the automation of everything. Host Jennifer Strong and MIT Technology
@@ -212,6 +221,18 @@
       </div>
     </section>
   </main>
+
+  <template id="menubar-overlay-container-menu-bar-initial">
+    <div class="MenuBar__icon">Share</div>
+    <div class="MenuBar__icon">Subscribe</div>
+    <div class="MenuBar__icon">Cookie Policy</div>
+    <div class="MenuBar__icon">Description</div>
+    <a class="d-none" target="_blank" id="logo" href="https://megaphone.fm/" hreflang="en-us">
+      <img class="MenuBar__megaphone-wordmark"
+        src="/packs/media/assets/images/megaphone-wordmark-color-2a23c428ef3e4d05c2c4229d84f3aa04.png"
+        alt="Megaphone wordmark">
+    </a>
+  </template>
 
   <template id="menubar-overlay-container-menu-bar-hide">
     <div class="MenuBar__icon text-uppercase float-left">x hide</div>
@@ -248,13 +269,34 @@
 
       menuBarOverlayMenuBar.innerHTML = '';
 
-      const templateWhenHidden = document.querySelector('#menubar-overlay-container-menu-bar-hide')
-      const chil = [...templateWhenHidden.content.children]
-      
-       menuBarOverlayMenuBar.insertAdjacentElement('beforeend', chil[0])
-       menuBarOverlayMenuBar.insertAdjacentElement('beforeend', chil[1])
+      const templateWhenHiddenChildren = cloneTemplate('menubar-overlay-container-menu-bar-hide', true)
+      const hideDiv = templateWhenHiddenChildren[0];
+      hideDiv.addEventListener('click', closeMenuTab)
+
+      menuBarOverlayMenuBar.insertAdjacentElement('beforeend', hideDiv)
+      menuBarOverlayMenuBar.insertAdjacentElement('beforeend', templateWhenHiddenChildren[1])
     }
 
+    function closeMenuTab(e) {
+      const menuBarIcon = e.target
+      const menuBarOverlayMenuBar = menuBarIcon.parentElement
+      const menuBarOverlayContainer = menuBarIcon.parentElement.parentElement
+      menuBarOverlayContainer.classList.remove('is-up')
+
+      const menuBarMenubarTabs = document.querySelectorAll('.MenuBar__menubar-tab');
+      menuBarMenubarTabs.forEach(menu => menu.classList.remove('is-visible'))
+
+      menuBarOverlayMenuBar.innerHTML = '';
+
+      const templateWhenShownChildren = cloneTemplate('menubar-overlay-container-menu-bar-initial', true)
+
+      templateWhenShownChildren.forEach((menu, i) => {
+        if (menu.tagName === 'DIV') menu.addEventListener('click', openMenuTab);
+        menuBarOverlayMenuBar.insertAdjacentElement('beforeend', menu)
+      });
+    }
+
+    // Converts a HTML element to its string representation.
     function convertToString(who, deep) {
       if (!who || !who.tagName) return '';
       var txt, ax, el = document.createElement("div");
@@ -266,6 +308,17 @@
       }
       el = null;
       return txt;
+    }
+
+    function cloneTemplate(templateId, withChildren) {
+      const template = document.getElementById(templateId)
+
+      if (!withChildren) {
+        return template.content.firstElementChild.cloneNode(true)
+      }
+
+      const templateChildren = [...template.content.children]
+      return templateChildren.map(child => child.cloneNode(true))
     }
 
     menuBarContainer.forEach(menuIcon => menuIcon.addEventListener('click', openMenuTab))

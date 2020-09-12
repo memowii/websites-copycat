@@ -81,7 +81,7 @@ body {
 
 .Player {
   /* position: relative; */
-  font-family: 'pnply';
+  font-family: "pnply";
   font-size: 16px;
   width: 100%;
 }
@@ -210,7 +210,7 @@ body {
   height: 12.5em;
   padding: 0 20px;
   background: #191d23;
-  transition: bottom .25s;
+  transition: bottom 0.25s;
 }
 
 .MenuBar__overlay-container__menu-bar {
@@ -227,7 +227,7 @@ body {
 .MenuBar__icon {
   vertical-align: top;
   display: inline-block;
-  font-family: 'pnply-icons', 'pnply';
+  font-family: "pnply-icons", "pnply";
   margin-right: 10px;
 }
 
@@ -239,3 +239,62 @@ body {
 .MenuBar__menubar-tab.is-visible {
   display: block;
 }
+
+.MenuBar__menubar-tab__title {
+  height: 25px;
+  margin-top: 25px;
+  color: #fff;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.MenuBar__menubar-tab__subtitle {
+  min-height: 20px;
+  max-height: 105px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  color: #c3c3c3;
+  font-size: 12px;
+}
+
+.MenuBar__btn {
+  display: inline-block;
+  margin-right: 0.75em;
+}
+
+.MenuBar__btn__icon {
+  vertical-align: top;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f5f6f7;
+  color: #515151;
+  text-align: center;
+  line-height: 30px;
+  font-family: "pnply-icons";
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.MenuBar__btn__icon.facebook {
+  background-color: #3b5998;
+  font-size: 24px;
+  color: white;
+  padding-top: 3px;
+  font-size: 18px;
+}
+
+.MenuBar__btn__icon.twitter {
+  background-color: #00aced;
+  font-size: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.MenuBar__btn__icon.embed {
+  padding-top: 3px;
+}
+
