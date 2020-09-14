@@ -298,3 +298,37 @@ body {
   padding-top: 3px;
 }
 
+.MenuBar__btn__icon.rss i {
+  color: #ff6600;
+  background-color: #ffffff;
+}
+
+.MenuBar__btn__icon.itunes i {
+  color: purple;
+  background-color: #ffffff;
+}
+
+.MenuBar__btn__icon.spotify i {
+  color: green;
+  background-color: #ffffff;
+}
+
+.MenuBar__btn__icon.stitcher i {
+  color: blue;
+  background-color: #ffffff;
+}
+
+.MenuBar__btn__icon.google i {
+  color: yellow;
+  background-color: #ffffff;
+}
+
+.MenuBar__btn__icon.iheart i {
+  color: red;
+  background-color: #ffffff;
+}
+
+.MenuBar__menubar-tab.cookie-policy a {
+  color: inherit;
+  text-decoration: underline;
+}
