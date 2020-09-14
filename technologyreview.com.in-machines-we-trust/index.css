@@ -332,3 +332,24 @@ body {
   color: inherit;
   text-decoration: underline;
 }
+
+.quote {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 50px;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  display: inline-block;
+}
+
+.main-content {
+  background-color: rgb(205, 230, 235);
+}
+
+.main-content .phrase-1 {
+  font-weight: 600;
+}
+
+.main-content .phrase-2 {
+  color: #e70f19;
+}
