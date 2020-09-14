@@ -353,3 +353,30 @@ body {
 .main-content .phrase-2 {
   color: #e70f19;
 }
+
+.form-container {
+  background: rgba(183, 213, 219, 1);
+
+}
+
+.form-container p {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.25px;
+}
+
+.form-container form p {
+  font-size: 15px;
+}
+
+.notifications-p {
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.notifications-p a {
+  color: #D7182A;
+  text-decoration: underline;
+}
