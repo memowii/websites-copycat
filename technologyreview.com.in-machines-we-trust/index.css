@@ -23,7 +23,7 @@ body {
   position: relative;
 }
 
-.hero div:first-child {
+.hero > div {
   background: rgba(0, 0, 0, 0.62);
 }
 
@@ -356,7 +356,6 @@ body {
 
 .form-container {
   background: rgba(183, 213, 219, 1);
-
 }
 
 .form-container p {
@@ -377,16 +376,35 @@ body {
 }
 
 .notifications-p a {
-  color: #D7182A;
+  color: #d7182a;
   text-decoration: underline;
 }
 
 footer {
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 footer p {
   line-height: 20px;
   font-size: 17px;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 576px) {
+  .hero .content {
+    width: 330px;
+    margin: 0 auto;
+  }
+
+  .premiere > div.container {
+    width: 330px;
+  }
+
+  .main-content > div.container {
+    width: 330px;
+  }
+
+  footer > div.container {
+    width: 330px;
+  }
 }
