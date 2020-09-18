@@ -457,6 +457,17 @@ footer p {
   }
 }
 
+@media (min-width: 992px) {
+  .hero__title-unit {
+    font-size: 60px;
+  }
+
+  .hero__subtitle {
+    font-size: 46px;
+    margin-top: 1.5rem!important;
+  }
+}
+
 @media (min-width: 1200px) {
   header nav.navbar {
     width: 60%;
