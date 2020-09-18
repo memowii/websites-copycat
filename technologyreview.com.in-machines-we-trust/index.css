@@ -231,6 +231,14 @@ body {
   margin-right: 10px;
 }
 
+.MenuBar__megaphone-wordmark {
+  float: right;
+  vertical-align: top;
+  display: inline-block;
+  height: 16px;
+  margin-top: 5px;
+}
+
 .MenuBar__overlay-container.is-up {
   position: absolute;
   bottom: 0;
@@ -409,20 +417,20 @@ footer p {
 
 @media (min-width: 576px) {
   .hero .content {
-    width: 330px;
+    width: 340px;
     margin: 0 auto;
   }
 
   .premiere > div.container {
-    width: 330px;
+    width: 340px;
   }
 
   .main-content > div.container {
-    width: 330px;
+    width: 340px;
   }
 
   footer > div.container {
-    width: 330px;
+    width: 340px;
   }
 }
 
@@ -441,7 +449,10 @@ footer p {
   }
 
   .premiere > div.container {
-    width: 690px;
+    width: 760px ;
+    max-width: 760px ;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .main-content > div.container {
@@ -464,7 +475,7 @@ footer p {
 
   .hero__subtitle {
     font-size: 46px;
-    margin-top: 1.5rem!important;
+    margin-top: 1.5rem !important;
   }
 }
 
