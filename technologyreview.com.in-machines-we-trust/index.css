@@ -456,3 +456,14 @@ footer p {
     width: 560px;
   }
 }
+
+@media (min-width: 1200px) {
+  header nav.navbar {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  header img {
+    width: 234px;
+  }
+}
