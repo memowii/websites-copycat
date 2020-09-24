@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export const Home = () => {
   return (
-    <div>
-      Home
+    <div className="container mx-auto my-8 px-4">
+      home
+      <h1>home</h1>
     </div>
-  )
-}
+  );
+};
