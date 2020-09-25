@@ -99,6 +99,22 @@ export const Home = () => {
           and substack <FontAwesomeIcon icon={faEnvelope} />
         </AButton>
       </section>
+      <section className="writing">
+        <h1 className="uppercase text-3xl font-bold text-white mt-12 mb-4">
+          writings.
+        </h1>
+
+        <ul>
+          <li className="mb-4">
+            <div class="text-sm text-gray-600">
+              <time datetime="2020-07-19T00:00:00.000Z">2020-07-19</time>
+            </div>
+            <AButton className="text-left underline">
+              A Mental Model to think in TypeScript
+            </AButton>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 };
