@@ -1,5 +1,21 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faTwitter,
+  faMedium,
+  faDev,
+  faGoodreads,
+  faPatreon,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faHashtag,
+  faMugHot,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+
+import { AButton } from "../../components/aButton";
 
 const typedJsOptions = {
   strings: [
@@ -37,18 +53,51 @@ export const Home = () => {
         </div>
 
         <p className="inline-block">
-          Find me <a href="#">building on github</a>
+          Find me{" "}
+          <AButton>
+            building on github <FontAwesomeIcon icon={faGithub} />
+          </AButton>
         </p>
         <p className="inline-block">
-          and sharing my <a href="#">thoughts on twitter</a>
+          and sharing my{" "}
+          <AButton>
+            thoughts on twitter <FontAwesomeIcon icon={faTwitter} />{" "}
+          </AButton>
         </p>
 
         <div className="my-4">
           <p>I'm also publishing my work on</p>
-          <a href="#">medium, </a>
-          <a href="#">dev.to, </a>
-          <a href="#">and hashnode, </a>
+          <AButton>
+            medium <FontAwesomeIcon icon={faMedium} />,{" "}
+          </AButton>
+          <AButton>
+            dev.to <FontAwesomeIcon icon={faDev} />,{" "}
+          </AButton>
+          <AButton>
+            and hashnode <FontAwesomeIcon icon={faHashtag} />
+          </AButton>
         </div>
+
+        <p className="my-4">
+          Find my books reviews on{" "}
+          <AButton>
+            goodreads <FontAwesomeIcon icon={faGoodreads} />
+          </AButton>
+        </p>
+
+        <p>You can support my work on</p>
+
+        <AButton>
+          patreon <FontAwesomeIcon icon={faPatreon} />
+          ,&nbsp;
+        </AButton>
+        <AButton>
+          ko-fi <FontAwesomeIcon icon={faMugHot} />
+          ,&nbsp;
+        </AButton>
+        <AButton>
+          and substack <FontAwesomeIcon icon={faEnvelope} />
+        </AButton>
       </section>
     </div>
   );
