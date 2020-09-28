@@ -1,0 +1,172 @@
+[
+  {
+    "dateTime": "2020-07-19T00:00:00.000Z",
+    "date": "2020-07-19",
+    "title": "\n\t\t\t\t\t\t\tA Mental Model to think in TypeScript\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-06-25T00:00:00.000Z",
+    "date": "2020-06-25",
+    "title": "\n\t\t\t\t\t\t\tDesigning my Life's System\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-06-21T00:00:00.000Z",
+    "date": "2020-06-21",
+    "title": "\n\t\t\t\t\t\t\tUX Studies with React, TypeScript, and Testing Library\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-06-14T00:00:00.000Z",
+    "date": "2020-06-14",
+    "title": "\n\t\t\t\t\t\t\tData Structures Series\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-05-17T00:00:00.000Z",
+    "date": "2020-05-17",
+    "title": "\n\t\t\t\t\t\t\tAlgorithms Problem Solving Series\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-05-09T00:00:00.000Z",
+    "date": "2020-05-09",
+    "title": "\n\t\t\t\t\t\t\tTypeScript Interesting Types\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-05-05T00:00:00.000Z",
+    "date": "2020-05-05",
+    "title": "\n\t\t\t\t\t\t\tConstant feedback driven development with Nodemon\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-04-29T00:00:00.000Z",
+    "date": "2020-04-29",
+    "title": "\n\t\t\t\t\t\t\tAutomating my blog posts publishing process\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-04-25T00:00:00.000Z",
+    "date": "2020-04-25",
+    "title": "\n\t\t\t\t\t\t\tTypeScript Type System\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-04-21T00:00:00.000Z",
+    "date": "2020-04-21",
+    "title": "\n\t\t\t\t\t\t\tPlaying around with Elixir lists\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-04-18T00:00:00.000Z",
+    "date": "2020-04-18",
+    "title": "\n\t\t\t\t\t\t\tReact Hooks, Context API, and Pokemons\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-04-15T00:00:00.000Z",
+    "date": "2020-04-15",
+    "title": "\n\t\t\t\t\t\t\tFun with Dates\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-04-13T00:00:00.000Z",
+    "date": "2020-04-13",
+    "title": "\n\t\t\t\t\t\t\tElixir Learnings Series\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-04-08T00:00:00.000Z",
+    "date": "2020-04-08",
+    "title": "\n\t\t\t\t\t\t\tThinking in data contracts\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-04-05T00:00:00.000Z",
+    "date": "2020-04-05",
+    "title": "\n\t\t\t\t\t\t\tTypeScript Learnings Series\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-04-01T00:00:00.000Z",
+    "date": "2020-04-01",
+    "title": "\n\t\t\t\t\t\t\tConsistent State Management in React and Redux\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-03-27T00:00:00.000Z",
+    "date": "2020-03-27",
+    "title": "\n\t\t\t\t\t\t\tTDD, simple functions, and React components\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-03-08T00:00:00.000Z",
+    "date": "2020-03-08",
+    "title": "\n\t\t\t\t\t\t\tClosures, Currying, and Cool Abstractions\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-02-10T00:00:00.000Z",
+    "date": "2020-02-10",
+    "title": "Tree Data Structure"
+  },
+  {
+    "dateTime": "2020-02-02T00:00:00.000Z",
+    "date": "2020-02-02",
+    "title": "\n\t\t\t\t\t\t\tLinked List\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-01-13T00:00:00.000Z",
+    "date": "2020-01-13",
+    "title": "\n\t\t\t\t\t\t\tQueue Data Structure\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-01-06T00:00:00.000Z",
+    "date": "2020-01-06",
+    "title": "\n\t\t\t\t\t\t\tStack Data Structure\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2020-01-01T00:00:00.000Z",
+    "date": "2020-01-01",
+    "title": "\n\t\t\t\t\t\t\tBuilding an abstraction for React internationalization messages\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2019-09-16T00:00:00.000Z",
+    "date": "2019-09-16",
+    "title": "\n\t\t\t\t\t\t\tDesigning my Learning Experience\n\t\t\t\t\t\t"
+  },
+  {
+    "dateTime": "2019-07-07T00:00:00.000Z",
+    "date": "2019-07-07",
+    "title": "Thoughts on my productivity"
+  },
+  {
+    "dateTime": "2018-11-17T00:00:00.000Z",
+    "date": "2018-11-17",
+    "title": "Functional\n\t\t\t\t\t\t\tProgramming Principles in JavaScript"
+  },
+  {
+    "dateTime": "2018-11-15T00:00:00.000Z",
+    "date": "2018-11-15",
+    "title": "An\n\t\t\t\t\t\t\tintroduction to the basic principles of Functional Programming"
+  },
+  {
+    "dateTime": "2018-01-05T00:00:00.000Z",
+    "date": "2018-01-05",
+    "title": "Understanding\n\t\t\t\t\t\t\tthe basics of Ruby on Rails: SQL Databases and how they work"
+  },
+  {
+    "dateTime": "2018-01-03T00:00:00.000Z",
+    "date": "2018-01-03",
+    "title": "Actionable advice to start\n\t\t\t\t\t\t\tlearning to code"
+  },
+  {
+    "dateTime": "2018-01-02T00:00:00.000Z",
+    "date": "2018-01-02",
+    "title": "Understanding\n\t\t\t\t\t\t\tthe basics of Ruby on Rails: HTTP, MVC, and Routes"
+  },
+  {
+    "dateTime": "2017-11-05T00:00:00.000Z",
+    "date": "2017-11-05",
+    "title": "Everything\n\t\t\t\t\t\t\tyou need to know about tree data structures"
+  },
+  {
+    "dateTime": "2017-09-30T00:00:00.000Z",
+    "date": "2017-09-30",
+    "title": "Learning\n\t\t\t\t\t\t\tPython From Zero to Hero"
+  },
+  {
+    "dateTime": "2017-09-28T00:00:00.000Z",
+    "date": "2017-09-28",
+    "title": "Idiomatic Ruby: Writing\n\t\t\t\t\t\t\tbeautiful\n\t\t\t\t\t\t\tcode"
+  },
+  {
+    "dateTime": "2017-09-12T00:00:00.000Z",
+    "date": "2017-09-12",
+    "title": "Learning Ruby From Zero to Hero"
+  }
+]

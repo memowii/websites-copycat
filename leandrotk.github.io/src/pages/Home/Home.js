@@ -16,6 +16,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { AButton } from "../../components/aButton";
+import { PostItem } from "../../components/postItem";
+import postsData from "./postsData.json";
 
 const typedJsOptions = {
   strings: [
@@ -105,14 +107,15 @@ export const Home = () => {
         </h1>
 
         <ul>
-          <li className="mb-4">
-            <div class="text-sm text-gray-600">
-              <time datetime="2020-07-19T00:00:00.000Z">2020-07-19</time>
-            </div>
-            <AButton className="text-left underline">
-              A Mental Model to think in TypeScript
-            </AButton>
-          </li>
+          {postsData.map((postItem, idx) => (
+            <React.Fragment key={idx}>
+              <PostItem
+                dateTime={postItem.dateTime}
+                date={postItem.date}
+                title={postItem.title}
+              />
+            </React.Fragment>
+          ))}
         </ul>
       </section>
     </div>
