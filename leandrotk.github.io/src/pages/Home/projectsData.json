@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Algorithms",
+    "description": "\n\t\t\t\t\tAlgorithms: Algorithms\n\t\t\t\t\tand Data Structures studies\n\t\t\t\t"
+  },
+  {
+    "topic": "FP",
+    "description": "\n\t\t\t\t\tFP: A Learning Path for Functional Programming\n\t\t\t\t"
+  },
+  {
+    "topic": "Luhn",
+    "description": "\n\t\t\t\t\tLuhn:\n\t\t\t\t\tA simple checksum formula for credit cards\n\t\t\t\t"
+  },
+  {
+    "topic": "PomoLambda",
+    "description": "\n\t\t\t\t\tPomoLambda:\n\t\t\t\t\tA Pomodoro Timer using Functional Programming style\n\t\t\t\t"
+  },
+  {
+    "topic": "M2M",
+    "description": "\n\t\t\t\t\tM2M: Transformation of a\n\t\t\t\t\tMedium post into a Markdown file\n\t\t\t\t"
+  },
+  {
+    "topic": "Pokemon",
+    "description": "\n\t\t\t\t\tPokemon: Understanding\n\t\t\t\t\tHigher Order Functions with Pokemon\n\t\t\t\t"
+  },
+  {
+    "topic": "Rachar Conta",
+    "description": "\n\t\t\t\t\tRachar Conta: A\n\t\t\t\t\tsimple program to split bills with friends\n\t\t\t\t"
+  },
+  {
+    "topic": "Rekommender",
+    "description": "\n\t\t\t\t\tRekommender: A\n\t\t\t\t\tRecommender System for profiles connections\n\t\t\t\t"
+  },
+  {
+    "topic": "Year Progress\n\t\t\t\t\t\t\tBar",
+    "description": "\n\t\t\t\t\tYear Progress\n\t\t\t\t\t\t\tBar: See how the year progress\n\t\t\t\t"
+  },
+  {
+    "topic": "TK Gym",
+    "description": "\n\t\t\t\t\tTK Gym: A Learning Center\n\t\t\t\t"
+  },
+  {
+    "topic": "Boring Test",
+    "description": "\n\t\t\t\t\tBoring Test: Automate\n\t\t\t\t\tboring tests\n\t\t\t\t"
+  },
+  {
+    "topic": "Lazy Cypress",
+    "description": "\n\t\t\t\t\tLazy Cypress:\n\t\t\t\t\tAutomate Cypress integration test in your React app\n\t\t\t\t"
+  }
+]

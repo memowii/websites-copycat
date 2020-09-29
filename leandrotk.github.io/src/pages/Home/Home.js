@@ -18,6 +18,7 @@ import {
 import { AButton } from "../../components/aButton";
 import { PostItem } from "../../components/postItem";
 import postsData from "./postsData.json";
+import projectsData from "./projectsData.json";
 
 const typedJsOptions = {
   strings: [
@@ -43,9 +44,7 @@ export const Home = () => {
   return (
     <div className="container mx-auto my-8 px-4">
       <section className="about">
-        <h1 className="uppercase text-3xl font-bold text-white mt-12 mb-4">
-          tk.
-        </h1>
+        <h1 className="h1 uppercase">tk.</h1>
 
         <div className="mb-3">
           I'm <span className="uppercase">tk</span>, a{" "}
@@ -102,9 +101,7 @@ export const Home = () => {
         </AButton>
       </section>
       <section className="writing">
-        <h1 className="uppercase text-3xl font-bold text-white mt-12 mb-4">
-          writings.
-        </h1>
+        <h1 className="h1">writings.</h1>
 
         <ul>
           {postsData.map((postItem, idx) => (
@@ -115,6 +112,21 @@ export const Home = () => {
                 title={postItem.title}
               />
             </React.Fragment>
+          ))}
+        </ul>
+      </section>
+
+      <section className="projects">
+        <h1 className="h1">projects.</h1>
+
+        <ul>
+          {projectsData.map((project, idx) => (
+            <li className="mb-2" key={idx}>
+              <strong>
+                <AButton className="underline-custom">{project.topic}</AButton>
+              </strong>
+              : {project.description}
+            </li>
           ))}
         </ul>
       </section>
