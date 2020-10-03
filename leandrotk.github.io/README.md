@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+Solution to run scripts in parallel.
+
+```
+This way your css won't update when you run it with npm start as it is compiled only once. Use npm-run-all (npm install --save-dev npm-run-all) and change your scripts in package.json to run both css watcher and react project paralell (the "run-p" means run paralell). "build:tailwind": "postcss src/tailwind.css -o src/tailwind.generated.css", "watch:tailwind": "postcss -w src/tailwind.css -o src/tailwind.generated.css",
+
+"start": "run-p watch:tailwind start:react", "start:react": "react-scripts start",
+```

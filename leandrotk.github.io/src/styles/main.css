@@ -601,6 +601,15 @@ video {
     );
 }
 
+.hover-custom:hover {
+  background-image: linear-gradient(
+      transparent,
+      transparent 4px,
+      white 4px,
+      white
+    );
+}
+
 .container {
   width: 100%;
 }

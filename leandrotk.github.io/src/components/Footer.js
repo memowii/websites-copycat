@@ -3,7 +3,7 @@ import { AButton } from "./aButton";
 
 export const Footer = () => {
   return (
-    <footer className="py-3 text-gray-700 text-xs max-w-2xl w-full mt-0 mx-auto mb-4 w-full align-top text-center">
+    <footer className="py-3 text-gray-700 text-xs max-w-2xl w-full mt-0 mx-auto mb-4 w-full align-top text-center sm:clearfix">
       <div className="h-5 leading-5 sm:float-left">Copyright © 2020 TK</div>
       <div className="sm:float-right">
         <nav>

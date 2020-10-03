@@ -42,31 +42,27 @@ export const Home = () => {
   });
 
   return (
-    <div className="container mx-auto my-8 px-4">
+    <div className="container mx-auto my-8 sm:my-16 px-4 md:w-full md:max-w-xl">
       <section className="about">
         <h1 className="h1 uppercase">tk.</h1>
-
         <div className="mb-3">
           I'm <span className="uppercase">tk</span>, a{" "}
           <span className="typed-info bg-white text-black">
             software engineer
           </span>
         </div>
-
         <p className="inline-block">
           Find me{" "}
           <AButton>
             building on github <FontAwesomeIcon icon={faGithub} />
           </AButton>
-        </p>
-        {" "}
+        </p>{" "}
         <p className="inline-block">
           and sharing my{" "}
           <AButton>
             thoughts on twitter <FontAwesomeIcon icon={faTwitter} />{" "}
           </AButton>
         </p>
-
         <div className="my-4">
           <p>I'm also publishing my work on</p>
           <AButton>
@@ -79,16 +75,13 @@ export const Home = () => {
             and hashnode <FontAwesomeIcon icon={faHashtag} />
           </AButton>
         </div>
-
         <p className="my-4">
           Find my books reviews on{" "}
           <AButton>
             goodreads <FontAwesomeIcon icon={faGoodreads} />
           </AButton>
         </p>
-
         <p>You can support my work on</p>
-
         <AButton>
           patreon <FontAwesomeIcon icon={faPatreon} />
           ,&nbsp;
