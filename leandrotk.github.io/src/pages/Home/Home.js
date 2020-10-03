@@ -59,6 +59,7 @@ export const Home = () => {
             building on github <FontAwesomeIcon icon={faGithub} />
           </AButton>
         </p>
+        {" "}
         <p className="inline-block">
           and sharing my{" "}
           <AButton>
