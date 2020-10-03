@@ -9,17 +9,12 @@ export const App = () => (
     <Layout>
       <Switch>
         <Route exact path="/" component={Home} />
-        
-        {/* <Route exact path="/equipo" component={Equipo} />
-        <Route exact path="/blog" component={Blog} />
+
         <Route
           exact
-          path="/blog/estrategias-decisiones-crecer-negocio"
-          component={BlogEntry}
+          path="/constant-feedback-driven-development-with-nodemon"
+          component={Home}
         />
-        <Route exact path="/juntos-mipymes" component={JuntosPymes} />
-        <Route exact path="/juntos-mipymes/tyc" component={Terminos} />
-        <Route component={NotFound} /> */}
       </Switch>
     </Layout>
   </BrowserRouter>

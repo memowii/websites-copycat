@@ -15,10 +15,10 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { AButton } from "../../components/aButton";
 import { PostItem } from "../../components/postItem";
 import postsData from "./postsData.json";
 import projectsData from "./projectsData.json";
+import { NavLink } from "../../components/NavLink";
 
 const typedJsOptions = {
   strings: [
@@ -53,46 +53,46 @@ export const Home = () => {
         </div>
         <p className="inline-block">
           Find me{" "}
-          <AButton>
+          <NavLink to="#" hover>
             building on github <FontAwesomeIcon icon={faGithub} />
-          </AButton>
+          </NavLink>
         </p>{" "}
         <p className="inline-block">
           and sharing my{" "}
-          <AButton>
+          <NavLink to="#" hover>
             thoughts on twitter <FontAwesomeIcon icon={faTwitter} />{" "}
-          </AButton>
+          </NavLink>
         </p>
         <div className="my-4">
           <p>I'm also publishing my work on</p>
-          <AButton>
+          <NavLink to="#" hover>
             medium <FontAwesomeIcon icon={faMedium} />,{" "}
-          </AButton>
-          <AButton>
+          </NavLink>
+          <NavLink to="#" hover>
             dev.to <FontAwesomeIcon icon={faDev} />,{" "}
-          </AButton>
-          <AButton>
+          </NavLink>
+          <NavLink to="#" hover>
             and hashnode <FontAwesomeIcon icon={faHashtag} />
-          </AButton>
+          </NavLink>
         </div>
         <p className="my-4">
           Find my books reviews on{" "}
-          <AButton>
+          <NavLink to="#" hover>
             goodreads <FontAwesomeIcon icon={faGoodreads} />
-          </AButton>
+          </NavLink>
         </p>
         <p>You can support my work on</p>
-        <AButton>
+        <NavLink to="#" hover>
           patreon <FontAwesomeIcon icon={faPatreon} />
           ,&nbsp;
-        </AButton>
-        <AButton>
+        </NavLink>
+        <NavLink to="#" hover>
           ko-fi <FontAwesomeIcon icon={faMugHot} />
           ,&nbsp;
-        </AButton>
-        <AButton>
+        </NavLink>
+        <NavLink to="#" hover>
           and substack <FontAwesomeIcon icon={faEnvelope} />
-        </AButton>
+        </NavLink>
       </section>
       <section className="writing">
         <h1 className="h1">writings.</h1>
@@ -117,7 +117,9 @@ export const Home = () => {
           {projectsData.map((project, idx) => (
             <li className="mb-2" key={idx}>
               <strong>
-                <AButton className="underline-custom">{project.topic}</AButton>
+                <NavLink to="#" className="underline-custom">
+                  {project.topic}
+                </NavLink>
               </strong>
               : {project.description}
             </li>

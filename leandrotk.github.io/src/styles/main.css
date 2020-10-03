@@ -601,7 +601,7 @@ video {
     );
 }
 
-.hover-custom:hover {
+.underline-custom:hover {
   background-image: linear-gradient(
       transparent,
       transparent 4px,
