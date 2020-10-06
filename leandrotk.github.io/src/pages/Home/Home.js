@@ -15,6 +15,8 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
+import IconStore from "../../components/IconStore";
+
 import { PostItem } from "../../components/postItem";
 import postsData from "./postsData.json";
 import projectsData from "./projectsData.json";
@@ -54,7 +56,8 @@ export const Home = () => {
         <p className="inline-block">
           Find me{" "}
           <NavLink to="#" hover>
-            building on github <FontAwesomeIcon icon={faGithub} />
+            {/* building on github <FontAwesomeIcon icon={faGithub} /> */}
+            building on github {IconStore("faGithub")}
           </NavLink>
         </p>{" "}
         <p className="inline-block">
