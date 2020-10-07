@@ -12,6 +12,7 @@ import {
   faHashtag,
   faMugHot,
   faEnvelope,
+  faLongArrowAltLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 const icons = {
@@ -24,6 +25,7 @@ const icons = {
   faHashtag,
   faMugHot,
   faEnvelope,
+  faLongArrowAltLeft,
 };
 
 export default (icon) => {

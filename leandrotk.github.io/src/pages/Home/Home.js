@@ -7,7 +7,7 @@ import { PostItem } from "../../components/postItem";
 import postsData from "./postsData.json";
 import projectsData from "./projectsData.json";
 import { NavLink } from "../../components/NavLink";
-import { useTitle } from '../../hooks/useTitle'
+import { useTitle } from "../../hooks/useTitle";
 
 const typedJsOptions = {
   strings: [
@@ -22,8 +22,8 @@ const typedJsOptions = {
 };
 
 export const Home = () => {
-  useTitle('Tk')
-  
+  useTitle("Tk");
+
   useEffect(() => {
     const typed = new Typed(".typed-info", typedJsOptions);
 
@@ -33,7 +33,7 @@ export const Home = () => {
   });
 
   return (
-    <div className="container mx-auto my-8 sm:my-16 px-4 md:w-full md:max-w-xl">
+    <>
       <section className="about">
         <h1 className="h1 uppercase">tk.</h1>
         <div className="mb-3">
@@ -120,6 +120,6 @@ export const Home = () => {
       </section>
 
       <ReactTooltip place="bottom" type="dark" effect="float" border />
-    </div>
+    </>
   );
 };

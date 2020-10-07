@@ -610,6 +610,19 @@ video {
     );
 }
 
+code {
+  border-radius: 0.125rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  --bg-opacity: 1;
+  background-color: #2b6cb0;
+  background-color: rgba(43, 108, 176, var(--bg-opacity));
+}
+
+blockquote {
+  word-spacing: -4px;
+}
+
 .container {
   width: 100%;
 }

@@ -31,4 +31,12 @@
       white
     );
   }
+
+  code {
+    @apply rounded-sm px-1 bg-blue-700;
+  }
+
+  blockquote {
+    word-spacing: -4px;
+  }
 }
