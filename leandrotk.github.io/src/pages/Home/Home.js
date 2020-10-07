@@ -7,6 +7,7 @@ import { PostItem } from "../../components/postItem";
 import postsData from "./postsData.json";
 import projectsData from "./projectsData.json";
 import { NavLink } from "../../components/NavLink";
+import { useTitle } from '../../hooks/useTitle'
 
 const typedJsOptions = {
   strings: [
@@ -21,6 +22,8 @@ const typedJsOptions = {
 };
 
 export const Home = () => {
+  useTitle('Tk')
+  
   useEffect(() => {
     const typed = new Typed(".typed-info", typedJsOptions);
 
