@@ -30,4 +30,9 @@ export default (icon) => {
   if (typeof icons[icon] !== "undefined") {
     return React.createElement(FontAwesomeIcon, { icon: icons[icon] });
   }
+
+  // In case the icon wasn't found, notify with a message.
+  return React.createElement(() => (
+    <p>The icon {icon} hasn't been added to the store.</p>
+  ));
 };

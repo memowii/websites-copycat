@@ -1,22 +1,7 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faTwitter,
-  faMedium,
-  faDev,
-  faGoodreads,
-  faPatreon,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faHashtag,
-  faMugHot,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
 
 import IconStore from "../../components/IconStore";
-
 import { PostItem } from "../../components/postItem";
 import postsData from "./postsData.json";
 import projectsData from "./projectsData.json";
@@ -56,45 +41,44 @@ export const Home = () => {
         <p className="inline-block">
           Find me{" "}
           <NavLink to="#" hover>
-            {/* building on github <FontAwesomeIcon icon={faGithub} /> */}
             building on github {IconStore("faGithub")}
           </NavLink>
         </p>{" "}
         <p className="inline-block">
           and sharing my{" "}
           <NavLink to="#" hover>
-            thoughts on twitter <FontAwesomeIcon icon={faTwitter} />{" "}
+            thoughts on twitter {IconStore("faTwitter")} />{" "}
           </NavLink>
         </p>
         <div className="my-4">
           <p>I'm also publishing my work on</p>
           <NavLink to="#" hover>
-            medium <FontAwesomeIcon icon={faMedium} />,{" "}
+            medium {IconStore("faMedium")},{" "}
           </NavLink>
           <NavLink to="#" hover>
-            dev.to <FontAwesomeIcon icon={faDev} />,{" "}
+            dev.to {IconStore("faDev")},{" "}
           </NavLink>
           <NavLink to="#" hover>
-            and hashnode <FontAwesomeIcon icon={faHashtag} />
+            and hashnode {IconStore("faHashtag")}
           </NavLink>
         </div>
         <p className="my-4">
           Find my books reviews on{" "}
           <NavLink to="#" hover>
-            goodreads <FontAwesomeIcon icon={faGoodreads} />
+            goodreads {IconStore("faGoodreads")}
           </NavLink>
         </p>
         <p>You can support my work on</p>
         <NavLink to="#" hover>
-          patreon <FontAwesomeIcon icon={faPatreon} />
+          patreon {IconStore("faPatreon")}
           ,&nbsp;
         </NavLink>
         <NavLink to="#" hover>
-          ko-fi <FontAwesomeIcon icon={faMugHot} />
+          ko-fi {IconStore("faMugHot")}
           ,&nbsp;
         </NavLink>
         <NavLink to="#" hover>
-          and substack <FontAwesomeIcon icon={faEnvelope} />
+          and substack {IconStore("faEnvelope")}
         </NavLink>
       </section>
       <section className="writing">
