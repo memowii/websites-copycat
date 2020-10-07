@@ -92,6 +92,7 @@ export const Home = () => {
                 dateTime={postItem.dateTime}
                 date={postItem.date}
                 title={postItem.title}
+                to={"/article"}
               />
             </React.Fragment>
           ))}
