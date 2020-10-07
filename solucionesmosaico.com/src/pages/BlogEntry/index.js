@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import { Divider } from "../../components/Divider";
 import { SocialNetworks } from "../../components/SocialNetworks";
+import { useTitle } from "../../hooks/useTitle";
 
 import estrategiaNegocioImg from "../../images/Estrategia-negocio.jpg";
 import estrategiaNegociosImg from "../../images/Estrategia-negocios.jpg";
@@ -10,10 +11,9 @@ import estrategiaNegociosImg from "../../images/Estrategia-negocios.jpg";
 import "./index.css";
 
 export const BlogEntry = () => {
-  useEffect(() => {
-    document.title =
-      "Estrategias: las decisiones que hacen crecer tu negocio | Mosaico Agencia de publicidad";
-  });
+  useTitle(
+    "Estrategias: las decisiones que hacen crecer tu negocio | Mosaico Agencia de publicidad"
+  );
 
   return (
     <div className="BlogEntry container mt-3">

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { ServiceCard } from "../../components/ServiceCard";
 import { Swiper } from "../../components/Swiper";
@@ -6,6 +6,7 @@ import { SwiperImage } from "../../components/SwiperImage";
 import { InnerHeading } from "../../components/InnerHeading";
 import { SocialNetworks } from "../../components/SocialNetworks";
 import { Divider } from "../../components/Divider";
+import { useTitle } from "../../hooks/useTitle";
 
 import "./index.css";
 
@@ -27,9 +28,7 @@ import sliderImage11 from "../../images/Don-Porfirio-Barberia-150x150.jpg";
 import sliderImage12 from "../../images/SISEdu-Mosaico-150x150.png";
 
 export function Home() {
-  useEffect(() => {
-    document.title = "Mosaico Agencia de publicidad | Estrategias creativas";
-  });
+  useTitle("Mosaico Agencia de publicidad | Estrategias creativas");
 
   return (
     <div className="container">

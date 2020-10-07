@@ -1,20 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 import { InnerHeading } from "../../components/InnerHeading";
 import { Divider } from "../../components/Divider";
 import { Notice } from "../../components/Notice";
+import { useTitle } from "../../hooks/useTitle";
+import { useWithoutDivider } from "../../hooks/useWithoutDivider";
 
 export const JuntosPymes = () => {
-  useEffect(() => {
-    document.title = "Juntos por las MiPyMes | Mosaico Agencia de publicidad";
-    const divider = document.querySelector(".Divider");
-    divider.hidden = true;
-
-    return () => {
-      divider.hidden = false;
-    };
-  });
+  useTitle("Juntos por las MiPyMes | Mosaico Agencia de publicidad");
+  useWithoutDivider();
 
   return (
     <div className="container">

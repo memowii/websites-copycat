@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { InnerHeading } from "../../components/InnerHeading";
 import { Divider } from "../../components/Divider";
 import { BlogCard } from "../../components/BlogCard";
 
 import estrategiaNegocioImg from "../../images/Estrategia-negocio.jpg";
+import { useTitle } from '../../hooks/useTitle'
 
 export const Blog = () => {
-  useEffect(() => {
-    document.title = "Blog | Mosaico Agencia de publicidad";
-  });
+  useTitle('Blog | Mosaico Agencia de publicidad')
 
   return (
     <div className="container">

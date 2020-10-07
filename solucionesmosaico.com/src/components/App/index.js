@@ -1,10 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import {
-  Transition,
-  TransitionGroup,
-  CSSTransition,
-} from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 
 import { Layout } from "../Layout";
 import { Home } from "../../pages/Home";
@@ -21,7 +17,7 @@ export const App = () => (
       <Layout>
         <Route
           render={({ location }) => {
-            const { pathname, key } = location;
+            const { key } = location;
 
             return (
               <CSSTransition key={key} timeout={0}>

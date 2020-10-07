@@ -1,13 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { TeammateCard } from "../../components/TeammateCard";
 import { InnerHeading } from "../../components/InnerHeading";
 import { Divider } from "../../components/Divider";
+import { useTitle } from "../../hooks/useTitle";
 
 export const Equipo = () => {
-  useEffect(() => {
-    document.title = "Equipo | Mosaico Agencia de publicidad";
-  });
+  useTitle("Equipo | Mosaico Agencia de publicidad");
 
   return (
     <div className="container">
