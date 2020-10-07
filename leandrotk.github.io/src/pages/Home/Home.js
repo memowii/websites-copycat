@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
+import ReactTooltip from "react-tooltip";
 
 import IconStore from "../../components/IconStore";
 import { PostItem } from "../../components/postItem";
@@ -40,44 +41,44 @@ export const Home = () => {
         </div>
         <p className="inline-block">
           Find me{" "}
-          <NavLink to="#" hover>
+          <NavLink to="#" hover dataTip="github">
             building on github {IconStore("faGithub")}
           </NavLink>
         </p>{" "}
         <p className="inline-block">
           and sharing my{" "}
-          <NavLink to="#" hover>
-            thoughts on twitter {IconStore("faTwitter")} />{" "}
+          <NavLink to="#" hover dataTip="twitter">
+            thoughts on twitter {IconStore("faTwitter")}{" "}
           </NavLink>
         </p>
         <div className="my-4">
           <p>I'm also publishing my work on</p>
-          <NavLink to="#" hover>
+          <NavLink to="#" hover dataTip="medium">
             medium {IconStore("faMedium")},{" "}
           </NavLink>
-          <NavLink to="#" hover>
+          <NavLink to="#" hover dataTip="devto">
             dev.to {IconStore("faDev")},{" "}
           </NavLink>
-          <NavLink to="#" hover>
+          <NavLink to="#" hover dataTip="hashnode">
             and hashnode {IconStore("faHashtag")}
           </NavLink>
         </div>
         <p className="my-4">
           Find my books reviews on{" "}
-          <NavLink to="#" hover>
+          <NavLink to="#" hover dataTip="goodreads">
             goodreads {IconStore("faGoodreads")}
           </NavLink>
         </p>
         <p>You can support my work on</p>
-        <NavLink to="#" hover>
+        <NavLink to="#" hover dataTip="patreon">
           patreon {IconStore("faPatreon")}
           ,&nbsp;
         </NavLink>
-        <NavLink to="#" hover>
+        <NavLink to="#" hover dataTip="kofi">
           ko-fi {IconStore("faMugHot")}
           ,&nbsp;
         </NavLink>
-        <NavLink to="#" hover>
+        <NavLink to="#" hover dataTip="substack">
           and substack {IconStore("faEnvelope")}
         </NavLink>
       </section>
@@ -113,6 +114,8 @@ export const Home = () => {
           ))}
         </ul>
       </section>
+
+      <ReactTooltip place="bottom" type="dark" effect="float" border />
     </div>
   );
 };
