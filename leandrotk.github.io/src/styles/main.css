@@ -587,6 +587,17 @@ video {
   margin-bottom: 1rem;
 }
 
+.h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  --text-opacity: 1;
+  color: #edf2f7;
+  color: rgba(237, 242, 247, var(--text-opacity));
+  line-height: 2.25rem;
+}
+
 .underline-custom {
   text-decoration: none;
   color: #c9cacc;
@@ -620,7 +631,46 @@ code {
 }
 
 blockquote {
+  font-size: 1.125rem;
+  --text-opacity: 1;
+  color: #edf2f7;
+  color: rgba(237, 242, 247, var(--text-opacity));
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  letter-spacing: -0.05em;
+  line-height: 1.75rem;
+  position: relative;
   word-spacing: -4px;
+}
+
+blockquote::before {
+  --text-opacity: 1;
+  color: #edf2f7;
+  color: rgba(237, 242, 247, var(--text-opacity));
+  font-size: 2.25rem;
+  line-height: .75rem;
+  margin-right: 0.25rem;
+  position: absolute;
+  content: "\201C";
+  vertical-align: -0.4em;
+  left: -25px;
+}
+
+blockquote::after {
+  --text-opacity: 1;
+  color: #edf2f7;
+  color: rgba(237, 242, 247, var(--text-opacity));
+  font-size: 2.25rem;
+  line-height: .75rem;
+  margin-right: 0.25rem;
+  position: absolute;
+  content: "\201C";
+  vertical-align: -0.4em;
+  bottom: -15px;
+  right: -20px;
 }
 
 .container {

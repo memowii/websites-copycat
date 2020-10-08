@@ -79,11 +79,18 @@ export const Article = () => {
         <p className="my-4">
           <code>nodemon</code> is not specific for TypeScript. It is a
         </p>
-        <blockquote className="text-lg text-gray-200 my-6 mx-2 text-center tracking-tighter leading-7">
+        <blockquote>
           Tool that helps develop node.js based applications by automatically
           restarting the node application when file changes in the directory are
           detected. - nodemon.io
         </blockquote>
+        <p className="my-4">
+          So, for every file you saved, <code>nodemon</code> will restart the
+          application. With that, you can have constant feedback from what you
+          are building.
+        </p>
+        <h2 className="h2">Setting up</h2>
+        <p className="my-4">If you really like this tooling, you can install it globally:</p>
       </article>
     </>
   );

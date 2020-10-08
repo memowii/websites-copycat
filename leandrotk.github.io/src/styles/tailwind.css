@@ -9,6 +9,10 @@
     @apply text-3xl font-bold text-white mt-12 mb-4;
   }
 
+  .h2 {
+    @apply text-3xl font-bold mt-8 mb-2 text-gray-200 leading-9;
+  }
+
   .underline-custom {
     text-decoration: none;
     color: #c9cacc;
@@ -37,6 +41,23 @@
   }
 
   blockquote {
+    @apply text-lg text-gray-200 my-6 mx-2 text-center tracking-tighter leading-7 relative;
     word-spacing: -4px;
+  }
+
+  blockquote::before {
+    @apply text-gray-200 text-4xl leading-3 mr-1 absolute;
+
+    content: "\201C";
+    vertical-align: -0.4em;
+    left: -25px;
+  }
+
+  blockquote::after {
+    @apply text-gray-200 text-4xl leading-3 mr-1 absolute;
+    content: "\201C";
+    vertical-align: -0.4em;
+    bottom: -15px;
+    right: -20px;
   }
 }
