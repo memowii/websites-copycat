@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 
 import { useTitle } from "../hooks/useTitle";
 import IconStore from "../components/IconStore";
+import { Highlight } from "../components/Highlight";
 import img1 from "../assets/images/cover.jpg";
 
 export const Article = () => {
   useTitle("Constant feedback driven development with Nodemon");
 
   return (
-    <>
+    <div className="Article">
       <div className="mb-5">
         <NavLink to="/">{IconStore("faLongArrowAltLeft")} HOME</NavLink>
       </div>
@@ -53,12 +54,12 @@ export const Article = () => {
         <NavLink to="#" className="underline-custom">
           TypeScript Learning Series.
         </NavLink>
-        <p className="my-4">
+        <p>
           I'm learning a lot about building new projects using TypeScript. Today
           I want to tell you more about building things with constant feedback
           and how to make the development dynamic.
         </p>
-        <p className="my-4">
+        <p>
           At first, when I started building things with TypeScript, for every
           function I built, I had two options:
         </p>
@@ -71,12 +72,12 @@ export const Article = () => {
             function there.
           </li>
         </ol>
-        <p className="my-4">
+        <p>
           At first, it is ok to test simple things. But you all need to stop the
           development and lose the flow. I wanted a more dynamic development
           flow and I found <code>nodemon</code>.
         </p>
-        <p className="my-4">
+        <p>
           <code>nodemon</code> is not specific for TypeScript. It is a
         </p>
         <blockquote>
@@ -84,14 +85,54 @@ export const Article = () => {
           restarting the node application when file changes in the directory are
           detected. - nodemon.io
         </blockquote>
-        <p className="my-4">
+        <p>
           So, for every file you saved, <code>nodemon</code> will restart the
           application. With that, you can have constant feedback from what you
           are building.
         </p>
         <h2 className="h2">Setting up</h2>
-        <p className="my-4">If you really like this tooling, you can install it globally:</p>
+        <p>If you really like this tooling, you can install it globally:</p>
+        <Highlight
+          content={`
+          <pre>
+            <code class="leading-6 bash">npm install -g nodemon</code>
+          </pre>
+          `}
+        />
+        <p>
+          But I like to configure dependencies for each project. So I install it
+          in the dev dependencies in the project I want to use it.
+        </p>
+        <Highlight
+          content={`
+          <pre>
+            <code class="leading-6 bash">npm install --save-dev nodemon</code>
+          </pre>
+          `}
+        />
+        <p>
+          After installing it, we have to configure the nodemon json config.
+          This is the simple configuration I did for my{" "}
+          <NavLink to="#">publisher tool</NavLink>:
+        </p>
+        <Highlight
+          content={`
+          <pre>
+            <code class="leading-6 json">
+{
+  "watch": [
+    "src",
+    "examples"
+  ],
+  "ext": ".ts,.js,.html,.json",
+  "ignore": [],
+  "exec": "ts-node ./src/index.ts"
+}
+            </code>
+          </pre>
+          `}
+        />
       </article>
-    </>
+    </div>
   );
 };

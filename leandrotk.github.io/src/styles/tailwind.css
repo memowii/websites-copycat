@@ -60,4 +60,17 @@
     bottom: -15px;
     right: -20px;
   }
+
+  .Article p {
+    @apply my-4;
+  }
+
+  .Article pre {
+    line-height: 0;
+    box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+  }
+
+  .Article pre .hljs {
+    @apply p-6;
+  }
 }

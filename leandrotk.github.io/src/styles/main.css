@@ -673,6 +673,20 @@ blockquote::after {
   right: -20px;
 }
 
+.Article p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Article pre {
+  line-height: 0;
+  box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+}
+
+.Article pre .hljs {
+  padding: 1.5rem;
+}
+
 .container {
   width: 100%;
 }
