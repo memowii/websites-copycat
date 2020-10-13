@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import { useTitle } from "../hooks/useTitle";
 import IconStore from "../components/IconStore";
-import { Highlight } from "../components/Highlight";
+import { HighlightJson } from "../components/HighlightJson";
+import { HighlightBash } from "../components/HighlightBash";
 import img1 from "../assets/images/cover.jpg";
 
 export const Article = () => {
@@ -92,24 +93,18 @@ export const Article = () => {
         </p>
         <h2 className="h2">Setting up</h2>
         <p>If you really like this tooling, you can install it globally:</p>
-        <Highlight
-          language="bash"
-          content="npm install -g nodemon"
-        />
+        <HighlightBash content="npm install -g nodemon" />
         <p>
           But I like to configure dependencies for each project. So I install it
           in the dev dependencies in the project I want to use it.
         </p>
-        <Highlight
-          language="bash"
-          content="npm install --save-dev nodemon"
-        />
+        <HighlightBash content="npm install --save-dev nodemon" />
         <p>
           After installing it, we have to configure the nodemon json config.
           This is the simple configuration I did for my{" "}
           <NavLink to="#">publisher tool</NavLink>:
         </p>
-        <Highlight
+        <HighlightJson
           content={`
 {
   "watch": [
@@ -121,7 +116,6 @@ export const Article = () => {
   "exec": "ts-node ./src/index.ts"
 }
           `}
-          language="json"
         />
       </article>
     </div>

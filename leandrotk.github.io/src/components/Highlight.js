@@ -1,13 +1,7 @@
 import React, { useRef, useEffect } from "react";
-import hljs from "highlight.js/lib/core";
-import bash from "highlight.js/lib/languages/bash";
-import json from "highlight.js/lib/languages/json";
 import "highlight.js/styles/dark.css";
 
-// hljs.registerLanguage("bash", bash);
-hljs.registerLanguage("json", json);
-
-export const Highlight = ({ content, language }) => {
+export const Highlight = ({ content, language, hljs }) => {
   const node = useRef(null);
 
   useEffect(() => {
