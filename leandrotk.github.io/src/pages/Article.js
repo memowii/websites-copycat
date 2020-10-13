@@ -117,6 +117,47 @@ export const Article = () => {
 }
           `}
         />
+        <p>
+          It watches the <code>src</code> and <code>example</code> folders with{" "}
+          <code>.ts</code>, <code>.js</code>,<code>.html</code>, and{" "}
+          <code>.json</code> files. If one of these files changes, the nodemon
+          executes your main file defined in the <code>exec</code> property. In
+          my project, I add the main file in the
+          <code>./src/index.ts</code>.
+        </p>
+        <p>
+          In your <code>package.json</code>, you can add a script to handle
+          nodemon:
+        </p>
+        <HighlightJson
+          content={`
+{
+  "scripts": {
+    "start:dev": "nodemon"
+  }
+}
+          `}
+        />
+        <p>Run the command:</p>
+        <HighlightBash content="npm run start:dev" />
+        <p>
+          As I said earlier, dynamic feedback is really important in development
+          mode. It helps you have instant feedback as early as possible, making
+          it breaking and working faster.
+        </p>
+        <p>
+          For your next project, I really recommend you to play around with this
+          library. Or set up a different tool to make your development more
+          dynamic.
+        </p>
+        <h2 className="h2">Resources</h2>
+        <ul className="list-disc my-4 pl-10">
+          <li>
+            <NavLink to="#" className="underline-custom">
+              npm package
+            </NavLink>
+          </li>
+        </ul>
       </article>
     </div>
   );
