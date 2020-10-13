@@ -93,22 +93,16 @@ export const Article = () => {
         <h2 className="h2">Setting up</h2>
         <p>If you really like this tooling, you can install it globally:</p>
         <Highlight
-          content={`
-          <pre>
-            <code class="leading-6 bash">npm install -g nodemon</code>
-          </pre>
-          `}
+          language="bash"
+          content="npm install -g nodemon"
         />
         <p>
           But I like to configure dependencies for each project. So I install it
           in the dev dependencies in the project I want to use it.
         </p>
         <Highlight
-          content={`
-          <pre>
-            <code class="leading-6 bash">npm install --save-dev nodemon</code>
-          </pre>
-          `}
+          language="bash"
+          content="npm install --save-dev nodemon"
         />
         <p>
           After installing it, we have to configure the nodemon json config.
@@ -117,8 +111,6 @@ export const Article = () => {
         </p>
         <Highlight
           content={`
-          <pre>
-            <code class="leading-6 json">
 {
   "watch": [
     "src",
@@ -128,9 +120,8 @@ export const Article = () => {
   "ignore": [],
   "exec": "ts-node ./src/index.ts"
 }
-            </code>
-          </pre>
           `}
+          language="json"
         />
       </article>
     </div>

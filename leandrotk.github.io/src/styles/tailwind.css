@@ -65,12 +65,19 @@
     @apply my-4;
   }
 
-  .Article pre {
+  .Article .Highlight {
     line-height: 0;
+  }
+  
+  .Article .Highlight code {
+    line-height: 1.15rem;
+  }
+
+  .Article pre {
     box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
   }
 
   .Article pre .hljs {
-    @apply p-6;
+    @apply px-6;
   }
 }

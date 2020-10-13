@@ -7,7 +7,7 @@ import "highlight.js/styles/dark.css";
 // hljs.registerLanguage("bash", bash);
 hljs.registerLanguage("json", json);
 
-export const Highlight = ({ content }) => {
+export const Highlight = ({ content, language }) => {
   const node = useRef(null);
 
   useEffect(() => {
@@ -17,5 +17,24 @@ export const Highlight = ({ content }) => {
     });
   });
 
-  return <div ref={node} dangerouslySetInnerHTML={{ __html: content }} />;
+  const wrapContent = (content) => {
+    const template = `
+    <pre>
+      <code class="{language}">
+{content}
+      </code>
+    </pre>`;
+
+    return template
+      .replace("{language}", language)
+      .replace("{content}", content);
+  };
+
+  return (
+    <div
+      className="Highlight my-8"
+      ref={node}
+      dangerouslySetInnerHTML={{ __html: wrapContent(content) }}
+    />
+  );
 };
