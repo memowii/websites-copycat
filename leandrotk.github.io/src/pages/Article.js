@@ -6,6 +6,7 @@ import IconStore from "../components/IconStore";
 import { HighlightJson } from "../components/HighlightJson";
 import { HighlightBash } from "../components/HighlightBash";
 import img1 from "../assets/images/cover.jpg";
+import img2 from "../assets/images/eclipse.png";
 
 export const Article = () => {
   useTitle("Constant feedback driven development with Nodemon");
@@ -158,6 +159,38 @@ export const Article = () => {
             </NavLink>
           </li>
         </ul>
+        <div className="substack h-64 relative flex items-center justify-center p-3 bg-white text-center">
+          <div>
+            <img
+              className="w-12 h-12 inline-block rounded-lg mb-4"
+              src={img2}
+              alt="Eclipse"
+            />
+            <h1 className="text-gray-900 text-2xl font-extrabold ">
+              TK’s Journey
+            </h1>
+            <p className="text-gray-500 text-xs">
+              coding. learning. self-development.
+            </p>
+            <div className="flex flex-row flex-no-wrap justify-center mt-3">
+              <input
+                className="inline-block p-3 border border-green-300 border-r-0 w-2/3 rounded-l-md outline-none"
+                type="email"
+                name="email"
+                placeholder="Type your email..."
+              />
+              <button
+                type="submit"
+                className="bg-green-500 rounded-lg px-3 text-black rounded-l-none"
+              >
+                <b>Subscribe</b>
+              </button>
+            </div>
+          </div>
+          <NavLink to="#" className="substack-watermark">
+            {" "}
+          </NavLink>
+        </div>
       </article>
     </div>
   );

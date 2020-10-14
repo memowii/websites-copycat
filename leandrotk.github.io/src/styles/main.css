@@ -687,7 +687,7 @@ blockquote::after {
 }
 
 .Article pre {
-  box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.75);
 }
 
 .Article pre .hljs {
@@ -695,6 +695,27 @@ blockquote::after {
   padding-right: 1rem;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.Article .substack {
+  height: 19rem;
+}
+
+.Article .substack p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.substack-watermark {
+  height: 1rem;
+  width: 6rem;
+  bottom: 1rem;
+  right: 1rem;
+  position: absolute;
+  display: block;
+  background-image: url(../assets/images/https___substack.com_img_substack_wordmark.black.png);
+  background-size: 100%;
+  opacity: 0.3;
 }
 
 .container {
