@@ -7,6 +7,8 @@ import { HighlightJson } from "../components/HighlightJson";
 import { HighlightBash } from "../components/HighlightBash";
 import img1 from "../assets/images/cover.jpg";
 import img2 from "../assets/images/eclipse.png";
+import img3 from "../assets/images/patron.png";
+import img4 from "../assets/images/coffee.png";
 
 export const Article = () => {
   useTitle("Constant feedback driven development with Nodemon");
@@ -189,6 +191,36 @@ export const Article = () => {
           </div>
           <NavLink to="#" className="substack-watermark">
             {" "}
+          </NavLink>
+        </div>
+        <div className="mt-10">
+          Tags:{" "}
+          <NavLink to="#" className="underline-custom">
+            #typescript
+          </NavLink>{" "}
+          <NavLink to="#" className="underline-custom">
+            #javascript
+          </NavLink>
+        </div>
+        <div className="mt-10 flex">
+          <NavLink
+            to="#"
+            className="bg-red-500 text-white font-bold py-2 px-4 rounded inline-flex mr-3 items-center"
+          >
+            <img src={img3} alt="patreon symbol" width="40" />
+            Become a patron
+          </NavLink>
+          <NavLink
+            to="#"
+            className="bg-blue-500 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+          >
+            <img
+              src={img4}
+              alt="a cup of coffee"
+              width="40"
+              className="h-8 mr-3"
+            />
+            Buy me a cofee
           </NavLink>
         </div>
       </article>
