@@ -34,7 +34,9 @@ export const Article = () => {
               <time dateTime="2020-05-04T00:00:00.000Z">2020-05-04</time>
             </div>
 
-            <div>
+            <span className="hidden sm:inline"> | </span>
+
+            <div className="sm:inline-block">
               <NavLink to="#" className="underline-custom">
                 #typescript
               </NavLink>{" "}
@@ -162,7 +164,7 @@ export const Article = () => {
           </li>
         </ul>
         <div className="substack h-64 relative flex items-center justify-center p-3 bg-white text-center">
-          <div>
+          <div className="sm:w-8/12">
             <img
               className="w-12 h-12 inline-block rounded-lg mb-4"
               src={img2}
@@ -194,6 +196,7 @@ export const Article = () => {
           </NavLink>
         </div>
         <div className="mt-10">
+          <span className="hidden sm:inline">| </span>
           Tags:{" "}
           <NavLink to="#" className="underline-custom">
             #typescript
